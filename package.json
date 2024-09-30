@@ -7,12 +7,12 @@
   "author": "Simon He",
   "license": "MIT",
   "funding": "https://github.com/sponsors/Simon-He95",
-  "homepage": "https://github.com/common-intellisense/primevue3#readme",
+  "homepage": "https://github.com/common-intellisense/primevue#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/common-intellisense/primevue3.git"
+    "url": "git+https://github.com/common-intellisense/primevue.git"
   },
-  "bugs": "https://github.com/common-intellisense/primevue3/issues",
+  "bugs": "https://github.com/common-intellisense/primevue/issues",
   "keywords": [],
   "sideEffects": false,
   "exports": {
