@@ -1,0 +1,87 @@
+{
+  "name": "TabMenu",
+  "props": {
+    "model": {
+      "default": "",
+      "description": "An array of menuitems.",
+      "description_zh": "菜单项的数组。",
+      "type": "MenuItem[]",
+      "value": "",
+      "required": false
+    },
+    "activeIndex": {
+      "default": "0",
+      "description": "Active index of menuitem.",
+      "description_zh": "menuitem 的活动索引。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "ariaLabel": {
+      "default": "",
+      "description": "Defines a string value that labels an interactive element.",
+      "description_zh": "定义用于标记交互式元素的字符串值。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "ariaLabelledby": {
+      "default": "",
+      "description": "Identifier of the underlying input element.",
+      "description_zh": "基础 input 元素的标识符。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<TabMenuPassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "item",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">item</span>: <span class=\"doc-option-parameter-type\">MenuItem</span>, <span class=\"doc-option-parameter-type\">// Menuitem instance</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">index</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Index of the menuitem</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">active</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Current active state of the menuitem</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">label</span>: <span class=\"doc-option-parameter-type\">undefined</span>, <span class=\"doc-option-parameter-type\">// Label property of the menuitem</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">props</span>: <span class=\"doc-option-parameter-type\">TabMenuRouterBindProps</span>, <span class=\"doc-option-parameter-type\">// Binding properties of the menuitem</span>\n }",
+      "description": "Custom content for each item.",
+      "description_zh": "每个项目的自定义内容。"
+    },
+    {
+      "name": "itemicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">item</span>: <span class=\"doc-option-parameter-type\">MenuItem</span>, <span class=\"doc-option-parameter-type\">// Menuitem instance</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Style class of the item icon element.</span>\n }",
+      "description": "Custom item icon template.",
+      "description_zh": "自定义项目图标模板。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/tabmenu/",
+  "methods": []
+}

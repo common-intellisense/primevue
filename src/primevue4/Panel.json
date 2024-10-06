@@ -1,0 +1,111 @@
+{
+  "name": "Panel",
+  "props": {
+    "header": {
+      "default": "",
+      "description": "Header text of the panel.",
+      "description_zh": "面板的标题文本。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "toggleable": {
+      "default": "false",
+      "description": "Defines if content of panel can be expanded and collapsed.",
+      "description_zh": "定义面板的内容是否可以展开和折叠。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "collapsed": {
+      "default": "false",
+      "description": "Defines the initial state of panel content.",
+      "description_zh": "定义面板内容的初始状态。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "toggleButtonProps": {
+      "default": "",
+      "description": "Used to pass the custom value to read for the button inside the component.",
+      "description_zh": "用于传递要读取组件内按钮的自定义值。",
+      "type": "object",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<PanelPassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "default",
+      "params": "",
+      "description": "Custom content template.",
+      "description_zh": "自定义内容模板。"
+    },
+    {
+      "name": "header",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">id</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Current id state as a string</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the icon</span>\n }",
+      "description": "Custom header template.",
+      "description_zh": "自定义标头模板。"
+    },
+    {
+      "name": "icons",
+      "params": "",
+      "description": "Custom icons template.",
+      "description_zh": "自定义图标模板。"
+    },
+    {
+      "name": "togglericon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">collapsed</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Collapsed state as a boolean</span>\n }",
+      "description": "",
+      "description_zh": ""
+    },
+    {
+      "name": "toggleicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">collapsed</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Collapsed state as a boolean</span>\n }",
+      "description": "Custom toggler icon template of panel.",
+      "description_zh": "面板的自定义切换器图标模板。"
+    },
+    {
+      "name": "footer",
+      "params": "",
+      "description": "Custom footer template.",
+      "description_zh": "自定义页脚模板。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/panel/",
+  "methods": []
+}

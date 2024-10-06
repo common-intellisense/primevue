@@ -1,0 +1,341 @@
+{
+  "name": "Galleria",
+  "props": {
+    "id": {
+      "default": "",
+      "description": "Unique identifier of the element.",
+      "description_zh": "元素的唯一标识符。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "value": {
+      "default": "",
+      "description": "An array of objects to display.",
+      "description_zh": "要显示的对象数组。",
+      "type": "any[]",
+      "value": "",
+      "required": false
+    },
+    "activeIndex": {
+      "default": "0",
+      "description": "Index of the first item.",
+      "description_zh": "第一项的索引。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "fullScreen": {
+      "default": "false",
+      "description": "Whether to display the component on fullscreen.",
+      "description_zh": "是否全屏显示组件。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "visible": {
+      "default": "false",
+      "description": "Specifies the visibility of the mask on fullscreen mode.",
+      "description_zh": "指定蒙版在全屏模式下的可见性。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "numVisible": {
+      "default": "3",
+      "description": "Number of items per page.",
+      "description_zh": "每页的项目数。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "responsiveOptions": {
+      "default": "",
+      "description": "An array of options for responsive design.",
+      "description_zh": "响应式设计的一系列选项。",
+      "type": "GalleriaResponsiveOptions[]",
+      "value": "",
+      "required": false
+    },
+    "showItemNavigators": {
+      "default": "false",
+      "description": "Whether to display navigation buttons in item section.",
+      "description_zh": "是否在 item 部分中显示导航按钮。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "showThumbnailNavigators": {
+      "default": "true",
+      "description": "Whether to display navigation buttons in thumbnail container.",
+      "description_zh": "是否在缩略图容器中显示导航按钮。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "showItemNavigatorsOnHover": {
+      "default": "false",
+      "description": "Whether to display navigation buttons on item hover.",
+      "description_zh": "是否在项目悬停时显示导航按钮。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "changeItemOnIndicatorHover": {
+      "default": "false",
+      "description": "When enabled, item is changed on indicator hover.",
+      "description_zh": "启用后，项目将在指示器悬停时更改。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "circular": {
+      "default": "false",
+      "description": "Defines if scrolling would be infinite.",
+      "description_zh": "定义滚动是否为无限。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "autoPlay": {
+      "default": "false",
+      "description": "Items are displayed with a slideshow in autoPlay mode.",
+      "description_zh": "项目在自动播放模式下以幻灯片显示。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "transitionInterval": {
+      "default": "4000",
+      "description": "Time in milliseconds to scroll items.",
+      "description_zh": "滚动项目的时间（以毫秒为单位）。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "showThumbnails": {
+      "default": "true",
+      "description": "Whether to display thumbnail container.",
+      "description_zh": "是否显示缩略图容器。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "thumbnailsPosition": {
+      "default": "bottom",
+      "description": "Position of thumbnails.",
+      "description_zh": "缩略图的位置。",
+      "type": "left / right / top / bottom",
+      "value": "",
+      "required": false
+    },
+    "verticalThumbnailViewPortHeight": {
+      "default": "300px",
+      "description": "Height of the viewport in vertical thumbnail.",
+      "description_zh": "垂直缩略图中视区的高度。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "showIndicators": {
+      "default": "false",
+      "description": "Whether to display indicator container.",
+      "description_zh": "是否显示指示器容器。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "showIndicatorsOnItem": {
+      "default": "false",
+      "description": "When enabled, indicator container is displayed on item container.",
+      "description_zh": "启用后，指示器容器将显示在 item container.",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "indicatorsPosition": {
+      "default": "bottom",
+      "description": "Position of indicators.",
+      "description_zh": "指标的位置。",
+      "type": "left / right / top / bottom",
+      "value": "",
+      "required": false
+    },
+    "baseZIndex": {
+      "default": "0",
+      "description": "Base zIndex value to use in layering.",
+      "description_zh": "要在分层中使用的 Base zIndex 值。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "maskClass": {
+      "default": "",
+      "description": "Style class of the mask on fullscreen mode.",
+      "description_zh": "Style 类。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "containerStyle": {
+      "default": "",
+      "description": "Inline style of the component on fullscreen mode. Otherwise, the 'style' property can be used.",
+      "description_zh": "全屏模式下组件的内联样式。否则，可以使用 'style' 属性。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "containerClass": {
+      "default": "",
+      "description": "Style class of the component on fullscreen mode. Otherwise, the 'class' property can be used.",
+      "description_zh": "Style 类。否则，可以使用 'class' 属性。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "containerProps": {
+      "default": "",
+      "description": "Used to pass all properties of the HTMLDivElement to the container element on fullscreen mode.",
+      "description_zh": "用于在全屏模式下将 HTMLDivElement 的所有属性传递给容器元素。",
+      "type": "HTMLAttributes",
+      "value": "",
+      "required": false
+    },
+    "prevButtonProps": {
+      "default": "",
+      "description": "Used to pass all properties of the HTMLButtonElement to the previous navigation button.",
+      "description_zh": "用于将 HTMLButtonElement 的所有属性传递给上一个导航按钮。",
+      "type": "ButtonHTMLAttributes",
+      "value": "",
+      "required": false
+    },
+    "nextButtonProps": {
+      "default": "",
+      "description": "Used to pass all properties of the HTMLButtonElement to the next navigation button.",
+      "description_zh": "用于将 HTMLButtonElement 的所有属性传递给下一个导航按钮。",
+      "type": "ButtonHTMLAttributes",
+      "value": "",
+      "required": false
+    },
+    "ariaLabel": {
+      "default": "",
+      "description": "Defines a string value that labels an interactive element.",
+      "description_zh": "定义用于标记交互式元素的字符串值。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "ariaRoledescription": {
+      "default": "",
+      "description": "Defines a string value that description for the role of the component.",
+      "description_zh": "定义描述组件角色的字符串值。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<GalleriaPassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "header",
+      "params": "",
+      "description": "Custom header template.",
+      "description_zh": "自定义标头模板。"
+    },
+    {
+      "name": "footer",
+      "params": "",
+      "description": "Custom footer template.",
+      "description_zh": "自定义页脚模板。"
+    },
+    {
+      "name": "item",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">item</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Item instance</span>\n }",
+      "description": "Custom item template.",
+      "description_zh": "自定义项目模板。"
+    },
+    {
+      "name": "caption",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">item</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Item instance</span>\n }",
+      "description": "Custom caption template.",
+      "description_zh": "自定义字幕模板。"
+    },
+    {
+      "name": "indicator",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">index</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Index of the indicator item</span>\n }",
+      "description": "Custom indicator template.",
+      "description_zh": "自定义指标模板。"
+    },
+    {
+      "name": "thumbnail",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">item</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Item instance</span>\n }",
+      "description": "Custom thumbnail template.",
+      "description_zh": "自定义缩略图模板。"
+    },
+    {
+      "name": "closeicon",
+      "params": "",
+      "description": "Custom close icon template.",
+      "description_zh": "自定义关闭图标模板。"
+    },
+    {
+      "name": "previousitemicon",
+      "params": "",
+      "description": "Custom navigator previous item icon template.",
+      "description_zh": "自定义导航器上一项图标模板。"
+    },
+    {
+      "name": "nextitemicon",
+      "params": "",
+      "description": "Custom navigator next item icon template.",
+      "description_zh": "自定义导航器下一项图标模板。"
+    },
+    {
+      "name": "previousthumbnailicon",
+      "params": "",
+      "description": "Custom thumbnail previous icon template.",
+      "description_zh": "自定义缩略图上一个图标模板。"
+    },
+    {
+      "name": "nextthumbnailicon",
+      "params": "",
+      "description": "Custom thumbnail next item template.",
+      "description_zh": "自定义缩略图下一项模板。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/galleria/",
+  "methods": []
+}

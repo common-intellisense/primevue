@@ -1,0 +1,193 @@
+{
+  "name": "Checkbox",
+  "props": {
+    "value": {
+      "default": "",
+      "description": "Value of the checkbox.",
+      "description_zh": "复选框的值。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "modelValue": {
+      "default": "",
+      "description": "Value binding of the checkbox.",
+      "description_zh": "复选框的值绑定。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "name": {
+      "default": "",
+      "description": "Name of the input element.",
+      "description_zh": "input 元素的名称。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "binary": {
+      "default": "",
+      "description": "Allows to select a boolean value instead of multiple values.",
+      "description_zh": "允许选择布尔值而不是多个值。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "indeterminate": {
+      "default": "",
+      "description": "When present, it specifies input state as indeterminate.",
+      "description_zh": "如果存在，它将输入状态指定为不确定。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "invalid": {
+      "default": "false",
+      "description": "When present, it specifies that the component should have invalid state style.",
+      "description_zh": "如果存在，则它指定组件应具有无效的状态样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "disabled": {
+      "default": "",
+      "description": "When present, it specifies that the element should be disabled.",
+      "description_zh": "如果存在，则指定应禁用该元素。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "variant": {
+      "default": "outlined",
+      "description": "Specifies the input variant of the component.",
+      "description_zh": "指定组件的输入变量。",
+      "type": "outlined / filled",
+      "value": "",
+      "required": false
+    },
+    "readonly": {
+      "default": "",
+      "description": "When present, it specifies that an input field is read-only.",
+      "description_zh": "如果存在，则指定输入字段为只读。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "required": {
+      "default": "",
+      "description": "When present, it specifies that the element is required.",
+      "description_zh": "如果存在，则指定该元素是必需的。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "tabindex": {
+      "default": "",
+      "description": "Index of the element in tabbing order.",
+      "description_zh": "按 Tab 键顺序排列的元素索引。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "trueValue": {
+      "default": "",
+      "description": "Value in checked state.",
+      "description_zh": "值处于选中状态。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "falseValue": {
+      "default": "",
+      "description": "Value in unchecked state.",
+      "description_zh": "值处于未选中状态。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "inputId": {
+      "default": "",
+      "description": "Identifier of the underlying input element.",
+      "description_zh": "基础 input 元素的标识符。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "inputClass": {
+      "default": "",
+      "description": "Style class of the input field.",
+      "description_zh": "Style 类。",
+      "type": "object",
+      "value": "",
+      "required": false
+    },
+    "inputStyle": {
+      "default": "",
+      "description": "Inline style of the input field.",
+      "description_zh": "输入字段的内联样式。",
+      "type": "string | object",
+      "value": "",
+      "required": false
+    },
+    "ariaLabelledby": {
+      "default": "",
+      "description": "Establishes relationships between the component and label(s) where its value should be one or more element IDs.",
+      "description_zh": "在组件和标签之间建立关系，其中其值应为一个或多个元素 ID。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "ariaLabel": {
+      "default": "",
+      "description": "Establishes a string value that labels the component.",
+      "description_zh": "建立用于标记组件的字符串值。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<CheckboxPassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "icon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">checked</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// State of the checkbox.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">indeterminate</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Indeterminate state of the checkbox.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the icon.</span>\n }",
+      "description": "Custom icon template.",
+      "description_zh": "自定义图标模板。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/checkbox/",
+  "methods": []
+}

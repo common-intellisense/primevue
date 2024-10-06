@@ -1,0 +1,243 @@
+{
+  "name": "SpeedDial",
+  "props": {
+    "model": {
+      "default": "",
+      "description": "MenuModel instance to define the action items.",
+      "description_zh": "MenuModel 实例来定义操作项。",
+      "type": "MenuItem[]",
+      "value": "",
+      "required": false
+    },
+    "visible": {
+      "default": "false",
+      "description": "Specifies the visibility of the overlay.",
+      "description_zh": "指定叠加层的可见性。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "direction": {
+      "default": "up",
+      "description": "Specifies the opening direction of actions.",
+      "description_zh": "指定动作的打开方向。",
+      "type": "left / right / up / down / up-left / up-right / down-left / down-right",
+      "value": "",
+      "required": false
+    },
+    "transitionDelay": {
+      "default": "30",
+      "description": "Transition delay step for each action item.",
+      "description_zh": "每个操作项的过渡延迟步骤。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "type": {
+      "default": "linear",
+      "description": "Specifies the opening type of actions.",
+      "description_zh": "指定动作的打开类型。",
+      "type": "circle / linear / semi-circle / quarter-circle",
+      "value": "",
+      "required": false
+    },
+    "radius": {
+      "default": "0",
+      "description": "Radius for *circle types.",
+      "description_zh": "圆类型的半径。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "mask": {
+      "default": "false",
+      "description": "Whether to show a mask element behind the speeddial.",
+      "description_zh": "是否在快速拨号后面显示掩码元素。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "disabled": {
+      "default": "false",
+      "description": "Whether the component is disabled.",
+      "description_zh": "组件是否被禁用。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "hideOnClickOutside": {
+      "default": "true",
+      "description": "Whether the actions close when clicked outside.",
+      "description_zh": "在外部单击时是否关闭操作。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "buttonClass": {
+      "default": "",
+      "description": "Style class of the button element.",
+      "description_zh": "button 元素的 Style 类。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "maskStyle": {
+      "default": "",
+      "description": "Inline style of the mask element.",
+      "description_zh": "mask 元素的内联样式。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "maskClass": {
+      "default": "",
+      "description": "Style class of the mask element.",
+      "description_zh": "mask 元素的 Style 类。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "showIcon": {
+      "default": "",
+      "description": "Show icon of the button element.",
+      "description_zh": "显示按钮元素的图标。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "hideIcon": {
+      "default": "",
+      "description": "Hide icon of the button element.",
+      "description_zh": "隐藏按钮元素的图标。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "rotateAnimation": {
+      "default": "true",
+      "description": "Defined to rotate showIcon when hideIcon is not present.",
+      "description_zh": "定义为在 hideIcon 不存在时旋转 showIcon。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "class": {
+      "default": "",
+      "description": "Style class of the element.",
+      "description_zh": "Style 类。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "style": {
+      "default": "",
+      "description": "Inline style of the element.",
+      "description_zh": "元素的内联样式。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "tooltipOptions": {
+      "default": "",
+      "description": "Whether to display the tooltip on items. The modifiers of Tooltip can be used like an object in it. Valid keys are 'event' and 'position'.",
+      "description_zh": "是否在项目上显示 tooltip。Tooltip 的修改器可以像其中的对象一样使用。有效键是 'event' 和 'position'。",
+      "type": "SpeedDialTooltipOptions",
+      "value": "",
+      "required": false
+    },
+    "buttonProps": {
+      "default": "",
+      "description": "Used to pass all properties of the ButtonProps to the button component.",
+      "description_zh": "用于将 ButtonProps 的所有属性传递给按钮组件。",
+      "type": "object",
+      "value": "",
+      "required": false
+    },
+    "actionButtonProps": {
+      "default": "",
+      "description": "Used to pass all properties of the ButtonProps to the item component.",
+      "description_zh": "用于将 ButtonProps 的所有属性传递给 item 组件。",
+      "type": "object",
+      "value": "",
+      "required": false
+    },
+    "ariaLabel": {
+      "default": "",
+      "description": "Defines a string value that labels an interactive list element.",
+      "description_zh": "定义用于标记交互式列表元素的字符串值。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "ariaLabelledby": {
+      "default": "",
+      "description": "Identifier of the underlying list element.",
+      "description_zh": "基础 list 元素的标识符。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<SpeedDialPassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "item",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">item</span>: <span class=\"doc-option-parameter-type\">MenuItem</span>, <span class=\"doc-option-parameter-type\">// Menuitem instance</span>\n \t <span class=\"ml-3 doc-option-parameter-name\">onClick</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">event</span>: Event) &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Item click function</span>\n\t <span class=\"ml-3 doc-option-parameter-name\">toggleCallback</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">event</span>: Event) &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Button click function</span>\n}",
+      "description": "Custom content for each item.",
+      "description_zh": "每个项目的自定义内容。"
+    },
+    {
+      "name": "button",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">visible</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Visible state of the item</span>\n \t <span class=\"ml-3 doc-option-parameter-name\">toggleCallback</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">event</span>: Event) &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Button click function</span>\n}",
+      "description": "Custom button template.",
+      "description_zh": "自定义按钮模板。"
+    },
+    {
+      "name": "icon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">visible</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Visible state of the item</span>\n }",
+      "description": "Custom icon template.",
+      "description_zh": "自定义图标模板。"
+    },
+    {
+      "name": "itemicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">item</span>: <span class=\"doc-option-parameter-type\">MenuItem</span>, <span class=\"doc-option-parameter-type\">// Menuitem instance</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Style class of the icon template</span>\n }",
+      "description": "Custom icon template.",
+      "description_zh": "自定义图标模板。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/speeddial/",
+  "methods": []
+}

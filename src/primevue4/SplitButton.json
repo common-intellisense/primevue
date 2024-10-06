@@ -1,0 +1,253 @@
+{
+  "name": "SplitButton",
+  "props": {
+    "label": {
+      "default": "",
+      "description": "Text of the button.",
+      "description_zh": "按钮的文本。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "icon": {
+      "default": "",
+      "description": "Name of the icon.",
+      "description_zh": "图标的名称。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "model": {
+      "default": "",
+      "description": "MenuModel instance to define the overlay items.",
+      "description_zh": "MenuModel 实例来定义叠加层项。",
+      "type": "MenuItem[]",
+      "value": "",
+      "required": false
+    },
+    "autoZIndex": {
+      "default": "true",
+      "description": "Whether to automatically manage layering.",
+      "description_zh": "是否自动管理分层。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "baseZIndex": {
+      "default": "0",
+      "description": "Base zIndex value to use in layering.",
+      "description_zh": "要在分层中使用的 Base zIndex 值。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "appendTo": {
+      "default": "body",
+      "description": "A valid query selector or an HTMLElement to specify where the overlay gets attached.\nSpecial keywords are 'body' for document body and 'self' for the element itself.",
+      "description_zh": "一个有效的查询选择器或一个 HTMLElement，用于指定覆盖层的附加位置。\n特殊关键字是 'body' 表示文档正文，'self' 表示元素本身。",
+      "type": "HTMLElement | HintedString<\"body\" | \"self\">",
+      "value": "",
+      "required": false
+    },
+    "disabled": {
+      "default": "false",
+      "description": "When present, it specifies that the element should be disabled.",
+      "description_zh": "如果存在，则指定应禁用该元素。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "fluid": {
+      "default": "null",
+      "description": "Spans 100% width of the container when enabled.",
+      "description_zh": "启用后，跨度为容器的 100% 宽度。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "class": {
+      "default": "",
+      "description": "Style class of the component.",
+      "description_zh": "Style 类。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "style": {
+      "default": "",
+      "description": "Inline style of the component.",
+      "description_zh": "组件的内联样式。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "buttonProps": {
+      "default": "",
+      "description": "Used to pass all properties of the HTMLButtonElement to the default button.",
+      "description_zh": "用于将 HTMLButtonElement 的所有属性传递给 default 按钮。",
+      "type": "ButtonHTMLAttributes",
+      "value": "",
+      "required": false
+    },
+    "menuButtonProps": {
+      "default": "",
+      "description": "Used to pass all properties of the HTMLButtonElement to the menu button.",
+      "description_zh": "用于将 HTMLButtonElement 的所有属性传递给菜单按钮。",
+      "type": "ButtonHTMLAttributes",
+      "value": "",
+      "required": false
+    },
+    "menuButtonIcon": {
+      "default": "",
+      "description": "Name of the menu button icon.",
+      "description_zh": "菜单按钮图标的名称。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "dropdownIcon": {
+      "default": "",
+      "description": "Name of the menu button icon.",
+      "description_zh": "菜单按钮图标的名称。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "severity": {
+      "default": "",
+      "description": "Defines the style of the button.",
+      "description_zh": "定义按钮的样式。",
+      "type": "HintedString<\"secondary\" | \"info\" | \"success\" | \"warn\" | \"danger\" | \"contrast\" | \"help\">",
+      "value": "",
+      "required": false
+    },
+    "raised": {
+      "default": "false",
+      "description": "Add a shadow to indicate elevation.",
+      "description_zh": "添加阴影以指示海拔。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "rounded": {
+      "default": "false",
+      "description": "Add a circular border radius to the button.",
+      "description_zh": "向按钮添加圆形边框半径。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "text": {
+      "default": "false",
+      "description": "Add a textual class to the button without a background initially.",
+      "description_zh": "最初向按钮添加一个没有背景的文本类。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "outlined": {
+      "default": "false",
+      "description": "Add a border class without a background initially.",
+      "description_zh": "最初添加一个没有背景的 border 类。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "size": {
+      "default": "",
+      "description": "Defines the size of the button.",
+      "description_zh": "定义按钮的大小。",
+      "type": "large / small",
+      "value": "",
+      "required": false
+    },
+    "plain": {
+      "default": "false",
+      "description": "Add a plain textual class to the button without a background initially.",
+      "description_zh": "最初向按钮添加一个没有背景的纯文本类。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<SplitButtonPassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "default",
+      "params": "",
+      "description": "Button part of the content can easily be customized with the default slot instead of using the built-in modes.",
+      "description_zh": "Button 部分的内容可以使用默认插槽轻松自定义，而不是使用内置模式。"
+    },
+    {
+      "name": "buttoncontent",
+      "params": "",
+      "description": "Command button part of the content can easily be customized with the button content slot.",
+      "description_zh": "命令按钮部分的内容可以使用按钮内容槽轻松自定义。"
+    },
+    {
+      "name": "icon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the icon.</span>\n }",
+      "description": "Custom button icon template.",
+      "description_zh": "自定义按钮图标模板。"
+    },
+    {
+      "name": "menubuttonicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the icon.</span>\n }",
+      "description": "",
+      "description_zh": ""
+    },
+    {
+      "name": "dropdownicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the icon.</span>\n }",
+      "description": "Custom menu button icon template.",
+      "description_zh": "自定义菜单按钮图标模板。"
+    },
+    {
+      "name": "menuitemicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">item</span>: <span class=\"doc-option-parameter-type\">MenuItem</span>, <span class=\"doc-option-parameter-type\">// Menuitem instance</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Style class of the item icon element.</span>\n }",
+      "description": "Custom menu item icon template.",
+      "description_zh": "自定义菜单项图标模板。"
+    },
+    {
+      "name": "item",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">item</span>: <span class=\"doc-option-parameter-type\">MenuItem</span>, <span class=\"doc-option-parameter-type\">// Menuitem instance</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">label</span>: <span class=\"doc-option-parameter-type\">undefined</span>, <span class=\"doc-option-parameter-type\">// Label property of the menuitem</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">props</span>: <span class=\"doc-option-parameter-type\">TieredMenuRouterBindProps</span>, <span class=\"doc-option-parameter-type\">// Binding properties of the menuitem</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">hasSubmenu</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Whether or not there is a submenu</span>\n }",
+      "description": "Custom content for each menu item.",
+      "description_zh": "每个菜单项的自定义内容。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/splitbutton/",
+  "methods": []
+}

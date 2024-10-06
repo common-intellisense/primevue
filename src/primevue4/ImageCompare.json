@@ -1,0 +1,79 @@
+{
+  "name": "ImageCompare",
+  "props": {
+    "tabindex": {
+      "default": "0",
+      "description": "Index of the element in tabbing order.",
+      "description_zh": "按 Tab 键顺序排列的元素索引。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "ariaLabel": {
+      "default": "",
+      "description": "Defines a string value that labels an interactive element.",
+      "description_zh": "定义用于标记交互式元素的字符串值。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "ariaLabelledby": {
+      "default": "",
+      "description": "Identifier of the underlying input element.",
+      "description_zh": "基础 input 元素的标识符。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<ImageComparePassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "left",
+      "params": "",
+      "description": "Custom left template.",
+      "description_zh": "自定义左模板。"
+    },
+    {
+      "name": "right",
+      "params": "",
+      "description": "Custom right template.",
+      "description_zh": "自定义右模板。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/imagecompare/",
+  "methods": []
+}

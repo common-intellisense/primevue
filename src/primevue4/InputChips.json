@@ -1,0 +1,197 @@
+{
+  "name": "InputChips",
+  "props": {
+    "modelValue": {
+      "default": "",
+      "description": "Value of the component.",
+      "description_zh": "组件的值。",
+      "type": "any[]",
+      "value": "",
+      "required": false
+    },
+    "max": {
+      "default": "",
+      "description": "Maximum number of entries allowed.",
+      "description_zh": "允许的最大条目数。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "addOnBlur": {
+      "default": "false",
+      "description": "Whether to add an item when the input loses focus.",
+      "description_zh": "是否在输入失去焦点时添加项。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "allowDuplicate": {
+      "default": "true",
+      "description": "Whether to allow duplicate values or not.",
+      "description_zh": "是否允许重复值。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "separator": {
+      "default": "",
+      "description": "Separator char to add an item when pressed in addition to the enter key.",
+      "description_zh": "分隔符 char 用于在按下时添加一个项目，以及 enter 键。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "inputId": {
+      "default": "",
+      "description": "Identifier of the focus input to match a label defined for the inputchips.",
+      "description_zh": "焦点输入的标识符，用于匹配为 inputChips 定义的标签。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "inputClass": {
+      "default": "",
+      "description": "Style class of the input field.",
+      "description_zh": "Style 类。",
+      "type": "string | object",
+      "value": "",
+      "required": false
+    },
+    "inputStyle": {
+      "default": "",
+      "description": "Inline style of the input field.",
+      "description_zh": "输入字段的内联样式。",
+      "type": "object",
+      "value": "",
+      "required": false
+    },
+    "inputProps": {
+      "default": "",
+      "description": "Used to pass all properties of the HTMLInputElement to the focusable input element inside the component.",
+      "description_zh": "用于将 HTMLInputElement 的所有属性传递给组件内的可聚焦输入元素。",
+      "type": "InputHTMLAttributes",
+      "value": "",
+      "required": false
+    },
+    "removeTokenIcon": {
+      "default": "",
+      "description": "Icon to display in chip remove action.",
+      "description_zh": "在芯片移除操作中显示的图标。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "chipIcon": {
+      "default": "",
+      "description": "Icon to display in chip remove action.",
+      "description_zh": "在芯片移除操作中显示的图标。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "invalid": {
+      "default": "false",
+      "description": "When present, it specifies that the component should have invalid state style.",
+      "description_zh": "如果存在，则它指定组件应具有无效的状态样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "disabled": {
+      "default": "false",
+      "description": "When present, it specifies that the element should be disabled.",
+      "description_zh": "如果存在，则指定应禁用该元素。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "variant": {
+      "default": "outlined",
+      "description": "Specifies the input variant of the component.",
+      "description_zh": "指定组件的输入变量。",
+      "type": "outlined / filled",
+      "value": "",
+      "required": false
+    },
+    "placeholder": {
+      "default": "",
+      "description": "Placeholder text for the input.",
+      "description_zh": "输入的占位符文本。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "ariaLabelledby": {
+      "default": "",
+      "description": "Establishes relationships between the component and label(s) where its value should be one or more element IDs.",
+      "description_zh": "在组件和标签之间建立关系，其中其值应为一个或多个元素 ID。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "ariaLabel": {
+      "default": "",
+      "description": "Establishes a string value that labels the component.",
+      "description_zh": "建立用于标记组件的字符串值。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<InputChipsPassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "chip",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">value</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Value of the component</span>\n }",
+      "description": "Custom chip template.",
+      "description_zh": "自定义芯片模板。"
+    },
+    {
+      "name": "removetokenicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the icon.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">index</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Index of the token.</span>\n \t <span class=\"ml-3 doc-option-parameter-name\">removeCallback</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">event</span>: Event, <span class=\"doc-option-parameter-name\">index</span>: number) &rArr; void</span>, <span class=\"doc-option-parameter-type\">// chip icon function.</span>\n}",
+      "description": "",
+      "description_zh": ""
+    },
+    {
+      "name": "chipicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the icon.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">index</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Index of the token.</span>\n \t <span class=\"ml-3 doc-option-parameter-name\">removeCallback</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">event</span>: Event, <span class=\"doc-option-parameter-name\">index</span>: number) &rArr; void</span>, <span class=\"doc-option-parameter-type\">// chip icon function.</span>\n}",
+      "description": "Custom chip icon template.",
+      "description_zh": "自定义条状图标模板。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/inputchips/",
+  "methods": []
+}

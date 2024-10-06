@@ -1,0 +1,154 @@
+{
+  "name": "InputMask",
+  "props": {
+    "modelValue": {
+      "default": "",
+      "description": "Value of the component.",
+      "description_zh": "组件的值。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "slotChar": {
+      "default": "_",
+      "description": "Placeholder character in mask, default is underscore.",
+      "description_zh": "掩码中的占位符字符，默认为下划线。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "mask": {
+      "default": "",
+      "description": "Mask pattern.",
+      "description_zh": "蒙版图案。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "id": {
+      "default": "",
+      "description": "Identifier of the element.",
+      "description_zh": "元素的标识符。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "class": {
+      "default": "",
+      "description": "Style class of the input field.",
+      "description_zh": "Style 类。",
+      "type": "string | object",
+      "value": "",
+      "required": false
+    },
+    "placeholder": {
+      "default": "",
+      "description": "Placeholder text for the input.",
+      "description_zh": "输入的占位符文本。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "autoClear": {
+      "default": "true",
+      "description": "Clears the incomplete value on blur.",
+      "description_zh": "清除模糊时不完整的值。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "unmask": {
+      "default": "false",
+      "description": "Defines if model sets the raw unmasked value to bound value or the formatted mask value.",
+      "description_zh": "定义模型是将原始未掩码值设置为绑定值还是格式化掩码值。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "readonly": {
+      "default": "false",
+      "description": "Whether the items are clickable or not.",
+      "description_zh": "项目是否可单击。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "invalid": {
+      "default": "false",
+      "description": "When present, it specifies that the component should have invalid state style.",
+      "description_zh": "如果存在，则它指定组件应具有无效的状态样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "name": {
+      "default": "",
+      "description": "Name of the input element.",
+      "description_zh": "input 元素的名称。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "variant": {
+      "default": "outlined",
+      "description": "Specifies the input variant of the component.",
+      "description_zh": "指定组件的输入变量。",
+      "type": "outlined / filled",
+      "value": "",
+      "required": false
+    },
+    "fluid": {
+      "default": "null",
+      "description": "Spans 100% width of the container when enabled.",
+      "description_zh": "启用后，跨度为容器的 100% 宽度。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "disabled": {
+      "default": "false",
+      "description": "When present, it specifies that the component should be disabled.",
+      "description_zh": "如果存在，则它指定应禁用该组件。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<InputMaskPassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [],
+  "suggestions": [],
+  "link": "https://primevue.org/inputmask/",
+  "methods": []
+}

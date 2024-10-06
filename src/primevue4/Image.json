@@ -1,0 +1,159 @@
+{
+  "name": "Image",
+  "props": {
+    "preview": {
+      "default": "false",
+      "description": "Controls the preview functionality.",
+      "description_zh": "控制预览功能。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "imageStyle": {
+      "default": "",
+      "description": "Inline style of the image element.",
+      "description_zh": "图像元素的内联样式。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "imageClass": {
+      "default": "",
+      "description": "Style class of the image element.",
+      "description_zh": "Style 类。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "indicatorIcon": {
+      "default": "",
+      "description": "Custom indicator icon.",
+      "description_zh": "自定义指示器图标。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "previewIcon": {
+      "default": "",
+      "description": "Custom indicator icon.",
+      "description_zh": "自定义指示器图标。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "zoomInDisabled": {
+      "default": "false",
+      "description": "Disable the zoom-in button",
+      "description_zh": "禁用放大按钮",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "zoomOutDisabled": {
+      "default": "false",
+      "description": "Disable the zoom-out button",
+      "description_zh": "禁用缩小按钮",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<ImagePassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "previewicon",
+      "params": "",
+      "description": "Custom indicator template.",
+      "description_zh": "自定义指标模板。"
+    },
+    {
+      "name": "indicatoricon",
+      "params": "",
+      "description": "",
+      "description_zh": ""
+    },
+    {
+      "name": "refresh",
+      "params": "",
+      "description": "Custom refresh template.",
+      "description_zh": "自定义刷新模板。"
+    },
+    {
+      "name": "undo",
+      "params": "",
+      "description": "Custom undo template.",
+      "description_zh": "自定义撤消模板。"
+    },
+    {
+      "name": "zoomout",
+      "params": "",
+      "description": "Custom zoomout template.",
+      "description_zh": "自定义缩小模板。"
+    },
+    {
+      "name": "zoomin",
+      "params": "",
+      "description": "Custom zoomin template.",
+      "description_zh": "自定义放大模板。"
+    },
+    {
+      "name": "close",
+      "params": "",
+      "description": "Custom close template.",
+      "description_zh": "自定义关闭模板。"
+    },
+    {
+      "name": "image",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Style class of the image element.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">style</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Style of the image element.</span>\n \t <span class=\"ml-3 doc-option-parameter-name\">errorCallback</span>: <span class=\"doc-option-parameter-type\">() &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Preview click function.</span>\n}",
+      "description": "Custom image template.",
+      "description_zh": "自定义镜像模板。"
+    },
+    {
+      "name": "preview",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Style class of the preview image element.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">style</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Style of the preview image element.</span>\n \t <span class=\"ml-3 doc-option-parameter-name\">previewCallback</span>: <span class=\"doc-option-parameter-type\">() &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Preview click function.</span>\n}",
+      "description": "",
+      "description_zh": ""
+    },
+    {
+      "name": "original",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Style class of the original image element.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">style</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Style of the original image element.</span>\n \t <span class=\"ml-3 doc-option-parameter-name\">previewCallback</span>: <span class=\"doc-option-parameter-type\">() &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Preview click function.</span>\n}",
+      "description": "Custom original template.",
+      "description_zh": "自定义原始模板。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/image/",
+  "methods": []
+}

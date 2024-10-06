@@ -1,0 +1,125 @@
+{
+  "name": "Accordion",
+  "props": {
+    "value": {
+      "default": "null",
+      "description": "Value of the active panel or an array of values in multiple mode.",
+      "description_zh": "活动面板的值或多个模式下的值数组。",
+      "type": "null | string | number | string[] | number[]",
+      "value": "",
+      "required": false
+    },
+    "multiple": {
+      "default": "false",
+      "description": "When enabled, multiple tabs can be activated at the same time.",
+      "description_zh": "启用后，可以同时激活多个选项卡。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "activeIndex": {
+      "default": "null",
+      "description": "Index of the active tab or an array of indexes in multiple mode.",
+      "description_zh": "活动选项卡的索引或多个模式下的索引数组。",
+      "type": "null | number | number[]",
+      "value": "",
+      "required": false
+    },
+    "lazy": {
+      "default": "false",
+      "description": "When enabled, hidden tabs are not rendered at all. Defaults to false that hides tabs with css.",
+      "description_zh": "启用后，隐藏的选项卡根本不会呈现。默认为 false，使用 css 隐藏选项卡。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "expandIcon": {
+      "default": "",
+      "description": "Icon of a collapsed tab.",
+      "description_zh": "折叠选项卡的图标。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "collapseIcon": {
+      "default": "",
+      "description": "Icon of an expanded tab.",
+      "description_zh": "展开的选项卡的图标。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "tabindex": {
+      "default": "0",
+      "description": "Index of the element in tabbing order.",
+      "description_zh": "按 Tab 键顺序排列的元素索引。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "selectOnFocus": {
+      "default": "false",
+      "description": "When enabled, the focused tab is activated.",
+      "description_zh": "启用后，将激活 focused 选项卡。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<AccordionPassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "default",
+      "params": "",
+      "description": "Default slot to detect AccordionTab components.",
+      "description_zh": "用于检测 AccordionTab 组件的默认插槽。"
+    },
+    {
+      "name": "collapseicon",
+      "params": "",
+      "description": "Custom collapse icon template.",
+      "description_zh": "自定义折叠图标模板。"
+    },
+    {
+      "name": "expandicon",
+      "params": "",
+      "description": "Custom expand icon template.",
+      "description_zh": "自定义展开图标模板。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/accordion/",
+  "methods": []
+}

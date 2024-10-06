@@ -1,0 +1,125 @@
+{
+  "name": "AccordionTab",
+  "props": {
+    "header": {
+      "default": "",
+      "description": "Orientation of tab headers.",
+      "description_zh": "选项卡标题的方向。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "headerStyle": {
+      "default": "",
+      "description": "Inline style of the tab header.",
+      "description_zh": "选项卡标题的内联样式。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "headerClass": {
+      "default": "",
+      "description": "Style class of the tab header.",
+      "description_zh": "Style 类。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "headerProps": {
+      "default": "",
+      "description": "Used to pass all properties of the HTMLDivElement to the tab header.",
+      "description_zh": "用于将 HTMLDivElement 的所有属性传递给 Tab 页头。",
+      "type": "HTMLAttributes",
+      "value": "",
+      "required": false
+    },
+    "headerActionProps": {
+      "default": "",
+      "description": "Used to pass all properties of the HTMLAnchorElement to the focusable anchor element inside the tab header.",
+      "description_zh": "用于将 HTMLAnchorElement 的所有属性传递给选项卡标题内的可聚焦锚点元素。",
+      "type": "AnchorHTMLAttributes",
+      "value": "",
+      "required": false
+    },
+    "contentStyle": {
+      "default": "",
+      "description": "Inline style of the tab content.",
+      "description_zh": "选项卡内容的内联样式。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "contentClass": {
+      "default": "",
+      "description": "Style class of the tab content.",
+      "description_zh": "Style 类。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "contentProps": {
+      "default": "",
+      "description": "Used to pass all properties of the HTMLDivElement to the tab content.",
+      "description_zh": "用于将 HTMLDivElement 的所有属性传递给选项卡内容。",
+      "type": "HTMLAttributes",
+      "value": "",
+      "required": false
+    },
+    "disabled": {
+      "default": "false",
+      "description": "Whether the tab is disabled.",
+      "description_zh": "选项卡是否被禁用。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<AccordionTabPassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "default",
+      "params": "",
+      "description": "Default slot for content.",
+      "description_zh": "内容的默认插槽。"
+    },
+    {
+      "name": "header",
+      "params": "",
+      "description": "Custom content for the title section of a AccordionTab is defined using the header template.",
+      "description_zh": "AccordionTab 的 title 部分的自定义内容是使用 header 模板定义的。"
+    },
+    {
+      "name": "headericon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">index</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Index of the tab</span>\n \t <span class=\"ml-3 doc-option-parameter-name\">active</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">index</span>: number) &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Whether the tab is active</span>\n}",
+      "description": "Custom icon for the header section of a AccordionTab is defined using the headericon template.",
+      "description_zh": "AccordionTab 的 header 部分的自定义图标是使用 headericon 模板定义的。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/accordiontab/",
+  "methods": []
+}

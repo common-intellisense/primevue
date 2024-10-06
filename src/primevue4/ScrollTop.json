@@ -1,0 +1,89 @@
+{
+  "name": "ScrollTop",
+  "props": {
+    "target": {
+      "default": "window",
+      "description": "Target of the ScrollTop.",
+      "description_zh": "ScrollTop 的目标。",
+      "type": "window / parent",
+      "value": "",
+      "required": false
+    },
+    "threshold": {
+      "default": "400",
+      "description": "Defines the threshold value of the vertical scroll position of the target to toggle the visibility.",
+      "description_zh": "定义用于切换可见性的目标垂直滚动位置的阈值。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "icon": {
+      "default": "",
+      "description": "Icon to display.",
+      "description_zh": "要显示的图标。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "behavior": {
+      "default": "smooth",
+      "description": "Defines the scrolling behaviour, 'smooth' adds an animation and 'auto' scrolls with a jump.",
+      "description_zh": "定义滚动行为，'smooth' 添加动画，'auto' 滚动跳跃。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "buttonProps": {
+      "default": "",
+      "description": "Used to pass all properties of the ButtonProps to the Button component.",
+      "description_zh": "用于将 ButtonProps 的所有属性传递给 Button 组件。",
+      "type": "object",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<ScrollTopPassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "icon",
+      "params": "",
+      "description": "Custom scrolltop icon template.",
+      "description_zh": "自定义 scrolltop 图标模板。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/scrolltop/",
+  "methods": []
+}

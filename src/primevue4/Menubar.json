@@ -1,0 +1,137 @@
+{
+  "name": "Menubar",
+  "props": {
+    "model": {
+      "default": "",
+      "description": "An array of menuitems.",
+      "description_zh": "菜单项的数组。",
+      "type": "MenuItem[]",
+      "value": "",
+      "required": false
+    },
+    "breakpoint": {
+      "default": "960px",
+      "description": "The breakpoint to define the maximum width boundary.",
+      "description_zh": "用于定义最大宽度边界的断点。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "buttonProps": {
+      "default": "",
+      "description": "Used to pass all properties of the HTMLButtonElement to the menu button.",
+      "description_zh": "用于将 HTMLButtonElement 的所有属性传递给菜单按钮。",
+      "type": "ButtonHTMLAttributes",
+      "value": "",
+      "required": false
+    },
+    "ariaLabel": {
+      "default": "",
+      "description": "Defines a string value that labels an interactive element.",
+      "description_zh": "定义用于标记交互式元素的字符串值。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "ariaLabelledby": {
+      "default": "",
+      "description": "Identifier of the underlying input element.",
+      "description_zh": "基础 input 元素的标识符。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<MenubarPassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "start",
+      "params": "",
+      "description": "Custom start template.",
+      "description_zh": "自定义启动模板。"
+    },
+    {
+      "name": "end",
+      "params": "",
+      "description": "Custom end template.",
+      "description_zh": "自定义结束模板。"
+    },
+    {
+      "name": "item",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">item</span>: <span class=\"doc-option-parameter-type\">MenuItem</span>, <span class=\"doc-option-parameter-type\">// Menuitem instance</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">label</span>: <span class=\"doc-option-parameter-type\">undefined</span>, <span class=\"doc-option-parameter-type\">// Label property of the menuitem</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">props</span>: <span class=\"doc-option-parameter-type\">MenubarRouterBindProps</span>, <span class=\"doc-option-parameter-type\">// Binding properties of the menuitem</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">root</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// State of the root</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">hasSubmenu</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Whether or not there is a submenu</span>\n }",
+      "description": "Custom item template.",
+      "description_zh": "自定义项目模板。"
+    },
+    {
+      "name": "menubutton",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">id</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Current id state as a string</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of component</span>\n \t <span class=\"ml-3 doc-option-parameter-name\">toggleCallback</span>: <span class=\"doc-option-parameter-type\">() &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Toggle event</span>\n}",
+      "description": "",
+      "description_zh": ""
+    },
+    {
+      "name": "button",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">id</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Current id state as a string</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of component</span>\n \t <span class=\"ml-3 doc-option-parameter-name\">toggleCallback</span>: <span class=\"doc-option-parameter-type\">() &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Toggle event</span>\n}",
+      "description": "Custom menu button template on responsive mode.",
+      "description_zh": "响应模式下的自定义菜单按钮模板。"
+    },
+    {
+      "name": "menubuttonicon",
+      "params": "",
+      "description": "",
+      "description_zh": ""
+    },
+    {
+      "name": "buttonicon",
+      "params": "",
+      "description": "Custom menu button icon template on responsive mode.",
+      "description_zh": "响应模式下的自定义菜单按钮图标模板。"
+    },
+    {
+      "name": "submenuicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">root</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Whether item is root</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">active</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Whether item is active</span>\n }",
+      "description": "Custom submenu icon template.",
+      "description_zh": "自定义子菜单图标模板。"
+    },
+    {
+      "name": "itemicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">item</span>: <span class=\"doc-option-parameter-type\">MenuItem</span>, <span class=\"doc-option-parameter-type\">// Menuitem instance</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Style class of the item icon element.</span>\n }",
+      "description": "Custom item icon template.",
+      "description_zh": "自定义项目图标模板。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/menubar/",
+  "methods": []
+}

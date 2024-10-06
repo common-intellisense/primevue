@@ -1,0 +1,137 @@
+{
+  "name": "SelectButton",
+  "props": {
+    "modelValue": {
+      "default": "",
+      "description": "Value of the component.",
+      "description_zh": "组件的值。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "options": {
+      "default": "",
+      "description": "An array of selectitems to display as the available options.",
+      "description_zh": "要显示为可用选项的 selectitems 数组。",
+      "type": "any[]",
+      "value": "",
+      "required": false
+    },
+    "optionLabel": {
+      "default": "",
+      "description": "Property name or getter function to use as the label of an option.",
+      "description_zh": "用作选项标签的属性名称或 getter 函数。",
+      "type": "string | Function",
+      "value": "",
+      "required": false
+    },
+    "optionValue": {
+      "default": "",
+      "description": "Property name or getter function to use as the value of an option, defaults to the option itself when not defined.",
+      "description_zh": "用作选项值的属性名称或 getter 函数，如果未定义，则默认为选项本身。",
+      "type": "string | Function",
+      "value": "",
+      "required": false
+    },
+    "optionDisabled": {
+      "default": "",
+      "description": "Property name or getter function to use as the disabled flag of an option, defaults to false when not defined.",
+      "description_zh": "用作选项的 disabled 标志的属性名称或 getter 函数，如果未定义，则默认为 false。",
+      "type": "string | Function",
+      "value": "",
+      "required": false
+    },
+    "multiple": {
+      "default": "false",
+      "description": "When specified, allows selecting multiple values.",
+      "description_zh": "指定后，允许选择多个值。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "invalid": {
+      "default": "false",
+      "description": "When present, it specifies that the component should have invalid state style.",
+      "description_zh": "如果存在，则它指定组件应具有无效的状态样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "disabled": {
+      "default": "false",
+      "description": "When present, it specifies that the element should be disabled.",
+      "description_zh": "如果存在，则指定应禁用该元素。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "dataKey": {
+      "default": "",
+      "description": "A property to uniquely identify an option.",
+      "description_zh": "用于唯一标识选项的属性。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "allowEmpty": {
+      "default": "true",
+      "description": "Whether selection can be cleared.",
+      "description_zh": "是否可以清除所选内容。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "ariaLabelledby": {
+      "default": "",
+      "description": "Identifier of the underlying element.",
+      "description_zh": "基础元素的标识符。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<SelectButtonPassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "option",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">option</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Option instance</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">index</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Index of the option</span>\n }",
+      "description": "Custom content for each option.",
+      "description_zh": "每个选项的自定义内容。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/selectbutton/",
+  "methods": []
+}

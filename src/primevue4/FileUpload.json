@@ -1,0 +1,315 @@
+{
+  "name": "FileUpload",
+  "props": {
+    "name": {
+      "default": "",
+      "description": "Name of the request parameter to identify the files at backend.",
+      "description_zh": "用于标识后端文件的请求参数的名称。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "url": {
+      "default": "",
+      "description": "Remote url to upload the files.",
+      "description_zh": "远程 url 上传文件。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "mode": {
+      "default": "advanced",
+      "description": "Defines the UI of the component, possible values are 'advanced' and 'basic'.",
+      "description_zh": "定义组件的 UI，可能的值为 'advanced' 和 'basic'。",
+      "type": "advanced / basic",
+      "value": "",
+      "required": false
+    },
+    "multiple": {
+      "default": "false",
+      "description": "Used to select multiple files at once from file dialog.",
+      "description_zh": "用于从文件对话框中一次选择多个文件。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "accept": {
+      "default": "",
+      "description": "Pattern to restrict the allowed file types such as 'image/*'.",
+      "description_zh": "Pattern 来限制允许的文件类型，例如 'image/*'。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "disabled": {
+      "default": "false",
+      "description": "Disables the upload functionality.",
+      "description_zh": "禁用上传功能。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "auto": {
+      "default": "false",
+      "description": "When enabled, upload begins automatically after selection is completed.",
+      "description_zh": "启用后，选择完成后会自动开始上传。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "maxFileSize": {
+      "default": "",
+      "description": "Maximum file size allowed in bytes.",
+      "description_zh": "允许的最大文件大小（以字节为单位）。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "invalidFileSizeMessage": {
+      "default": ": Invalid file size, file size should be smaller than {1.}",
+      "description": "Message of the invalid fize size.",
+      "description_zh": "无效 fize 大小的消息。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "invalidFileLimitMessage": {
+      "default": "Maximum number of files to be uploaded is {0.}",
+      "description": "Message to display when number of files to be uploaded exceeeds the limit.",
+      "description_zh": "当要上传的文件数超过限制时显示的消息。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "invalidFileTypeMessage": {
+      "default": "'{0}: Invalid file type.'",
+      "description": "Message of the invalid fize type.",
+      "description_zh": "无效 fize 类型的消息。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "fileLimit": {
+      "default": "",
+      "description": "Maximum number of files that can be uploaded.",
+      "description_zh": "可上传的最大文件数。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "withCredentials": {
+      "default": "false",
+      "description": "Cross-site Access-Control requests should be made using credentials such as cookies, authorization headers or TLS client certificates.",
+      "description_zh": "跨站点访问控制请求应使用 Cookie、授权标头或 TLS 客户端证书等凭据发出。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "previewWidth": {
+      "default": "50",
+      "description": "Width of the image thumbnail in pixels.",
+      "description_zh": "图像缩略图的宽度（以像素为单位）。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "chooseLabel": {
+      "default": "",
+      "description": "Label of the choose button. Defaults to PrimeVue Locale configuration.",
+      "description_zh": "choose 按钮的标签。默认为 PrimeVue Locale 配置。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "uploadLabel": {
+      "default": "",
+      "description": "Label of the upload button. Defaults to PrimeVue Locale configuration.",
+      "description_zh": "上传按钮的标签。默认为 PrimeVue Locale 配置。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "cancelLabel": {
+      "default": "Cancel",
+      "description": "Label of the cancel button. Defaults to PrimeVue Locale configuration.",
+      "description_zh": "取消按钮的标签。默认为 PrimeVue Locale 配置。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "customUpload": {
+      "default": "",
+      "description": "Whether to use the default upload or a manual implementation defined in uploadHandler callback. Defaults to PrimeVue Locale configuration.",
+      "description_zh": "是使用默认上传还是 uploadHandler 回调中定义的手动实现。默认为 PrimeVue Locale 配置。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "showUploadButton": {
+      "default": "true",
+      "description": "Whether to show the upload button.",
+      "description_zh": "是否显示上传按钮。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "showCancelButton": {
+      "default": "true",
+      "description": "Whether to show the cancel button.",
+      "description_zh": "是否显示 cancel （取消） 按钮。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "chooseIcon": {
+      "default": "",
+      "description": "Icon of the choose button.",
+      "description_zh": "选择按钮的图标。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "uploadIcon": {
+      "default": "",
+      "description": "Icon of the upload button.",
+      "description_zh": "上传按钮的图标。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "cancelIcon": {
+      "default": "",
+      "description": "Icon of the cancel button.",
+      "description_zh": "取消按钮的图标。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "style": {
+      "default": "",
+      "description": "Inline style of the component.",
+      "description_zh": "组件的内联样式。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "class": {
+      "default": "",
+      "description": "Style class of the component.",
+      "description_zh": "Style 类。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "chooseButtonProps": {
+      "default": "null",
+      "description": "Used to pass all properties of the ButtonProps to the choose button inside the component.",
+      "description_zh": "用于将 ButtonProps 的所有属性传递给组件内的 choose 按钮。",
+      "type": "object",
+      "value": "",
+      "required": false
+    },
+    "uploadButtonProps": {
+      "default": "",
+      "description": "Used to pass all properties of the ButtonProps to the upload button inside the component.",
+      "description_zh": "用于将 ButtonProps 的所有属性传递给组件内的上传按钮。",
+      "type": "object",
+      "value": "",
+      "required": false
+    },
+    "cancelButtonProps": {
+      "default": "",
+      "description": "Used to pass all properties of the ButtonProps to the cancel button inside the component.",
+      "description_zh": "用于将 ButtonProps 的所有属性传递给组件内的 cancel 按钮。",
+      "type": "object",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<FileUploadPassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "header",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">files</span>: <span class=\"doc-option-parameter-type\">File</span>, <span class=\"doc-option-parameter-type\">// Files to upload.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">uploadedFiles</span>: <span class=\"doc-option-parameter-type\">File</span>, <span class=\"doc-option-parameter-type\">// Uploaded files.</span>\n \t <span class=\"ml-3 doc-option-parameter-name\">chooseCallback</span>: <span class=\"doc-option-parameter-type\">() &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Choose function</span>\n\t <span class=\"ml-3 doc-option-parameter-name\">uploadCallback</span>: <span class=\"doc-option-parameter-type\">() &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Upload function</span>\n\t <span class=\"ml-3 doc-option-parameter-name\">clearCallback</span>: <span class=\"doc-option-parameter-type\">() &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Clear function</span>\n}",
+      "description": "Custom header content template.",
+      "description_zh": "自定义标题内容模板。"
+    },
+    {
+      "name": "content",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">files</span>: <span class=\"doc-option-parameter-type\">File</span>, <span class=\"doc-option-parameter-type\">// Files to upload.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">uploadedFiles</span>: <span class=\"doc-option-parameter-type\">File</span>, <span class=\"doc-option-parameter-type\">// Uploaded files.</span>\n \t <span class=\"ml-3 doc-option-parameter-name\">removeUploadedFileCallback</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">index</span>: number) &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Function to remove an uploaded file.</span>\n\t <span class=\"ml-3 doc-option-parameter-name\">removeFileCallback</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">index</span>: number) &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Function to remove a file.</span>\n \t <span class=\"ml-3 doc-option-parameter-name\">progress</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Uploaded progress as number.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">messages</span>: <span class=\"doc-option-parameter-type\">undefined</span>, <span class=\"doc-option-parameter-type\">// Status messages about upload process.</span>\n }",
+      "description": "Custom uploaded content template.",
+      "description_zh": "自定义上传的内容模板。"
+    },
+    {
+      "name": "empty",
+      "params": "",
+      "description": "Custom content when there is no selected file.",
+      "description_zh": "没有选定文件时的自定义内容。"
+    },
+    {
+      "name": "chooseicon",
+      "params": "",
+      "description": "Custom choose icon template.",
+      "description_zh": "自定义 Choose 图标模板。"
+    },
+    {
+      "name": "uploadicon",
+      "params": "",
+      "description": "Custom upload icon template.",
+      "description_zh": "自定义上传图标模板。"
+    },
+    {
+      "name": "cancelicon",
+      "params": "",
+      "description": "Custom cancel icon template.",
+      "description_zh": "自定义取消图标模板。"
+    },
+    {
+      "name": "fileremoveicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">file</span>: <span class=\"doc-option-parameter-type\">File</span>, <span class=\"doc-option-parameter-type\">// File to upload.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">index</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// The index of file</span>\n }",
+      "description": "Custom remove icon template for each file.",
+      "description_zh": "每个文件的自定义删除图标模板。"
+    },
+    {
+      "name": "filelabel",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">files</span>: <span class=\"doc-option-parameter-type\">File</span>, <span class=\"doc-option-parameter-type\">// File to upload.</span>\n }",
+      "description": "Custom file label template.",
+      "description_zh": "自定义文件标签模板。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/fileupload/",
+  "methods": []
+}

@@ -1,0 +1,237 @@
+{
+  "name": "Button",
+  "props": {
+    "style": {
+      "default": "",
+      "description": "Inline style of the button.",
+      "description_zh": "按钮的内联样式。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "class": {
+      "default": "",
+      "description": "Style class of the button.",
+      "description_zh": "Style 类。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "label": {
+      "default": "",
+      "description": "Text of the button.",
+      "description_zh": "按钮的文本。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "icon": {
+      "default": "",
+      "description": "Name of the icon.",
+      "description_zh": "图标的名称。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "iconPos": {
+      "default": "left",
+      "description": "Position of the icon.",
+      "description_zh": "图标的位置。",
+      "type": "left / right / top / bottom",
+      "value": "",
+      "required": false
+    },
+    "iconClass": {
+      "default": "",
+      "description": "Style class of the icon.",
+      "description_zh": "Style 类。",
+      "type": "string | object",
+      "value": "",
+      "required": false
+    },
+    "badge": {
+      "default": "",
+      "description": "Value of the badge.",
+      "description_zh": "徽章的值。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "badgeClass": {
+      "default": "",
+      "description": "Style class of the badge.",
+      "description_zh": "style 类。",
+      "type": "string | object",
+      "value": "",
+      "required": false
+    },
+    "badgeSeverity": {
+      "default": "",
+      "description": "Severity type of the badge.",
+      "description_zh": "徽章的严重性类型。",
+      "type": "null | HintedString<\"secondary\" | \"info\" | \"success\" | \"warn\" | \"danger\" | \"contrast\">",
+      "value": "",
+      "required": false
+    },
+    "loading": {
+      "default": "false",
+      "description": "Whether the button is in loading state.",
+      "description_zh": "按钮是否处于加载状态。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "loadingIcon": {
+      "default": "",
+      "description": "Icon to display in loading state.",
+      "description_zh": "在加载状态下显示的图标。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "as": {
+      "default": "BUTTON",
+      "description": "Use to change the HTML tag of root element.",
+      "description_zh": "用于更改根元素的 HTML 标记。",
+      "type": "string | Component",
+      "value": "",
+      "required": false
+    },
+    "asChild": {
+      "default": "false",
+      "description": "When enabled, it changes the default rendered element for the one passed as a child element.",
+      "description_zh": "启用后，它会更改作为子元素传递的元素的默认渲染元素。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "link": {
+      "default": "false",
+      "description": "Add a link style to the button.",
+      "description_zh": "向按钮添加链接样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "severity": {
+      "default": "",
+      "description": "Defines the style of the button.",
+      "description_zh": "定义按钮的样式。",
+      "type": "HintedString<\"secondary\" | \"info\" | \"success\" | \"warn\" | \"danger\" | \"contrast\" | \"help\">",
+      "value": "",
+      "required": false
+    },
+    "raised": {
+      "default": "false",
+      "description": "Add a shadow to indicate elevation.",
+      "description_zh": "添加阴影以指示海拔。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "rounded": {
+      "default": "false",
+      "description": "Add a circular border radius to the button.",
+      "description_zh": "向按钮添加圆形边框半径。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "text": {
+      "default": "false",
+      "description": "Add a textual class to the button without a background initially.",
+      "description_zh": "最初向按钮添加一个没有背景的文本类。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "outlined": {
+      "default": "false",
+      "description": "Add a border class without a background initially.",
+      "description_zh": "最初添加一个没有背景的 border 类。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "size": {
+      "default": "",
+      "description": "Defines the size of the button.",
+      "description_zh": "定义按钮的大小。",
+      "type": "large / small",
+      "value": "",
+      "required": false
+    },
+    "plain": {
+      "default": "false",
+      "description": "Add a plain textual class to the button without a background initially.",
+      "description_zh": "最初向按钮添加一个没有背景的纯文本类。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "fluid": {
+      "default": "null",
+      "description": "Spans 100% width of the container when enabled.",
+      "description_zh": "启用后，跨度为容器的 100% 宽度。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<ButtonPassThroughOptions<any>>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "default",
+      "params": "",
+      "description": "Custom content such as icons, images and text can be placed inside the button via the default slot. Note that when slot is used, label, icon and badge properties are not included.",
+      "description_zh": "自定义内容（如图标、图像和文本）可以通过默认插槽放置在按钮内。请注意，使用 slot 时，不包括 label、icon 和 badge 属性。"
+    },
+    {
+      "name": "icon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the icon.</span>\n }",
+      "description": "Custom icon template.",
+      "description_zh": "自定义图标模板。"
+    },
+    {
+      "name": "loadingicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the loading icon.</span>\n }",
+      "description": "Custom loading icon template.",
+      "description_zh": "自定义加载图标模板。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/button/",
+  "methods": []
+}

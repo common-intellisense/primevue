@@ -1,0 +1,73 @@
+{
+  "name": "Step",
+  "props": {
+    "value": {
+      "default": "",
+      "description": "Value of step.",
+      "description_zh": "步长的值。",
+      "type": "string | number",
+      "value": "",
+      "required": false
+    },
+    "disabled": {
+      "default": "false",
+      "description": "Whether the step is disabled.",
+      "description_zh": "该步骤是否被禁用。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "as": {
+      "default": "BUTTON",
+      "description": "Use to change the HTML tag of root element.",
+      "description_zh": "用于更改根元素的 HTML 标记。",
+      "type": "string | Component",
+      "value": "",
+      "required": false
+    },
+    "asChild": {
+      "default": "false",
+      "description": "When enabled, it changes the default rendered element for the one passed as a child element.",
+      "description_zh": "启用后，它会更改作为子元素传递的元素的默认渲染元素。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<StepPassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "default",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the loader.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">active</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Whether the step is active.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">value</span>: <span class=\"doc-option-parameter-type\">undefined</span>, <span class=\"doc-option-parameter-type\">// Value of step.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">a11yAttrs</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// A11t attributes</span>\n \t <span class=\"ml-3 doc-option-parameter-name\">activateCallback</span>: <span class=\"doc-option-parameter-type\">() &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Click function.</span>\n}",
+      "description": "Custom content template. Slot attributes can be used when asChild prop is true.",
+      "description_zh": "自定义内容模板。当 asChild prop 为 true 时，可以使用 slot 属性。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/step/",
+  "methods": []
+}

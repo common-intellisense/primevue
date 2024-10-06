@@ -1,0 +1,123 @@
+{
+  "name": "Message",
+  "props": {
+    "severity": {
+      "default": "info",
+      "description": "Severity level of the message.",
+      "description_zh": "消息的严重性级别。",
+      "type": "HintedString<\"error\" | \"secondary\" | \"info\" | \"success\" | \"warn\" | \"contrast\">",
+      "value": "",
+      "required": false
+    },
+    "closable": {
+      "default": "false",
+      "description": "Whether the message can be closed manually using the close icon.",
+      "description_zh": "是否可以使用 close 图标手动关闭消息。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "sticky": {
+      "default": "true",
+      "description": "",
+      "description_zh": "",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "life": {
+      "default": "null",
+      "description": "Delay in milliseconds to close the message automatically.",
+      "description_zh": "Delay （以毫秒为单位） 以自动关闭消息。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "icon": {
+      "default": "",
+      "description": "Display a custom icon for the message.",
+      "description_zh": "显示消息的自定义图标。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "closeIcon": {
+      "default": "",
+      "description": "Icon to display in the message close button.",
+      "description_zh": "在消息 close 按钮中显示的图标。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "closeButtonProps": {
+      "default": "",
+      "description": "Used to pass all properties of the HTMLButtonElement to the close button.",
+      "description_zh": "用于将 HTMLButtonElement 的所有属性传递给关闭按钮。",
+      "type": "ButtonHTMLAttributes",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<MessagePassThroughOptions<any>>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "default",
+      "params": "",
+      "description": "Default custom slot.",
+      "description_zh": "默认自定义插槽。"
+    },
+    {
+      "name": "icon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Style class of the item icon element.</span>\n }",
+      "description": "Custom message icon template.",
+      "description_zh": "自定义消息图标模板。"
+    },
+    {
+      "name": "closeicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Style class of the item icon element.</span>\n }",
+      "description": "Custom close icon template.",
+      "description_zh": "自定义关闭图标模板。"
+    },
+    {
+      "name": "container",
+      "params": "{\n \t <span class=\"ml-3 doc-option-parameter-name\">closeCallback</span>: <span class=\"doc-option-parameter-type\">() &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Close message function.</span>\n}",
+      "description": "Custom container slot.",
+      "description_zh": "自定义容器槽。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/message/",
+  "methods": []
+}

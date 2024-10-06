@@ -1,0 +1,593 @@
+{
+  "name": "DatePicker",
+  "props": {
+    "modelValue": {
+      "default": "null",
+      "description": "Value of the component.",
+      "description_zh": "组件的值。",
+      "type": "null | Date | Date[] | (null | Date)[]",
+      "value": "",
+      "required": false
+    },
+    "selectionMode": {
+      "default": "single",
+      "description": "Defines the quantity of the selection.",
+      "description_zh": "定义选择的数量。",
+      "type": "single / multiple / range",
+      "value": "",
+      "required": false
+    },
+    "dateFormat": {
+      "default": "",
+      "description": "Format of the date. Defaults to PrimeVue Locale configuration.",
+      "description_zh": "日期的格式。默认为 PrimeVue Locale 配置。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "inline": {
+      "default": "false",
+      "description": "When enabled, displays the datepicker as inline instead of an overlay.",
+      "description_zh": "启用后，将日期选取器显示为内联而不是叠加。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "showOtherMonths": {
+      "default": "true",
+      "description": "Whether to display dates in other months (non-selectable) at the start or end of the current month. To make these days selectable use the selectOtherMonths option.",
+      "description_zh": "是否在当月的月初或月末显示其他月份的日期（不可选择）。要使这些日期可选，请使用 selectOtherMonths 选项。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "selectOtherMonths": {
+      "default": "false",
+      "description": "Whether days in other months shown before or after the current month are selectable. This only applies if the showOtherMonths option is set to true.",
+      "description_zh": "可以选择当前月份之前还是之后显示的其他月份的日期。仅当 showOtherMonths 选项设置为 true 时，这才适用。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "showIcon": {
+      "default": "false",
+      "description": "When enabled, displays a button with icon next to input.",
+      "description_zh": "启用后，将在 input 旁边显示一个带有图标的按钮。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "iconDisplay": {
+      "default": "'button'",
+      "description": "Icon position of the component. This only applies if the showIcon option is set to true.",
+      "description_zh": "组件的图标位置。仅当 showIcon 选项设置为 true 时，这才适用。",
+      "type": "button / input",
+      "value": "",
+      "required": false
+    },
+    "icon": {
+      "default": "",
+      "description": "Icon of the datepicker button.",
+      "description_zh": "datepicker 按钮的图标。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "prevIcon": {
+      "default": "",
+      "description": "Icon to show in the previous button.",
+      "description_zh": "图标以显示在上一个按钮中。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "nextIcon": {
+      "default": "",
+      "description": "Icon to show in the next button.",
+      "description_zh": "图标以显示在 Next （下一步） 按钮中。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "incrementIcon": {
+      "default": "",
+      "description": "Icon to show in each of the increment buttons.",
+      "description_zh": "图标，以显示在每个增量按钮中。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "decrementIcon": {
+      "default": "",
+      "description": "Icon to show in each of the decrement buttons.",
+      "description_zh": "图标显示在每个递减按钮中。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "numberOfMonths": {
+      "default": "1",
+      "description": "Number of months to display.",
+      "description_zh": "要显示的月数。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "responsiveOptions": {
+      "default": "",
+      "description": "An array of options for responsive design.",
+      "description_zh": "响应式设计的一系列选项。",
+      "type": "DatePickerResponsiveOptions[]",
+      "value": "",
+      "required": false
+    },
+    "breakpoint": {
+      "default": "769px",
+      "description": "The breakpoint to define the maximum width boundary for datepicker panel.",
+      "description_zh": "用于定义 datepicker 面板的最大宽度边界的断点。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "view": {
+      "default": "date",
+      "description": "Type of view to display.",
+      "description_zh": "要显示的视图类型。",
+      "type": "date / month / year",
+      "value": "",
+      "required": false
+    },
+    "minDate": {
+      "default": "",
+      "description": "The minimum selectable date.",
+      "description_zh": "最小可选日期。",
+      "type": "Date",
+      "value": "",
+      "required": false
+    },
+    "maxDate": {
+      "default": "",
+      "description": "The maximum selectable date.",
+      "description_zh": "最大可选日期。",
+      "type": "Date",
+      "value": "",
+      "required": false
+    },
+    "disabledDates": {
+      "default": "",
+      "description": "Array with dates to disable.",
+      "description_zh": "包含要禁用的日期的数组。",
+      "type": "Date[]",
+      "value": "",
+      "required": false
+    },
+    "disabledDays": {
+      "default": "",
+      "description": "Array with disabled weekday numbers.",
+      "description_zh": "具有禁用的工作日数字的数组。",
+      "type": "number[]",
+      "value": "",
+      "required": false
+    },
+    "maxDateCount": {
+      "default": "",
+      "description": "Maximum number of selectable dates in multiple mode.",
+      "description_zh": "多模式下可选择日期的最大数量。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "showOnFocus": {
+      "default": "true",
+      "description": "When disabled, datepicker will not be visible with input focus.",
+      "description_zh": "禁用后，datepicker 将不可见于输入焦点。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "autoZIndex": {
+      "default": "true",
+      "description": "Whether to automatically manage layering.",
+      "description_zh": "是否自动管理分层。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "baseZIndex": {
+      "default": "0",
+      "description": "Base zIndex value to use in layering.",
+      "description_zh": "要在分层中使用的 Base zIndex 值。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "showButtonBar": {
+      "default": "false",
+      "description": "Whether to display today and clear buttons at the footer.",
+      "description_zh": "是否显示今天并清除页脚的按钮。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "shortYearCutoff": {
+      "default": "+10",
+      "description": "The cutoff year for determining the century for a date.",
+      "description_zh": "用于确定日期的世纪的截止年份。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "showTime": {
+      "default": "false",
+      "description": "Whether to display timepicker.",
+      "description_zh": "是否显示 timepicker。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "timeOnly": {
+      "default": "false",
+      "description": "Whether to display timepicker only.",
+      "description_zh": "是否仅显示 timepicker。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "hourFormat": {
+      "default": "24",
+      "description": "Specifies hour format.",
+      "description_zh": "指定小时格式。",
+      "type": "12 / 24",
+      "value": "",
+      "required": false
+    },
+    "stepHour": {
+      "default": "1",
+      "description": "Hours to change per step.",
+      "description_zh": "每一步更改的小时数。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "stepMinute": {
+      "default": "1",
+      "description": "Minutes to change per step.",
+      "description_zh": "每一步更改的分钟数。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "stepSecond": {
+      "default": "1",
+      "description": "Seconds to change per step.",
+      "description_zh": "每一步更改秒数。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "showSeconds": {
+      "default": "false",
+      "description": "Whether to show the seconds in time picker.",
+      "description_zh": "是否在时间选取器中显示秒数。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "hideOnDateTimeSelect": {
+      "default": "false",
+      "description": "Whether to hide the overlay on date selection when showTime is enabled.",
+      "description_zh": "启用 showTime 时，是否在日期选择时隐藏叠加。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "hideOnRangeSelection": {
+      "default": "false",
+      "description": "Whether to hide the overlay on date selection is completed when selectionMode is range.",
+      "description_zh": "当 selectionMode 为 range 时，是否在日期选择时隐藏叠加。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "timeSeparator": {
+      "default": ":",
+      "description": "Separator of time selector.",
+      "description_zh": "时间分隔符选择器。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "showWeek": {
+      "default": "false",
+      "description": "When enabled, datepicker will show week numbers.",
+      "description_zh": "启用后，datepicker 将显示周数。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "manualInput": {
+      "default": "true",
+      "description": "Whether to allow entering the date manually via typing.",
+      "description_zh": "是否允许通过键入手动输入日期。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "invalid": {
+      "default": "false",
+      "description": "When present, it specifies that the component should have invalid state style.",
+      "description_zh": "如果存在，则它指定组件应具有无效的状态样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "disabled": {
+      "default": "false",
+      "description": "When present, it specifies that the component should be disabled.",
+      "description_zh": "如果存在，则它指定应禁用该组件。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "variant": {
+      "default": "outlined",
+      "description": "Specifies the input variant of the component.",
+      "description_zh": "指定组件的输入变量。",
+      "type": "outlined / filled",
+      "value": "",
+      "required": false
+    },
+    "readonly": {
+      "default": "false",
+      "description": "When present, it specifies that an input field is read-only.",
+      "description_zh": "如果存在，则指定输入字段为只读。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "placeholder": {
+      "default": "",
+      "description": "Placeholder text for the input.",
+      "description_zh": "输入的占位符文本。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "name": {
+      "default": "",
+      "description": "Name of the element.",
+      "description_zh": "元素的名称。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "appendTo": {
+      "default": "body",
+      "description": "A valid query selector or an HTMLElement to specify where the overlay gets attached.",
+      "description_zh": "一个有效的查询选择器或一个 HTMLElement，用于指定覆盖层的附加位置。",
+      "type": "HTMLElement | HintedString<\"body\" | \"self\">",
+      "value": "",
+      "required": false
+    },
+    "id": {
+      "default": "",
+      "description": "Identifier of the element.",
+      "description_zh": "元素的标识符。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "inputId": {
+      "default": "",
+      "description": "Identifier of the underlying input element.",
+      "description_zh": "基础 input 元素的标识符。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "inputStyle": {
+      "default": "",
+      "description": "Inline style of the input field.",
+      "description_zh": "输入字段的内联样式。",
+      "type": "object",
+      "value": "",
+      "required": false
+    },
+    "inputClass": {
+      "default": "",
+      "description": "Style class of the input field.",
+      "description_zh": "Style 类。",
+      "type": "string | object",
+      "value": "",
+      "required": false
+    },
+    "panelStyle": {
+      "default": "",
+      "description": "Inline style of the overlay panel.",
+      "description_zh": "叠加面板的内联样式。",
+      "type": "object",
+      "value": "",
+      "required": false
+    },
+    "panelClass": {
+      "default": "",
+      "description": "Style class of the overlay panel.",
+      "description_zh": "Style 类。",
+      "type": "string | object",
+      "value": "",
+      "required": false
+    },
+    "todayButtonProps": {
+      "default": "",
+      "description": "Used to pass all properties of the ButtonProps to the today button component.",
+      "description_zh": "用于将 ButtonProps 的所有属性传递给 today 按钮组件。",
+      "type": "object",
+      "value": "",
+      "required": false
+    },
+    "clearButtonProps": {
+      "default": "",
+      "description": "Used to pass all properties of the ButtonProps to the clear button component.",
+      "description_zh": "用于将 ButtonProps 的所有属性传递给 clear button 组件。",
+      "type": "object",
+      "value": "",
+      "required": false
+    },
+    "navigatorButtonProps": {
+      "default": "",
+      "description": "Used to pass all properties of the ButtonProps to the navigator button component.",
+      "description_zh": "用于将 ButtonProps 的所有属性传递给导航器按钮组件。",
+      "type": "object",
+      "value": "",
+      "required": false
+    },
+    "timepickerButtonProps": {
+      "default": "",
+      "description": "Used to pass all properties of the ButtonProps to the timepicker button component.",
+      "description_zh": "用于将 ButtonProps 的所有属性传递给 timepicker 按钮组件。",
+      "type": "object",
+      "value": "",
+      "required": false
+    },
+    "fluid": {
+      "default": "null",
+      "description": "Spans 100% width of the container when enabled.",
+      "description_zh": "启用后，跨度为容器的 100% 宽度。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "ariaLabelledby": {
+      "default": "",
+      "description": "Establishes relationships between the component and label(s) where its value should be one or more element IDs.",
+      "description_zh": "在组件和标签之间建立关系，其中其值应为一个或多个元素 ID。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "ariaLabel": {
+      "default": "",
+      "description": "Establishes a string value that labels the component.",
+      "description_zh": "建立用于标记组件的字符串值。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<DatePickerPassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "header",
+      "params": "",
+      "description": "Custom header template of panel.",
+      "description_zh": "面板的自定义标题模板。"
+    },
+    {
+      "name": "footer",
+      "params": "",
+      "description": "Custom footer template of panel.",
+      "description_zh": "面板的自定义页脚模板。"
+    },
+    {
+      "name": "date",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">date</span>: <span class=\"doc-option-parameter-type\">DatePickerDateSlotOptions</span>, <span class=\"doc-option-parameter-type\">// Value of the component.</span>\n }",
+      "description": "Custom date template.",
+      "description_zh": "自定义日期模板。"
+    },
+    {
+      "name": "decade",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">years</span>: <span class=\"doc-option-parameter-type\">undefined</span>, <span class=\"doc-option-parameter-type\">// An array containing the start and and year of a decade to display at header of the year picker.</span>\n }",
+      "description": "Custom decade template.",
+      "description_zh": "自定义十年模板。"
+    },
+    {
+      "name": "weekheaderlabel",
+      "params": "",
+      "description": "Custom week header label template.",
+      "description_zh": "自定义周标题标签模板。"
+    },
+    {
+      "name": "weeklabel",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">weekNumber</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Number of the week</span>\n }",
+      "description": "Custom week label template.",
+      "description_zh": "自定义周标签模板。"
+    },
+    {
+      "name": "dropdownicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Style class of the dropdown icon</span>\n }",
+      "description": "Custom dropdown icon template.",
+      "description_zh": "自定义下拉图标模板。"
+    },
+    {
+      "name": "inputicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Style class of the input icon</span>\n \t <span class=\"ml-3 doc-option-parameter-name\">clickCallback</span>: <span class=\"doc-option-parameter-type\">() &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Click callback</span>\n}",
+      "description": "Custom input icon template.",
+      "description_zh": "自定义输入图标模板。"
+    },
+    {
+      "name": "previcon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Style class of the previous icon</span>\n }",
+      "description": "Custom previous icon template.",
+      "description_zh": "自定义上一个图标模板。"
+    },
+    {
+      "name": "nexticon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Style class of the next icon</span>\n }",
+      "description": "Custom next icon template.",
+      "description_zh": "自定义下一个图标模板。"
+    },
+    {
+      "name": "incrementicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Style class of the increment icon</span>\n }",
+      "description": "Custom increment icon template.",
+      "description_zh": "自定义增量图标模板。"
+    },
+    {
+      "name": "decrementicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Style class of the decrement icon</span>\n }",
+      "description": "Custom decrement icon template.",
+      "description_zh": "自定义递减图标模板。"
+    },
+    {
+      "name": "dropdownbutton",
+      "params": "{\n \t <span class=\"ml-3 doc-option-parameter-name\">toggleCallback</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">event</span>: Event) &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Toggle function.</span>\n}",
+      "description": "Custom dropdown button template.",
+      "description_zh": "自定义下拉按钮模板。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/datepicker/",
+  "methods": []
+}

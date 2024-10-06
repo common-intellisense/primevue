@@ -1,0 +1,243 @@
+{
+  "name": "VirtualScroller",
+  "props": {
+    "id": {
+      "default": "",
+      "description": "Unique identifier of the element.",
+      "description_zh": "元素的唯一标识符。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "style": {
+      "default": "",
+      "description": "Inline style of the component.",
+      "description_zh": "组件的内联样式。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "class": {
+      "default": "",
+      "description": "Style class of the component.",
+      "description_zh": "Style 类。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "items": {
+      "default": "",
+      "description": "An array of objects to display.",
+      "description_zh": "要显示的对象数组。",
+      "type": "null | any[] | any[][]",
+      "value": "",
+      "required": false
+    },
+    "itemSize": {
+      "default": "",
+      "description": "The height/width of item according to orientation.",
+      "description_zh": "根据方向的项的高度/宽度。",
+      "type": "number | number[]",
+      "value": "",
+      "required": false
+    },
+    "scrollHeight": {
+      "default": "",
+      "description": "Height of the scroll viewport.",
+      "description_zh": "滚动视区的高度。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "scrollWidth": {
+      "default": "",
+      "description": "Width of the scroll viewport.",
+      "description_zh": "滚动视区的宽度。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "orientation": {
+      "default": "vertical",
+      "description": "The orientation of scrollbar.",
+      "description_zh": "滚动条的方向。",
+      "type": "horizontal / vertical / both",
+      "value": "",
+      "required": false
+    },
+    "numToleratedItems": {
+      "default": "half the number of items shown in the view.",
+      "description": "Determines how many additional elements to add to the DOM outside of the view.\nAccording to the scrolls made up and down, extra items are added in a certain algorithm in the form of multiples of this number.",
+      "description_zh": "确定在视图之外向 DOM 添加多少个其他元素。\n根据上下组成的卷轴，以该数字的倍数的形式以一定的算法添加额外的项目。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "delay": {
+      "default": "0",
+      "description": "Delay in scroll before new data is loaded.",
+      "description_zh": "加载新数据之前的滚动延迟。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "resizeDelay": {
+      "default": "10",
+      "description": "Delay after window's resize finishes.",
+      "description_zh": "窗口大小调整完成后的延迟。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "lazy": {
+      "default": "false",
+      "description": "Defines if data is loaded and interacted with in lazy manner.",
+      "description_zh": "定义是否以延迟方式加载数据并与之交互。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "disabled": {
+      "default": "false",
+      "description": "If disabled, the VirtualScroller feature is eliminated and the content is displayed directly.",
+      "description_zh": "如果禁用，则 VirtualScroller 功能将被消除，内容将直接显示。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "loaderDisabled": {
+      "default": "false",
+      "description": "Used to implement a custom loader instead of using the loader feature in the VirtualScroller.",
+      "description_zh": "用于实现自定义加载器，而不是使用 VirtualScroller 中的 loader 功能。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "showLoader": {
+      "default": "false",
+      "description": "Whether to show loader.",
+      "description_zh": "是否显示 loader。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "showSpacer": {
+      "default": "true",
+      "description": "Used to implement a custom spacer instead of using the spacer feature in the VirtualScroller.",
+      "description_zh": "用于实现自定义 spacer，而不是使用 VirtualScroller 中的 spacer 功能。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "loading": {
+      "default": "false",
+      "description": "Whether to load items.",
+      "description_zh": "是否加载项目。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "tabindex": {
+      "default": "0",
+      "description": "Index of the element in tabbing order.",
+      "description_zh": "按 Tab 键顺序排列的元素索引。",
+      "type": "string | number",
+      "value": "",
+      "required": false
+    },
+    "inline": {
+      "default": "false",
+      "description": "When enabled, positions the content as inline.",
+      "description_zh": "启用后，将内容定位为内联。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "step": {
+      "default": "0",
+      "description": "Used to specify how many items to load in each load method in lazy mode.",
+      "description_zh": "用于指定在延迟模式下每个 load 方法中要加载的项目数。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "appendOnly": {
+      "default": "false",
+      "description": "Used to append each loaded item to top without removing any items from the DOM. Using very large data may cause the browser to crash.",
+      "description_zh": "用于将每个加载的项目附加到顶部，而不从 DOM 中删除任何项目。使用非常大的数据可能会导致浏览器崩溃。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "autoSize": {
+      "default": "false",
+      "description": "Whether to dynamically change the height or width of scrollable container.",
+      "description_zh": "是否动态更改可滚动容器的高度或宽度。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<VirtualScrollerPassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "content",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">items</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// An array of objects to display for virtualscroller</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">styleClass</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the content</span>\n \t <span class=\"ml-3 doc-option-parameter-name\">contentRef</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">el</span>: any) &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Referance of the content</span>\n\t <span class=\"ml-3 doc-option-parameter-name\">getItemOptions</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">index</span>: number) &rArr; VirtualScrollerItemOptions</span>, <span class=\"doc-option-parameter-type\">// Options of the items</span>\n \t <span class=\"ml-3 doc-option-parameter-name\">loading</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Whether the data is loaded.</span>\n \t <span class=\"ml-3 doc-option-parameter-name\">getLoaderOptions</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">index</span>: number, <span class=\"doc-option-parameter-name\">ext</span>: any) &rArr; VirtualScrollerLoaderOptions</span>, <span class=\"doc-option-parameter-type\">// Loader options of the items while the data is loading.</span>\n \t <span class=\"ml-3 doc-option-parameter-name\">itemSize</span>: <span class=\"doc-option-parameter-type\">undefined</span>, <span class=\"doc-option-parameter-type\">// The height/width of item according to orientation.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">rows</span>: <span class=\"doc-option-parameter-type\">undefined</span>, <span class=\"doc-option-parameter-type\">// The number of the rendered rows.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">columns</span>: <span class=\"doc-option-parameter-type\">undefined</span>, <span class=\"doc-option-parameter-type\">// The number of the rendered columns.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">spacerStyle</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// The style of spacer element.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">contentStyle</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// The style of content element.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">vertical</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Whether the orientation is vertical.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">horizontal</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Whether the orientation is horizontal.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">both</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Whether the orientation is both.</span>\n }",
+      "description": "Custom content template.",
+      "description_zh": "自定义内容模板。"
+    },
+    {
+      "name": "item",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">item</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Item data.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">options</span>: <span class=\"doc-option-parameter-type\">VirtualScrollerItemOptions</span>, <span class=\"doc-option-parameter-type\">// Item options.</span>\n }",
+      "description": "Custom item template.",
+      "description_zh": "自定义项目模板。"
+    },
+    {
+      "name": "loader",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">options</span>: <span class=\"doc-option-parameter-type\">VirtualScrollerLoaderOptions</span>, <span class=\"doc-option-parameter-type\">// Loader options.</span>\n }",
+      "description": "Custom loader template.",
+      "description_zh": "自定义加载器模板。"
+    },
+    {
+      "name": "loadingicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the icon.</span>\n }",
+      "description": "Custom loading icon template.",
+      "description_zh": "自定义加载图标模板。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/virtualscroller/",
+  "methods": []
+}

@@ -1,0 +1,90 @@
+{
+  "name": "Skeleton",
+  "props": {
+    "shape": {
+      "default": "rectangle",
+      "description": "Shape of the element.",
+      "description_zh": "元素的形状。",
+      "type": "circle / rectangle",
+      "value": "",
+      "required": false
+    },
+    "size": {
+      "default": "",
+      "description": "Size of the Circle or Square.",
+      "description_zh": "圆形或方形的大小。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "width": {
+      "default": "100%",
+      "description": "Width of the element.",
+      "description_zh": "元素的宽度。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "height": {
+      "default": "1rem",
+      "description": "Height of the element.",
+      "description_zh": "元素的高度。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "borderRadius": {
+      "default": "",
+      "description": "Border radius of the element, defaults to value from theme.",
+      "description_zh": "元素的边框半径，默认为 theme 中的 value。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "animation": {
+      "default": "wave",
+      "description": "Type of the animation.",
+      "description_zh": "动画的类型。",
+      "type": "wave / none",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<SkeletonPassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [],
+  "suggestions": [],
+  "link": "https://primevue.org/skeleton/",
+  "methods": []
+}

@@ -1,0 +1,138 @@
+{
+  "name": "ColorPicker",
+  "props": {
+    "modelValue": {
+      "default": "",
+      "description": "Value of the component.",
+      "description_zh": "组件的值。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "defaultColor": {
+      "default": "ff0000",
+      "description": "Initial color to display when value is not defined.",
+      "description_zh": "未定义值时显示的初始颜色。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "inline": {
+      "default": "false",
+      "description": "Whether to display as an overlay or not.",
+      "description_zh": "是否显示为叠加。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "format": {
+      "default": "hex",
+      "description": "Format to use in value binding, supported formats are 'hex', 'rgb' and 'hsb'.",
+      "description_zh": "格式，支持的格式为 'hex'、'rgb' 和 'hsb'。",
+      "type": "hex / rgb / hsb",
+      "value": "",
+      "required": false
+    },
+    "disabled": {
+      "default": "false",
+      "description": "When present, it specifies that the component should be disabled.",
+      "description_zh": "如果存在，则它指定应禁用该组件。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "tabindex": {
+      "default": "",
+      "description": "Index of the element in tabbing order.",
+      "description_zh": "按 Tab 键顺序排列的元素索引。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "autoZIndex": {
+      "default": "true",
+      "description": "Whether to automatically manage layering.",
+      "description_zh": "是否自动管理分层。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "baseZIndex": {
+      "default": "0",
+      "description": "Base zIndex value to use in layering.",
+      "description_zh": "要在分层中使用的 Base zIndex 值。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "inputId": {
+      "default": "",
+      "description": "Identifier of the focus input to match a label defined for the dropdown.",
+      "description_zh": "焦点输入的标识符，用于匹配为下拉列表定义的标签。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "panelClass": {
+      "default": "",
+      "description": "Style class of the overlay panel.",
+      "description_zh": "Style 类。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "overlayClass": {
+      "default": "",
+      "description": "Style class of the overlay panel.",
+      "description_zh": "Style 类。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "appendTo": {
+      "default": "body",
+      "description": "A valid query selector or an HTMLElement to specify where the overlay gets attached. Special keywords are 'body' for document body and 'self' for the element itself.",
+      "description_zh": "一个有效的查询选择器或一个 HTMLElement，用于指定覆盖层的附加位置。特殊关键字是 'body' 表示文档正文，'self' 表示元素本身。",
+      "type": "HTMLElement | HintedString<\"body\" | \"self\">",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<ColorPickerPassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [],
+  "suggestions": [],
+  "link": "https://primevue.org/colorpicker/",
+  "methods": []
+}

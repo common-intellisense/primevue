@@ -1,0 +1,171 @@
+{
+  "name": "Paginator",
+  "props": {
+    "totalRecords": {
+      "default": "0",
+      "description": "Number of total records.",
+      "description_zh": "总记录数。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "rows": {
+      "default": "0",
+      "description": "Data count to display per page.",
+      "description_zh": "每页显示的数据计数。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "first": {
+      "default": "0",
+      "description": "Zero-relative number of the first row to be displayed.",
+      "description_zh": "要显示的第一行的零相对编号。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "pageLinkSize": {
+      "default": "5",
+      "description": "Number of page links to display.",
+      "description_zh": "要显示的页面链接数。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "rowsPerPageOptions": {
+      "default": "",
+      "description": "Array of integer values to display inside rows per page dropdown.",
+      "description_zh": "要在每页行数下拉列表中显示的整数值数组。",
+      "type": "number[]",
+      "value": "",
+      "required": false
+    },
+    "template": {
+      "default": "",
+      "description": "Template of the paginator, can either be a string or an object with key-value pairs to define templates per breakpoint. Available templates are the following;\n\n- FirstPageLink\n- PrevPageLink\n- PageLinks\n- NextPageLink\n- LastPageLink\n- RowsPerPageDropdown\n- JumpToPageDropdown\n- JumpToPageInput\n- CurrentPageReport",
+      "description_zh": "Template 可以是字符串，也可以是带有键值对的对象，用于定义每个断点的模板。可用的模板如下;\n\n- FirstPage链接\n- 上一页链接\n- 页面链接\n- NextPage链接\n- LastPageLink\n- RowsPerPageDropdown\n- JumpToPageDropdown\n- JumpToPageInput\n- 当前页面报告",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "currentPageReportTemplate": {
+      "default": "'({currentPage} of {totalPages})'",
+      "description": "Template of the current page report element. It displays information about the pagination state. Available placeholders are the following;\n\n- {currentPage}\n- {totalPages}\n- {rows}\n- {first}\n- {last}\n- {totalRecords}",
+      "description_zh": "当前页报表元素的模板。它显示有关分页状态的信息。可用的占位符如下;\n\n- {当前页面}\n- {总页数}\n- {行}\n- {第一}\n- {最后}\n- {总计记录}",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "alwaysShow": {
+      "default": "true",
+      "description": "Whether to show the paginator even there is only one page.",
+      "description_zh": "是否显示分页器，即使只有一个页面。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<PaginatorPassThroughOptions<any>>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "start",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">state</span>: <span class=\"doc-option-parameter-type\">PageState</span>, <span class=\"doc-option-parameter-type\">// Current state</span>\n }",
+      "description": "Custom start template.",
+      "description_zh": "自定义启动模板。"
+    },
+    {
+      "name": "end",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">state</span>: <span class=\"doc-option-parameter-type\">PageState</span>, <span class=\"doc-option-parameter-type\">// Current state</span>\n }",
+      "description": "Custom end template.",
+      "description_zh": "自定义结束模板。"
+    },
+    {
+      "name": "firstpagelinkicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the jumptopagedropdown icon.</span>\n }",
+      "description": "",
+      "description_zh": ""
+    },
+    {
+      "name": "firsticon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the jumptopagedropdown icon.</span>\n }",
+      "description": "Custom first page link icon template.",
+      "description_zh": "自定义首页链接图标模板。"
+    },
+    {
+      "name": "prevpagelinkicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the jumptopagedropdown icon.</span>\n }",
+      "description": "",
+      "description_zh": ""
+    },
+    {
+      "name": "previcon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the jumptopagedropdown icon.</span>\n }",
+      "description": "Custom previous page link icon template.",
+      "description_zh": "自定义上一页链接图标模板。"
+    },
+    {
+      "name": "nextpagelinkicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the jumptopagedropdown icon.</span>\n }",
+      "description": "",
+      "description_zh": ""
+    },
+    {
+      "name": "nexticon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the jumptopagedropdown icon.</span>\n }",
+      "description": "Custom finextrst page link icon template.",
+      "description_zh": "自定义第一个页面链接图标模板。"
+    },
+    {
+      "name": "lastpagelinkicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the jumptopagedropdown icon.</span>\n }",
+      "description": "",
+      "description_zh": ""
+    },
+    {
+      "name": "lasticon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the jumptopagedropdown icon.</span>\n }",
+      "description": "Custom last page link icon template.",
+      "description_zh": "自定义最后一页链接图标模板。"
+    },
+    {
+      "name": "rowsperpagedropdownicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the rowsperpagedropdown icon.</span>\n }",
+      "description": "Custom rowsperpagedropdownicon template.",
+      "description_zh": "自定义 rowsperpagedropdownicon 模板。"
+    },
+    {
+      "name": "jumptopagedropdownicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the jumptopagedropdown icon.</span>\n }",
+      "description": "Custom jumptopagedropdownicon template.",
+      "description_zh": "自定义 jumptopagedropdownicon 模板。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/paginator/",
+  "methods": []
+}

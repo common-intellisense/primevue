@@ -1,0 +1,170 @@
+{
+  "name": "Knob",
+  "props": {
+    "modelValue": {
+      "default": "",
+      "description": "Value of the component.",
+      "description_zh": "组件的值。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "size": {
+      "default": "100",
+      "description": "Size of the component in pixels.",
+      "description_zh": "组件的大小（以像素为单位）。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "disabled": {
+      "default": "false",
+      "description": "When present, it specifies that the component should be disabled.",
+      "description_zh": "如果存在，则它指定应禁用该组件。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "readonly": {
+      "default": "false",
+      "description": "When present, it specifies that the component value cannot be edited.",
+      "description_zh": "如果存在，则指定无法编辑组件值。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "step": {
+      "default": "1",
+      "description": "Step factor to increment/decrement the value.",
+      "description_zh": "递增/递减值的步长因子。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "min": {
+      "default": "0",
+      "description": "Mininum boundary value.",
+      "description_zh": "最小边界值。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "max": {
+      "default": "100",
+      "description": "Maximum boundary value.",
+      "description_zh": "最大边界值。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "valueColor": {
+      "default": "$dt('knob.value.background')",
+      "description": "Background of the value.",
+      "description_zh": "值的背景。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "rangeColor": {
+      "default": "$dt('knob.range.background')",
+      "description": "Background color of the range.",
+      "description_zh": "范围的背景色。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "textColor": {
+      "default": "$dt('knob.text.color')",
+      "description": "Color of the value text.",
+      "description_zh": "值文本的颜色。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "strokeWidth": {
+      "default": "14",
+      "description": "Width of the knob stroke.",
+      "description_zh": "旋钮行程的宽度。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "showValue": {
+      "default": "true",
+      "description": "Whether the show the value inside the knob.",
+      "description_zh": "是否显示旋钮内部的值。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "valueTemplate": {
+      "default": "",
+      "type": "Function",
+      "value": "",
+      "required": false,
+      "description": "",
+      "description_zh": ""
+    },
+    "tabindex": {
+      "default": "0",
+      "description": "Index of the element in tabbing order.",
+      "description_zh": "按 Tab 键顺序排列的元素索引。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "ariaLabelledby": {
+      "default": "",
+      "description": "Establishes relationships between the component and label(s) where its value should be one or more element IDs.",
+      "description_zh": "在组件和标签之间建立关系，其中其值应为一个或多个元素 ID。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "ariaLabel": {
+      "default": "",
+      "description": "Used to define a string that labels the element.",
+      "description_zh": "用于定义标记元素的字符串。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<KnobPassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [],
+  "suggestions": [],
+  "link": "https://primevue.org/knob/",
+  "methods": []
+}

@@ -1,0 +1,111 @@
+{
+  "name": "Avatar",
+  "props": {
+    "label": {
+      "default": "",
+      "description": "Defines the text to display.",
+      "description_zh": "定义要显示的文本。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "icon": {
+      "default": "",
+      "description": "Defines the icon to display.",
+      "description_zh": "定义要显示的图标。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "image": {
+      "default": "",
+      "description": "Defines the image to display.",
+      "description_zh": "定义要显示的图像。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "size": {
+      "default": "normal",
+      "description": "Size of the element.",
+      "description_zh": "元素的大小。",
+      "type": "normal / large / xlarge",
+      "value": "",
+      "required": false
+    },
+    "shape": {
+      "default": "square",
+      "description": "Shape of the element.",
+      "description_zh": "元素的形状。",
+      "type": "square / circle",
+      "value": "",
+      "required": false
+    },
+    "ariaLabel": {
+      "default": "",
+      "description": "Establishes a string value that labels the component.",
+      "description_zh": "建立用于标记组件的字符串值。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "ariaLabelledby": {
+      "default": "",
+      "description": "Establishes relationships between the component and label(s) where its value should be one or more element IDs.",
+      "description_zh": "在组件和标签之间建立关系，其中其值应为一个或多个元素 ID。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<AvatarPassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "default",
+      "params": "",
+      "description": "Content can easily be customized with the default slot instead of using the built-in modes.",
+      "description_zh": "可以使用默认插槽轻松自定义内容，而不是使用内置模式。"
+    },
+    {
+      "name": "icon",
+      "params": "",
+      "description": "Custom icon template.",
+      "description_zh": "自定义图标模板。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/avatar/",
+  "methods": []
+}

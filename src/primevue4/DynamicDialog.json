@@ -1,0 +1,18 @@
+{
+  "name": "DynamicDialog",
+  "props": {
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [],
+  "suggestions": [],
+  "link": "https://primevue.org/dynamicdialog/",
+  "methods": []
+}

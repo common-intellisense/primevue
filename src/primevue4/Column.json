@@ -1,0 +1,551 @@
+{
+  "name": "Column",
+  "props": {
+    "columnKey": {
+      "default": "",
+      "description": "Identifier of a column if field property is not defined.",
+      "description_zh": "如果未定义 field 属性，则为列的标识符。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "field": {
+      "default": "",
+      "description": "Property represented by the column.",
+      "description_zh": "属性。",
+      "type": "string | Function",
+      "value": "",
+      "required": false
+    },
+    "sortField": {
+      "default": "",
+      "description": "Property name to use in sorting, defaults to field.",
+      "description_zh": "排序中使用的属性名称，默认为 field。",
+      "type": "string | Function",
+      "value": "",
+      "required": false
+    },
+    "filterField": {
+      "default": "",
+      "description": "Property name to use in filtering, defaults to field.",
+      "description_zh": "要在筛选中使用的属性名称，默认为 field。",
+      "type": "string | Function",
+      "value": "",
+      "required": false
+    },
+    "dataType": {
+      "default": "",
+      "description": "Type of data. It's value is related to PrimeVue.filterMatchModeOptions config.",
+      "description_zh": "数据类型。它的值与 PrimeVue.filterMatchModeOptions 配置有关。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "sortable": {
+      "default": "false",
+      "description": "Defines if a column is sortable.",
+      "description_zh": "定义列是否可排序。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "header": {
+      "default": "",
+      "description": "Header content of the column.",
+      "description_zh": "列的标题内容。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "footer": {
+      "default": "",
+      "description": "Footer content of the column.",
+      "description_zh": "列的页脚内容。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "style": {
+      "default": "",
+      "description": "Inline style of header, body and footer cells.",
+      "description_zh": "页眉、正文和页脚单元格的内联样式。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "class": {
+      "default": "",
+      "description": "Style class of header, body and footer cells.",
+      "description_zh": "样式 页眉、正文和页脚单元格的类。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "headerStyle": {
+      "default": "",
+      "description": "Inline style of the column header.",
+      "description_zh": "列标题的内联样式。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "headerClass": {
+      "default": "",
+      "description": "Style class of the column header.",
+      "description_zh": "Style 类。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "bodyStyle": {
+      "default": "",
+      "description": "Inline style of the column body.",
+      "description_zh": "列体的内联样式。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "bodyClass": {
+      "default": "",
+      "description": "Style class of the column body.",
+      "description_zh": "Style 类。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "footerStyle": {
+      "default": "",
+      "description": "Inline style of the column footer.",
+      "description_zh": "列页脚的内联样式。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "footerClass": {
+      "default": "",
+      "description": "Style class of the column footer.",
+      "description_zh": "Style 类。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "showFilterMenu": {
+      "default": "true",
+      "description": "Whether to display the filter overlay.",
+      "description_zh": "是否显示过滤器叠加。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "showFilterOperator": {
+      "default": "true",
+      "description": "When enabled, match all and match any operator selector is displayed.",
+      "description_zh": "启用后，将显示 Match all 和 Match any 运算符选择器。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "showClearButton": {
+      "default": "true",
+      "description": "Displays a button to clear the column filtering.",
+      "description_zh": "显示用于清除列筛选的按钮。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "showApplyButton": {
+      "default": "true",
+      "description": "Displays a button to apply the column filtering.",
+      "description_zh": "显示用于应用列筛选的按钮。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "showFilterMatchModes": {
+      "default": "true",
+      "description": "Whether to show the match modes selector.",
+      "description_zh": "是否显示匹配模式选择器。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "showAddButton": {
+      "default": "true",
+      "description": "When enabled, a button is displayed to add more rules.",
+      "description_zh": "启用后，将显示一个按钮以添加更多规则。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "filterMatchModeOptions": {
+      "default": "",
+      "description": "An array of label-value pairs to override the global match mode options.",
+      "description_zh": "用于覆盖全局匹配模式选项的标签-值对数组。",
+      "type": "ColumnFilterMatchModeOptions[]",
+      "value": "",
+      "required": false
+    },
+    "maxConstraints": {
+      "default": "2",
+      "description": "Maximum number of constraints for a column filter.",
+      "description_zh": "列筛选器的最大约束数。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "excludeGlobalFilter": {
+      "default": "false",
+      "description": "Whether to exclude from global filtering or not.",
+      "description_zh": "是否从全局筛选中排除。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "filterHeaderStyle": {
+      "default": "",
+      "description": "Inline style of the column filter header in row filter display.",
+      "description_zh": "行筛选器显示中列筛选器标题的内联样式。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "filterHeaderClass": {
+      "default": "",
+      "description": "Style class of the column filter header in row filter display.",
+      "description_zh": "行筛选器显示中的列筛选器标题的 Style 类。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "filterMenuStyle": {
+      "default": "",
+      "description": "Inline style of the column filter overlay.",
+      "description_zh": "列筛选器叠加层的内联样式。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "filterMenuClass": {
+      "default": "",
+      "description": "Style class of the column filter overlay.",
+      "description_zh": "列筛选器叠加层的 Style 类。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "selectionMode": {
+      "default": "",
+      "description": "Defines column based selection mode.",
+      "description_zh": "定义基于列的选择模式。",
+      "type": "single / multiple",
+      "value": "",
+      "required": false
+    },
+    "expander": {
+      "default": "false",
+      "description": "Displays an icon to toggle row expansion.",
+      "description_zh": "显示用于切换行扩展的图标。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "colspan": {
+      "default": "",
+      "description": "Number of columns to span for grouping.",
+      "description_zh": "用于分组的跨度列数。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "rowspan": {
+      "default": "",
+      "description": "Number of rows to span for grouping.",
+      "description_zh": "用于分组的跨度。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "rowReorder": {
+      "default": "false",
+      "description": "Whether this column displays an icon to reorder the rows.",
+      "description_zh": "此列是否显示用于对行重新排序的图标。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "rowReorderIcon": {
+      "default": "",
+      "description": "Icon of the drag handle to reorder rows.",
+      "description_zh": "用于对行重新排序的拖动手柄的图标。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "reorderableColumn": {
+      "default": "false",
+      "description": "Defines if the column itself can be reordered with dragging.",
+      "description_zh": "定义是否可以通过拖动对列本身进行重新排序。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "rowEditor": {
+      "default": "false",
+      "description": "When enabled, column displays row editor controls.",
+      "description_zh": "启用后，column 将显示行编辑器控件。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "frozen": {
+      "default": "false",
+      "description": "Whether the column is fixed in horizontal scrolling.",
+      "description_zh": "列在水平滚动时是否固定。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "alignFrozen": {
+      "default": "left",
+      "description": "Position of a frozen column, valid values are left and right.",
+      "description_zh": "冻结列的位置，有效值为 left 和 right。",
+      "type": "left / right",
+      "value": "",
+      "required": false
+    },
+    "exportable": {
+      "default": "false",
+      "description": "Whether the column is included in data export.",
+      "description_zh": "该列是否包含在数据导出中。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "exportHeader": {
+      "default": "",
+      "description": "Custom export header of the column to be exported as CSV.",
+      "description_zh": "要导出为 CSV 的列的自定义导出标题。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "exportFooter": {
+      "default": "",
+      "description": "Custom export footer of the column to be exported as CSV.",
+      "description_zh": "要导出为 CSV 的列的自定义导出页脚。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "filterMatchMode": {
+      "default": "",
+      "description": "Defines the filtering algorithm to use when searching the options.",
+      "description_zh": "定义搜索选项时要使用的筛选算法。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "hidden": {
+      "default": "false",
+      "description": "Whether the column is rendered.",
+      "description_zh": "是否呈现列。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<ColumnPassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "body",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">data</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Row data.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">node</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Row node data.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">column</span>: <span class=\"doc-option-parameter-type\">ColumnNode</span>, <span class=\"doc-option-parameter-type\">// Column node.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">field</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Column field.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">index</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Row index.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">frozenRow</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Whether the row is frozen.</span>\n \t <span class=\"ml-3 doc-option-parameter-name\">editorInitCallback</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">event</span>: Event) &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Editor init callback function</span>\n\t <span class=\"ml-3 doc-option-parameter-name\">rowTogglerCallback</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">event</span>: Event) &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Row toggler callback unction</span>\n}",
+      "description": "Custom body template for DataTable.",
+      "description_zh": "DataTable 的自定义正文模板。"
+    },
+    {
+      "name": "node",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">data</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Row data.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">node</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Row node data.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">column</span>: <span class=\"doc-option-parameter-type\">ColumnNode</span>, <span class=\"doc-option-parameter-type\">// Column node.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">field</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Column field.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">index</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Row index.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">frozenRow</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Whether the row is frozen.</span>\n \t <span class=\"ml-3 doc-option-parameter-name\">editorInitCallback</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">event</span>: Event) &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Editor init callback function</span>\n\t <span class=\"ml-3 doc-option-parameter-name\">rowTogglerCallback</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">event</span>: Event) &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Row toggler callback unction</span>\n}",
+      "description": "Custom body template for TreeTable.",
+      "description_zh": "TreeTable 的自定义正文模板。"
+    },
+    {
+      "name": "header",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">column</span>: <span class=\"doc-option-parameter-type\">ColumnNode</span>, <span class=\"doc-option-parameter-type\">// Column node.</span>\n }",
+      "description": "Custom header template.",
+      "description_zh": "自定义标头模板。"
+    },
+    {
+      "name": "footer",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">column</span>: <span class=\"doc-option-parameter-type\">ColumnNode</span>, <span class=\"doc-option-parameter-type\">// Column node.</span>\n }",
+      "description": "Custom footer template.",
+      "description_zh": "自定义页脚模板。"
+    },
+    {
+      "name": "editor",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">data</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Row data.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">column</span>: <span class=\"doc-option-parameter-type\">ColumnNode</span>, <span class=\"doc-option-parameter-type\">// Column node.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">field</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Column field.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">index</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Row index.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">frozenRow</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Whether the row is frozen.</span>\n \t <span class=\"ml-3 doc-option-parameter-name\">editorSaveCallback</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">event</span>: Event) &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Callback function</span>\n\t <span class=\"ml-3 doc-option-parameter-name\">editorCancelCallback</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">event</span>: Event) &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Callback function</span>\n}",
+      "description": "Custom editor template.",
+      "description_zh": "自定义编辑器模板。"
+    },
+    {
+      "name": "filter",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">field</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Column field.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">filterModel</span>: <span class=\"doc-option-parameter-type\">ColumnFilterModelType</span>, <span class=\"doc-option-parameter-type\">// Filter metadata</span>\n \t <span class=\"ml-3 doc-option-parameter-name\">filterCallback</span>: <span class=\"doc-option-parameter-type\">() &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Callback function</span>\n\t <span class=\"ml-3 doc-option-parameter-name\">applyFilter</span>: <span class=\"doc-option-parameter-type\">() &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Callback function (closes the overlay)</span>\n}",
+      "description": "Custom filter template.",
+      "description_zh": "自定义筛选条件模板。"
+    },
+    {
+      "name": "filterheader",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">field</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Column field.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">filterModel</span>: <span class=\"doc-option-parameter-type\">ColumnFilterModelType</span>, <span class=\"doc-option-parameter-type\">// Filter metadata</span>\n \t <span class=\"ml-3 doc-option-parameter-name\">filterCallback</span>: <span class=\"doc-option-parameter-type\">() &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Callback function</span>\n}",
+      "description": "Custom filter header template.",
+      "description_zh": "自定义筛选器标头模板。"
+    },
+    {
+      "name": "filterfooter",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">field</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Column field.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">filterModel</span>: <span class=\"doc-option-parameter-type\">ColumnFilterModelType</span>, <span class=\"doc-option-parameter-type\">// Filter metadata</span>\n \t <span class=\"ml-3 doc-option-parameter-name\">filterCallback</span>: <span class=\"doc-option-parameter-type\">() &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Callback function</span>\n}",
+      "description": "Custom filter footer template.",
+      "description_zh": "自定义过滤器页脚模板。"
+    },
+    {
+      "name": "filterclear",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">field</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Column field.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">filterModel</span>: <span class=\"doc-option-parameter-type\">ColumnFilterModelType</span>, <span class=\"doc-option-parameter-type\">// Filter metadata</span>\n \t <span class=\"ml-3 doc-option-parameter-name\">filterCallback</span>: <span class=\"doc-option-parameter-type\">() &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Callback function</span>\n}",
+      "description": "Custom filter clear template.",
+      "description_zh": "自定义过滤器清除模板。"
+    },
+    {
+      "name": "filterapply",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">field</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Column field.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">filterModel</span>: <span class=\"doc-option-parameter-type\">ColumnFilterModelType</span>, <span class=\"doc-option-parameter-type\">// Filter metadata</span>\n \t <span class=\"ml-3 doc-option-parameter-name\">filterCallback</span>: <span class=\"doc-option-parameter-type\">() &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Callback function</span>\n}",
+      "description": "Custom filter apply template.",
+      "description_zh": "自定义过滤器应用模板。"
+    },
+    {
+      "name": "loading",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">data</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Row data.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">column</span>: <span class=\"doc-option-parameter-type\">ColumnNode</span>, <span class=\"doc-option-parameter-type\">// Column node.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">field</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Column field.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">index</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Row index.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">frozenRow</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Whether the row is frozen.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">loadingOptions</span>: <span class=\"doc-option-parameter-type\">ColumnLoadingOptions</span>, <span class=\"doc-option-parameter-type\">// Loading options.</span>\n }",
+      "description": "Custom loading template.",
+      "description_zh": "自定义加载模板。"
+    },
+    {
+      "name": "rowtogglericon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the row toggler icon.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">rowExpanded</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Current row expanded state.</span>\n }",
+      "description": "",
+      "description_zh": ""
+    },
+    {
+      "name": "rowtoggleicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the row toggler icon.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">rowExpanded</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Current row expanded state.</span>\n }",
+      "description": "Custom row toggler icon template.",
+      "description_zh": "自定义行切换器图标模板。"
+    },
+    {
+      "name": "rowcheckboxicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">checked</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Current check state.</span>\n }",
+      "description": "Custom row checkbox icon template.",
+      "description_zh": "自定义行复选框图标模板。"
+    },
+    {
+      "name": "roweditoriniticon",
+      "params": "",
+      "description": "Custom row editor init icon template.",
+      "description_zh": "自定义行编辑器初始化图标模板。"
+    },
+    {
+      "name": "roweditorsaveicon",
+      "params": "",
+      "description": "Custom row editor save icon template.",
+      "description_zh": "自定义行编辑器保存图标模板。"
+    },
+    {
+      "name": "roweditorcancelicon",
+      "params": "",
+      "description": "Custom row editor cancel icon template.",
+      "description_zh": "自定义行编辑器取消图标模板。"
+    },
+    {
+      "name": "filtericon",
+      "params": "",
+      "description": "Custom filter icon template.",
+      "description_zh": "自定义筛选器图标模板。"
+    },
+    {
+      "name": "filterclearicon",
+      "params": "",
+      "description": "Custom filter clear icon template.",
+      "description_zh": "自定义过滤器清除图标模板。"
+    },
+    {
+      "name": "filterremoveicon",
+      "params": "",
+      "description": "Custom filter remove icon template.",
+      "description_zh": "自定义过滤器删除图标模板。"
+    },
+    {
+      "name": "filteraddicon",
+      "params": "",
+      "description": "Custom filter add icon template.",
+      "description_zh": "自定义过滤器添加图标模板。"
+    },
+    {
+      "name": "sorticon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the sort icon.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">sorted</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Current sort state.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">sortOrder</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Current sort order state.</span>\n }",
+      "description": "Custom sort icon template.",
+      "description_zh": "自定义排序图标模板。"
+    },
+    {
+      "name": "headercheckboxicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">checked</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Current check state.</span>\n }",
+      "description": "Custom header checkbox icon template.",
+      "description_zh": "自定义标题复选框图标模板。"
+    },
+    {
+      "name": "rowreordericon",
+      "params": "",
+      "description": "Custom row reorder icon template.",
+      "description_zh": "自定义行重新排序图标模板。"
+    },
+    {
+      "name": "nodetogglericon",
+      "params": "",
+      "description": "",
+      "description_zh": ""
+    },
+    {
+      "name": "nodetoggleicon",
+      "params": "",
+      "description": "Custom node toggler icon template.",
+      "description_zh": "自定义节点切换器图标模板。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/column/",
+  "methods": []
+}

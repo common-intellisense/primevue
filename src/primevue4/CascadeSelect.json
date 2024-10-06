@@ -1,0 +1,413 @@
+{
+  "name": "CascadeSelect",
+  "props": {
+    "modelValue": {
+      "default": "",
+      "description": "Value of the component.",
+      "description_zh": "组件的值。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "options": {
+      "default": "",
+      "description": "An array of selectitems to display as the available options.",
+      "description_zh": "要显示为可用选项的 selectitems 数组。",
+      "type": "any[]",
+      "value": "",
+      "required": false
+    },
+    "optionLabel": {
+      "default": "",
+      "description": "Property name or getter function to use as the label of an option.",
+      "description_zh": "用作选项标签的属性名称或 getter 函数。",
+      "type": "string | Function",
+      "value": "",
+      "required": false
+    },
+    "optionValue": {
+      "default": "",
+      "description": "Property name or getter function to use as the value of an option, defaults to the option itself when not defined.",
+      "description_zh": "用作选项值的属性名称或 getter 函数，如果未定义，则默认为选项本身。",
+      "type": "string | Function",
+      "value": "",
+      "required": false
+    },
+    "optionDisabled": {
+      "default": "",
+      "description": "Property name or getter function to use as the disabled flag of an option, defaults to false when not defined.",
+      "description_zh": "用作选项的 disabled 标志的属性名称或 getter 函数，如果未定义，则默认为 false。",
+      "type": "string | Function",
+      "value": "",
+      "required": false
+    },
+    "optionGroupLabel": {
+      "default": "",
+      "description": "Property name or getter function to use as the label of an option group.",
+      "description_zh": "用作选项组标签的属性名称或 getter 函数。",
+      "type": "string | Function",
+      "value": "",
+      "required": false
+    },
+    "optionGroupChildren": {
+      "default": "",
+      "description": "Property name or getter function to retrieve the items of a group.",
+      "description_zh": "用于检索组项的属性名称或 getter 函数。",
+      "type": "string | string[] | Function",
+      "value": "",
+      "required": false
+    },
+    "placeholder": {
+      "default": "",
+      "description": "Default text to display when no option is selected.",
+      "description_zh": "未选择任何选项时显示的默认文本。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "breakpoint": {
+      "default": "960px",
+      "description": "The breakpoint to define the maximum width boundary.",
+      "description_zh": "用于定义最大宽度边界的断点。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "invalid": {
+      "default": "false",
+      "description": "When present, it specifies that the component should have invalid state style.",
+      "description_zh": "如果存在，则它指定组件应具有无效的状态样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "disabled": {
+      "default": "false",
+      "description": "When present, it specifies that the component should be disabled.",
+      "description_zh": "如果存在，则它指定应禁用该组件。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "variant": {
+      "default": "outlined",
+      "description": "Specifies the input variant of the component.",
+      "description_zh": "指定组件的输入变量。",
+      "type": "outlined / filled",
+      "value": "",
+      "required": false
+    },
+    "dataKey": {
+      "default": "",
+      "description": "A property to uniquely identify an option.",
+      "description_zh": "用于唯一标识选项的属性。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "inputId": {
+      "default": "",
+      "description": "Identifier of the underlying input element.",
+      "description_zh": "基础 input 元素的标识符。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "inputStyle": {
+      "default": "",
+      "description": "Inline style of the input field.",
+      "description_zh": "输入字段的内联样式。",
+      "type": "object",
+      "value": "",
+      "required": false
+    },
+    "inputClass": {
+      "default": "",
+      "description": "Style class of the input field.",
+      "description_zh": "Style 类。",
+      "type": "string | object",
+      "value": "",
+      "required": false
+    },
+    "inputProps": {
+      "default": "",
+      "description": "Used to pass all properties of the HTMLInputElement to the focusable input element inside the component.",
+      "description_zh": "用于将 HTMLInputElement 的所有属性传递给组件内的可聚焦输入元素。",
+      "type": "InputHTMLAttributes",
+      "value": "",
+      "required": false
+    },
+    "panelStyle": {
+      "default": "",
+      "description": "",
+      "description_zh": "",
+      "type": "object",
+      "value": "",
+      "required": false
+    },
+    "panelClass": {
+      "default": "",
+      "description": "",
+      "description_zh": "",
+      "type": "string | object",
+      "value": "",
+      "required": false
+    },
+    "panelProps": {
+      "default": "",
+      "description": "",
+      "description_zh": "",
+      "type": "HTMLAttributes",
+      "value": "",
+      "required": false
+    },
+    "overlayStyle": {
+      "default": "",
+      "description": "Inline style of the overlay overlay.",
+      "description_zh": "叠加层叠加层的内联样式。",
+      "type": "object",
+      "value": "",
+      "required": false
+    },
+    "overlayClass": {
+      "default": "",
+      "description": "Style class of the overlay overlay.",
+      "description_zh": "叠加层的 Style 类。",
+      "type": "string | object",
+      "value": "",
+      "required": false
+    },
+    "overlayProps": {
+      "default": "",
+      "description": "Used to pass all properties of the HTMLDivElement to the overlay overlay inside the component.",
+      "description_zh": "用于将 HTMLDivElement 的所有属性传递给组件内的覆盖层。",
+      "type": "HTMLAttributes",
+      "value": "",
+      "required": false
+    },
+    "appendTo": {
+      "default": "body",
+      "description": "A valid query selector or an HTMLElement to specify where the overlay gets attached. Special keywords are 'body' for document body and 'self' for the element itself.",
+      "description_zh": "一个有效的查询选择器或一个 HTMLElement，用于指定覆盖层的附加位置。特殊关键字是 'body' 表示文档正文，'self' 表示元素本身。",
+      "type": "HTMLElement | HintedString<\"body\" | \"self\">",
+      "value": "",
+      "required": false
+    },
+    "loading": {
+      "default": "false",
+      "description": "Whether the dropdown is in loading state.",
+      "description_zh": "下拉列表是否处于 loading 状态。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "dropdownIcon": {
+      "default": "",
+      "description": "Icon to display in the dropdown.",
+      "description_zh": "图标以显示在下拉列表中。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "loadingIcon": {
+      "default": "",
+      "description": "Icon to display in loading state.",
+      "description_zh": "在加载状态下显示的图标。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "optionGroupIcon": {
+      "default": "",
+      "description": "Icon to display in the option group.",
+      "description_zh": "要在选项组中显示的图标。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "autoOptionFocus": {
+      "default": "false",
+      "description": "Whether to focus on the first visible or selected element when the overlay panel is shown.",
+      "description_zh": "显示叠加面板时，是聚焦于第一个可见元素还是选定元素。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "selectOnFocus": {
+      "default": "false",
+      "description": "When enabled, the focused option is selected/opened.",
+      "description_zh": "启用后，将选择/打开聚焦选项。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "focusOnHover": {
+      "default": "true",
+      "description": "When enabled, the focus is placed on the hovered option.",
+      "description_zh": "启用后，焦点将放在悬停的选项上。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "searchLocale": {
+      "default": "",
+      "description": "Locale to use in searching. The default locale is the host environment's current locale.",
+      "description_zh": "搜索中使用的区域设置。默认区域设置是主机环境的当前区域设置。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "searchMessage": {
+      "default": "'{0} results are available'",
+      "description": "Text to be displayed in hidden accessible field when filtering returns any results. Defaults to value from PrimeVue locale configuration.",
+      "description_zh": "筛选时要在隐藏的可访问字段中显示的文本会返回任何结果。默认为 PrimeVue locale 配置中的 value。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "selectionMessage": {
+      "default": "'{0} items selected'",
+      "description": "Text to be displayed in hidden accessible field when options are selected. Defaults to value from PrimeVue locale configuration.",
+      "description_zh": "选择选项时要在隐藏的可访问字段中显示的文本。默认为 PrimeVue locale 配置中的 value。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "emptySelectionMessage": {
+      "default": "No selected item",
+      "description": "Text to be displayed in hidden accessible field when any option is not selected. Defaults to value from PrimeVue locale configuration.",
+      "description_zh": "未选择任何选项时，要在隐藏的可访问字段中显示的文本。默认为 PrimeVue locale 配置中的 value。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "emptySearchMessage": {
+      "default": "No results found",
+      "description": "Text to display when filtering does not return any results. Defaults to value from PrimeVue locale configuration.",
+      "description_zh": "筛选时显示的文本不会返回任何结果。默认为 PrimeVue locale 配置中的 value。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "emptyMessage": {
+      "default": "No available options",
+      "description": "Text to be displayed when there are no options available. Defaults to value from PrimeVue locale configuration.",
+      "description_zh": "没有可用选项时要显示的文本。默认为 PrimeVue locale 配置中的 value。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "tabindex": {
+      "default": "",
+      "description": "Index of the element in tabbing order.",
+      "description_zh": "按 Tab 键顺序排列的元素索引。",
+      "type": "string | number",
+      "value": "",
+      "required": false
+    },
+    "fluid": {
+      "default": "null",
+      "description": "Spans 100% width of the container when enabled.",
+      "description_zh": "启用后，跨度为容器的 100% 宽度。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "ariaLabelledby": {
+      "default": "",
+      "description": "Establishes relationships between the component and label(s) where its value should be one or more element IDs.",
+      "description_zh": "在组件和标签之间建立关系，其中其值应为一个或多个元素 ID。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "ariaLabel": {
+      "default": "",
+      "description": "Establishes a string value that labels the component.",
+      "description_zh": "建立用于标记组件的字符串值。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<CascadeSelectPassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "option",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">option</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Option instance</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">selected</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Selection state</span>\n }",
+      "description": "Custom content for each option.",
+      "description_zh": "每个选项的自定义内容。"
+    },
+    {
+      "name": "value",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">value</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Value of the component</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">placeholder</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Placeholder text to show</span>\n }",
+      "description": "Custom value template.",
+      "description_zh": "自定义值模板。"
+    },
+    {
+      "name": "dropdownicon",
+      "params": "",
+      "description": "Custom dropdown icon template.",
+      "description_zh": "自定义下拉图标模板。"
+    },
+    {
+      "name": "loadingicon",
+      "params": "",
+      "description": "Custom loading icon template.",
+      "description_zh": "自定义加载图标模板。"
+    },
+    {
+      "name": "optiongroupicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the icon.</span>\n }",
+      "description": "Custom option group icon template.",
+      "description_zh": "自定义选项组图标模板。"
+    },
+    {
+      "name": "header",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">value</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Current value</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">options</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Options of the component</span>\n }",
+      "description": "Custom header template.",
+      "description_zh": "自定义标头模板。"
+    },
+    {
+      "name": "footer",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">value</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Current value</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">options</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Options of the component</span>\n }",
+      "description": "Custom footer template.",
+      "description_zh": "自定义页脚模板。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/cascadeselect/",
+  "methods": []
+}

@@ -1,1 +1,1 @@
-export * from './primevue3'
+export * from './primevue4'

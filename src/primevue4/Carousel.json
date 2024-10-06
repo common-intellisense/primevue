@@ -1,0 +1,207 @@
+{
+  "name": "Carousel",
+  "props": {
+    "value": {
+      "default": "",
+      "description": "An array of objects to display.",
+      "description_zh": "要显示的对象数组。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "page": {
+      "default": "0",
+      "description": "Index of the first item.",
+      "description_zh": "第一项的索引。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "numVisible": {
+      "default": "1",
+      "description": "Number of items per page.",
+      "description_zh": "每页的项目数。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "numScroll": {
+      "default": "1",
+      "description": "Number of items to scroll.",
+      "description_zh": "要滚动的项目数。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "responsiveOptions": {
+      "default": "",
+      "description": "An array of options for responsive design.",
+      "description_zh": "响应式设计的一系列选项。",
+      "type": "CarouselResponsiveOptions[]",
+      "value": "",
+      "required": false
+    },
+    "orientation": {
+      "default": "horizontal",
+      "description": "Specifies the layout of the component, valid values are 'horizontal' and 'vertical'.",
+      "description_zh": "指定组件的布局，有效值为 'horizontal' 和 'vertical'。",
+      "type": "horizontal / vertical",
+      "value": "",
+      "required": false
+    },
+    "verticalViewPortHeight": {
+      "default": "300px",
+      "description": "Height of the viewport in vertical layout.",
+      "description_zh": "垂直布局中视区的高度。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "containerClass": {
+      "default": "",
+      "description": "Style class of the viewport container.",
+      "description_zh": "Style 类。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "contentClass": {
+      "default": "",
+      "description": "Style class of main content.",
+      "description_zh": "主要内容的 Style 类。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "indicatorsContentClass": {
+      "default": "",
+      "description": "Style class of the indicator items.",
+      "description_zh": "Style 类。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "circular": {
+      "default": "false",
+      "description": "Defines if scrolling would be infinite.",
+      "description_zh": "定义滚动是否为无限。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "autoplayInterval": {
+      "default": "0",
+      "description": "Time in milliseconds to scroll items automatically.",
+      "description_zh": "自动滚动项目的时间（以毫秒为单位）。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "showNavigators": {
+      "default": "true",
+      "description": "Whether to display navigation buttons in container.",
+      "description_zh": "是否在容器中显示导航按钮。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "showIndicators": {
+      "default": "true",
+      "description": "Whether to display indicator container.",
+      "description_zh": "是否显示指示器容器。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "prevButtonProps": {
+      "default": "",
+      "description": "Used to pass attributes to the previous Button component.",
+      "description_zh": "用于将属性传递给上一个 Button 组件。",
+      "type": "object",
+      "value": "",
+      "required": false
+    },
+    "nextButtonProps": {
+      "default": "",
+      "description": "Used to pass attributes to the next Button component.",
+      "description_zh": "用于将属性传递给下一个 Button 组件。",
+      "type": "object",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<CarouselPassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "item",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">data</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Data of the component</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">index</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Index of the item</span>\n }",
+      "description": "Custom content for each item.",
+      "description_zh": "每个项目的自定义内容。"
+    },
+    {
+      "name": "header",
+      "params": "",
+      "description": "Custom header template.",
+      "description_zh": "自定义标头模板。"
+    },
+    {
+      "name": "footer",
+      "params": "",
+      "description": "Custom footer template.",
+      "description_zh": "自定义页脚模板。"
+    },
+    {
+      "name": "previcon",
+      "params": "",
+      "description": "Custom previous icon template.",
+      "description_zh": "自定义上一个图标模板。"
+    },
+    {
+      "name": "nexticon",
+      "params": "",
+      "description": "Custom next icon template.",
+      "description_zh": "自定义下一个图标模板。"
+    },
+    {
+      "name": "empty",
+      "params": "",
+      "description": "Custom empty template.",
+      "description_zh": "自定义空模板。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/carousel/",
+  "methods": []
+}

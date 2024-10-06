@@ -1,0 +1,121 @@
+{
+  "name": "MeterGroup",
+  "props": {
+    "value": {
+      "default": "",
+      "description": "Current value of the metergroup.",
+      "description_zh": "metergroup 的当前值。",
+      "type": "MeterItem[]",
+      "value": "",
+      "required": false
+    },
+    "min": {
+      "default": "0",
+      "description": "Mininum boundary value.",
+      "description_zh": "最小边界值。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "max": {
+      "default": "100",
+      "description": "Maximum boundary value.",
+      "description_zh": "最大边界值。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "orientation": {
+      "default": "horizontal",
+      "description": "Specifies the layout of the component, valid values are 'horizontal' and 'vertical'.",
+      "description_zh": "指定组件的布局，有效值为 'horizontal' 和 'vertical'。",
+      "type": "horizontal / vertical",
+      "value": "",
+      "required": false
+    },
+    "labelPosition": {
+      "default": "end",
+      "description": "Specifies the label position of the component, valid values are 'start' and 'end'.",
+      "description_zh": "指定组件的标签位置，有效值为 'start' 和 'end'。",
+      "type": "start / end",
+      "value": "",
+      "required": false
+    },
+    "labelOrientation": {
+      "default": "horizontal",
+      "description": "Specifies the label orientation of the component, valid values are 'horizontal' and 'vertical'.",
+      "description_zh": "指定组件的标签方向，有效值为 'horizontal' 和 'vertical'。",
+      "type": "horizontal / vertical",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<MeterGroupPassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "label",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">value</span>: <span class=\"doc-option-parameter-type\">MeterItem</span>, <span class=\"doc-option-parameter-type\">// Current value of the component</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">totalPercent</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Total percent of the metergroup items</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">percentages</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Array of sequential sum of values of metergroup items</span>\n }",
+      "description": "Custom label template.",
+      "description_zh": "自定义标签模板。"
+    },
+    {
+      "name": "meter",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">value</span>: <span class=\"doc-option-parameter-type\">MeterItem</span>, <span class=\"doc-option-parameter-type\">// Current value of the meter item</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">index</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Current index of the meter item</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the meter item</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">orientation</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Current orientation of the component</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">size</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Current width of the meter item</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">totalPercent</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Total percent of the metergroup items</span>\n }",
+      "description": "Custom meter template.",
+      "description_zh": "自定义计量模板。"
+    },
+    {
+      "name": "icon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">value</span>: <span class=\"doc-option-parameter-type\">MeterItem</span>, <span class=\"doc-option-parameter-type\">// Current value of the component</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the icon</span>\n }",
+      "description": "Custom icon template.",
+      "description_zh": "自定义图标模板。"
+    },
+    {
+      "name": "start",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">value</span>: <span class=\"doc-option-parameter-type\">MeterItem</span>, <span class=\"doc-option-parameter-type\">// Current value of the component</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">totalPercent</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Total percent of the metergroup items</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">percentages</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Array of sequential sum of values of metergroup items</span>\n }",
+      "description": "Custom start template.",
+      "description_zh": "自定义启动模板。"
+    },
+    {
+      "name": "end",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">value</span>: <span class=\"doc-option-parameter-type\">MeterItem</span>, <span class=\"doc-option-parameter-type\">// Current value of the component</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">totalPercent</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Total percent of the metergroup items</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">percentages</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Array of sequential sum of values of metergroup items</span>\n }",
+      "description": "Custom end template.",
+      "description_zh": "自定义结束模板。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/metergroup/",
+  "methods": []
+}

@@ -1,0 +1,249 @@
+{
+  "name": "OrderList",
+  "props": {
+    "modelValue": {
+      "default": "",
+      "description": "Value of the component.",
+      "description_zh": "组件的值。",
+      "type": "any[]",
+      "value": "",
+      "required": false
+    },
+    "dataKey": {
+      "default": "",
+      "description": "Name of the field that uniquely identifies the a record in the data.",
+      "description_zh": "唯一标识数据中 a 记录的字段的名称。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "selection": {
+      "default": "",
+      "description": "Selected items in the list.",
+      "description_zh": "列表中的选定项目。",
+      "type": "any[]",
+      "value": "",
+      "required": false
+    },
+    "metaKeySelection": {
+      "default": "false",
+      "description": "Defines whether metaKey is required or not for the selection.\nWhen true metaKey needs to be pressed to select or unselect an item and\nwhen set to false selection of each item can be toggled individually. On touch enabled devices, metaKeySelection is turned off automatically.",
+      "description_zh": "定义选择是否需要 metaKey。\n当需要按下 true metaKey 来选择或取消选择项目，并且\n当设置为 false 时，可以单独切换每个项目的选择。在支持触摸的设备上，metaKeySelection 会自动关闭。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "autoOptionFocus": {
+      "default": "true",
+      "description": "Whether to focus on the first visible or selected element.",
+      "description_zh": "是关注第一个可见元素还是选定元素。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "focusOnHover": {
+      "default": "true",
+      "description": "When enabled, the focus is placed on the hovered option.",
+      "description_zh": "启用后，焦点将放在悬停的选项上。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "listStyle": {
+      "default": "",
+      "description": "Inline style of the the list element.",
+      "description_zh": "list 元素的内联样式。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "responsive": {
+      "default": "true",
+      "description": "Whether the list optimizes layout based on screen size.",
+      "description_zh": "列表是否根据屏幕大小优化布局。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "breakpoint": {
+      "default": "960px",
+      "description": "The breakpoint to define the maximum width boundary when responsiveness is enabled.",
+      "description_zh": "启用响应能力时用于定义最大宽度边界的断点。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "striped": {
+      "default": "false",
+      "description": "Whether to displays rows with alternating colors.",
+      "description_zh": "是否显示具有交替颜色的行。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "tabindex": {
+      "default": "",
+      "description": "Index of the element in tabbing order.",
+      "description_zh": "按 Tab 键顺序排列的元素索引。",
+      "type": "string | number",
+      "value": "",
+      "required": false
+    },
+    "scrollHeight": {
+      "default": "14rem",
+      "description": "Height of the viewport, a scrollbar is defined if height of list exceeds this value.",
+      "description_zh": "视区的高度，如果列表的高度超过此值，则定义滚动条。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "buttonProps": {
+      "default": "",
+      "description": "Used to pass all properties of the ButtonProps to the button inside the component.",
+      "description_zh": "用于将 ButtonProps 的所有属性传递给组件内的按钮。",
+      "type": "object",
+      "value": "",
+      "required": false
+    },
+    "moveUpButtonProps": {
+      "default": "",
+      "description": "Used to pass all properties of the ButtonProps to the move up button inside the component.",
+      "description_zh": "用于将 ButtonProps 的所有属性传递给组件内的上移按钮。",
+      "type": "object",
+      "value": "",
+      "required": false
+    },
+    "moveTopButtonProps": {
+      "default": "",
+      "description": "Used to pass all properties of the ButtonProps to the move top button inside the component.",
+      "description_zh": "用于将 ButtonProps 的所有属性传递给组件内的 move top 按钮。",
+      "type": "object",
+      "value": "",
+      "required": false
+    },
+    "moveDownButtonProps": {
+      "default": "",
+      "description": "Used to pass all properties of the ButtonProps to the move down button inside the component.",
+      "description_zh": "用于将 ButtonProps 的所有属性传递给组件内的 move down 按钮。",
+      "type": "object",
+      "value": "",
+      "required": false
+    },
+    "moveBottomButtonProps": {
+      "default": "",
+      "description": "Used to pass all properties of the ButtonProps to the move bottom button inside the component.",
+      "description_zh": "用于将 ButtonProps 的所有属性传递给组件内部的 move bottom 按钮。",
+      "type": "object",
+      "value": "",
+      "required": false
+    },
+    "ariaLabel": {
+      "default": "",
+      "description": "Defines a string value that labels an interactive list element.",
+      "description_zh": "定义用于标记交互式列表元素的字符串值。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "ariaLabelledby": {
+      "default": "",
+      "description": "Identifier of the underlying list element.",
+      "description_zh": "基础 list 元素的标识符。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<OrderListPassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "header",
+      "params": "",
+      "description": "Custom header template.",
+      "description_zh": "自定义标头模板。"
+    },
+    {
+      "name": "item",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">item</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Item of the component</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">selected</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Selection state</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">index</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Index of the item.</span>\n }",
+      "description": "",
+      "description_zh": ""
+    },
+    {
+      "name": "option",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">option</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Option of the component</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">selected</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Selection state</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">index</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Index of the option.</span>\n }",
+      "description": "Custom option template.",
+      "description_zh": "自定义选项模板。"
+    },
+    {
+      "name": "controlsstart",
+      "params": "",
+      "description": "Custom controls start template.",
+      "description_zh": "自定义控件启动模板。"
+    },
+    {
+      "name": "controlsend",
+      "params": "",
+      "description": "Custom controls end template.",
+      "description_zh": "自定义控件结束模板。"
+    },
+    {
+      "name": "moveupicon",
+      "params": "",
+      "description": "Custom move up icon template.",
+      "description_zh": "自定义上移图标模板。"
+    },
+    {
+      "name": "movetopicon",
+      "params": "",
+      "description": "Custom move top icon template.",
+      "description_zh": "自定义 Move Top 图标模板。"
+    },
+    {
+      "name": "movedownicon",
+      "params": "",
+      "description": "Custom move down icon template.",
+      "description_zh": "自定义下移图标模板。"
+    },
+    {
+      "name": "movebottomicon",
+      "params": "",
+      "description": "Custom move bottom icon template.",
+      "description_zh": "自定义 move bottom 图标模板。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/orderlist/",
+  "methods": []
+}

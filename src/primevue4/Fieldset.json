@@ -1,0 +1,93 @@
+{
+  "name": "Fieldset",
+  "props": {
+    "legend": {
+      "default": "",
+      "description": "Header text of the fieldset.",
+      "description_zh": "字段集的标题文本。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "toggleable": {
+      "default": "false",
+      "description": "When specified, content can toggled by clicking the legend.",
+      "description_zh": "指定后，可以通过单击图例来切换内容。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "collapsed": {
+      "default": "false",
+      "description": "Defines the default visibility state of the content.",
+      "description_zh": "定义内容的默认可见性状态。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "toggleButtonProps": {
+      "default": "",
+      "description": "Used to pass the custom value to read for the AnchorHTMLAttributes inside the component.",
+      "description_zh": "用于传递要读取组件内部 AnchorHTMLAttributes 的自定义值。",
+      "type": "AnchorHTMLAttributes",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<FieldsetPassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "legend",
+      "params": "{\n \t <span class=\"ml-3 doc-option-parameter-name\">toggleCallback</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">event</span>: Event) &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Toggle function.</span>\n}",
+      "description": "Custom legend template.",
+      "description_zh": "自定义图例模板。"
+    },
+    {
+      "name": "togglericon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">collapsed</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Collapsed state as a boolean</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the icon.</span>\n }",
+      "description": "",
+      "description_zh": ""
+    },
+    {
+      "name": "toggleicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">collapsed</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Collapsed state as a boolean</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the icon.</span>\n }",
+      "description": "Custom toggler icon template.",
+      "description_zh": "自定义切换器图标模板。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/fieldset/",
+  "methods": []
+}

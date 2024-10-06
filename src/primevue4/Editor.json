@@ -1,0 +1,90 @@
+{
+  "name": "Editor",
+  "props": {
+    "modelValue": {
+      "default": "",
+      "description": "Value of the content.",
+      "description_zh": "内容的值。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "placeholder": {
+      "default": "",
+      "description": "Placeholder text to show when editor is empty.",
+      "description_zh": "编辑器为空时显示的占位符文本。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "readonly": {
+      "default": "false",
+      "description": "Whether to instantiate the editor to readonly mode.",
+      "description_zh": "是否将编辑器实例化为 readonly 模式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "formats": {
+      "default": "",
+      "description": "Whitelist of formats to display, see  <a target=\"_blank\" href=\"https://quilljs.com/docs/formats/\">here</a>  for available options.",
+      "description_zh": "要显示的格式白名单，请参阅 <a target=“_blank” href=“https://quilljs.com/docs/formats/”>此处</a>的可用选项。",
+      "type": "any[]",
+      "value": "",
+      "required": false
+    },
+    "editorStyle": {
+      "default": "",
+      "description": "Inline style of the container.",
+      "description_zh": "容器的内联样式。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "modules": {
+      "default": "",
+      "description": "Modules configuration, see  <a target=\"_blank\" href=\"https://quilljs.com/docs/modules/\">here</a>  for available options.",
+      "description_zh": "模块配置，请参阅 <a target=“_blank” href=“https://quilljs.com/docs/modules/”>此处</a>的可用选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<EditorPassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [],
+  "suggestions": [],
+  "link": "https://primevue.org/editor/",
+  "methods": []
+}

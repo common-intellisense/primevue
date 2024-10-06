@@ -1,0 +1,121 @@
+{
+  "name": "InputOtp",
+  "props": {
+    "modelValue": {
+      "default": "null",
+      "description": "Specifies whether a inputotp should be checked or not.",
+      "description_zh": "指定是否应检查 inputotp。",
+      "type": "string | boolean",
+      "value": "",
+      "required": false
+    },
+    "invalid": {
+      "default": "false",
+      "description": "When present, it specifies that the component should have invalid state style.",
+      "description_zh": "如果存在，则它指定组件应具有无效的状态样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "disabled": {
+      "default": "false",
+      "description": "When present, it specifies that the component should be disabled.",
+      "description_zh": "如果存在，则它指定应禁用该组件。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "readonly": {
+      "default": "false",
+      "description": "When present, it specifies that an input field is read-only.",
+      "description_zh": "如果存在，则指定输入字段为只读。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "variant": {
+      "default": "outlined",
+      "description": "Specifies the input variant of the component.",
+      "description_zh": "指定组件的输入变量。",
+      "type": "outlined / filled",
+      "value": "",
+      "required": false
+    },
+    "tabindex": {
+      "default": "",
+      "description": "Index of the element in tabbing order.",
+      "description_zh": "按 Tab 键顺序排列的元素索引。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "length": {
+      "default": "4",
+      "description": "Number of characters to initiate.",
+      "description_zh": "要启动的字符数。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "mask": {
+      "default": "false",
+      "description": "Mask pattern.",
+      "description_zh": "蒙版图案。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "integerOnly": {
+      "default": "false",
+      "description": "When present, it specifies that an input field is integer-only.",
+      "description_zh": "如果存在，则指定输入字段仅为整数。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<InputOtpPassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "default",
+      "params": "{\n \t <span class=\"ml-3 doc-option-parameter-name\">events</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">index</span>: number) &rArr; InputOtpTemplateEvents</span>, <span class=\"doc-option-parameter-type\">// Events of the component</span>\n\t <span class=\"ml-3 doc-option-parameter-name\">attrs</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">index</span>: number) &rArr; InputOtpTemplateAttrsOptions</span>, <span class=\"doc-option-parameter-type\">// Attributes of the component</span>\n \t <span class=\"ml-3 doc-option-parameter-name\">index</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Index of the input field</span>\n }",
+      "description": "Default content slot.",
+      "description_zh": "默认内容槽。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/inputotp/",
+  "methods": []
+}

@@ -1,0 +1,561 @@
+{
+  "name": "MultiSelect",
+  "props": {
+    "modelValue": {
+      "default": "",
+      "description": "Value of the component.",
+      "description_zh": "组件的值。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "options": {
+      "default": "",
+      "description": "An array of select items to display as the available options.",
+      "description_zh": "要显示为可用选项的选定项的数组。",
+      "type": "any[]",
+      "value": "",
+      "required": false
+    },
+    "optionLabel": {
+      "default": "",
+      "description": "Property name or getter function to use as the label of an option.",
+      "description_zh": "用作选项标签的属性名称或 getter 函数。",
+      "type": "string | Function",
+      "value": "",
+      "required": false
+    },
+    "optionValue": {
+      "default": "",
+      "description": "Property name or getter function to use as the value of an option, defaults to the option itself when not defined.",
+      "description_zh": "用作选项值的属性名称或 getter 函数，如果未定义，则默认为选项本身。",
+      "type": "string | Function",
+      "value": "",
+      "required": false
+    },
+    "optionDisabled": {
+      "default": "",
+      "description": "Property name or getter function to use as the disabled flag of an option, defaults to false when not defined.",
+      "description_zh": "用作选项的 disabled 标志的属性名称或 getter 函数，如果未定义，则默认为 false。",
+      "type": "string | Function",
+      "value": "",
+      "required": false
+    },
+    "optionGroupLabel": {
+      "default": "",
+      "description": "Property name or getter function to use as the label of an option group.",
+      "description_zh": "用作选项组标签的属性名称或 getter 函数。",
+      "type": "string | Function",
+      "value": "",
+      "required": false
+    },
+    "optionGroupChildren": {
+      "default": "",
+      "description": "Property name or getter function that refers to the children options of option group.",
+      "description_zh": "引用选项 group 的子选项的属性名称或 getter 函数。",
+      "type": "string | Function",
+      "value": "",
+      "required": false
+    },
+    "scrollHeight": {
+      "default": "14rem",
+      "description": "Height of the viewport, a scrollbar is defined if height of list exceeds this value.",
+      "description_zh": "视区的高度，如果列表的高度超过此值，则定义滚动条。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "placeholder": {
+      "default": "",
+      "description": "Label to display when there are no selections.",
+      "description_zh": "没有选择项时显示的标签。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "invalid": {
+      "default": "false",
+      "description": "When present, it specifies that the component should have invalid state style.",
+      "description_zh": "如果存在，则它指定组件应具有无效的状态样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "disabled": {
+      "default": "false",
+      "description": "When present, it specifies that the component should be disabled.",
+      "description_zh": "如果存在，则它指定应禁用该组件。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "variant": {
+      "default": "outlined",
+      "description": "Specifies the input variant of the component.",
+      "description_zh": "指定组件的输入变量。",
+      "type": "outlined / filled",
+      "value": "",
+      "required": false
+    },
+    "fluid": {
+      "default": "null",
+      "description": "Spans 100% width of the container when enabled.",
+      "description_zh": "启用后，跨度为容器的 100% 宽度。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "inputId": {
+      "default": "",
+      "description": "Identifier of the underlying input element.",
+      "description_zh": "基础 input 元素的标识符。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "panelStyle": {
+      "default": "",
+      "description": "",
+      "description_zh": "",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "panelClass": {
+      "default": "",
+      "description": "",
+      "description_zh": "",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "overlayStyle": {
+      "default": "",
+      "description": "Inline style of the overlay.",
+      "description_zh": "叠加层的内联样式。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "overlayClass": {
+      "default": "",
+      "description": "Style class of the overlay.",
+      "description_zh": "Style 类。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "dataKey": {
+      "default": "",
+      "description": "A property to uniquely identify an option.",
+      "description_zh": "用于唯一标识选项的属性。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "filter": {
+      "default": "false",
+      "description": "When specified, displays a filter input at header.",
+      "description_zh": "指定后，在 header 处显示筛选条件输入。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "filterPlaceholder": {
+      "default": "",
+      "description": "Placeholder text to show when filter input is empty.",
+      "description_zh": "筛选器输入为空时显示的占位符文本。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "filterLocale": {
+      "default": "",
+      "description": "Locale to use in filtering. The default locale is the host environment's current locale.",
+      "description_zh": "筛选中使用的区域设置。默认区域设置是主机环境的当前区域设置。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "filterMatchMode": {
+      "default": "contains",
+      "description": "Defines the filtering algorithm to use when searching the options.",
+      "description_zh": "定义搜索选项时要使用的筛选算法。",
+      "type": "HintedString<\"startsWith\" | \"contains\" | \"endsWith\">",
+      "value": "",
+      "required": false
+    },
+    "filterFields": {
+      "default": "",
+      "description": "Fields used when filtering the options, defaults to optionLabel.",
+      "description_zh": "筛选选项时使用的字段，默认为 optionLabel。",
+      "type": "string[]",
+      "value": "",
+      "required": false
+    },
+    "appendTo": {
+      "default": "body",
+      "description": "A valid query selector or an HTMLElement to specify where the overlay gets attached. Special keywords are 'body' for document body and 'self' for the element itself.",
+      "description_zh": "一个有效的查询选择器或一个 HTMLElement，用于指定覆盖层的附加位置。特殊关键字是 'body' 表示文档正文，'self' 表示元素本身。",
+      "type": "HTMLElement | HintedString<\"body\" | \"self\">",
+      "value": "",
+      "required": false
+    },
+    "display": {
+      "default": "comma",
+      "description": "Defines how the selected items are displayed.",
+      "description_zh": "定义选定项目的显示方式。",
+      "type": "comma / chip",
+      "value": "",
+      "required": false
+    },
+    "selectedItemsLabel": {
+      "default": "null",
+      "description": "Label to display after exceeding max selected labels.",
+      "description_zh": "在超过最大选定标签数后显示的标签。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "maxSelectedLabels": {
+      "default": "",
+      "description": "Decides how many selected item labels to show at most.",
+      "description_zh": "决定最多显示多少个选定项目标签。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "selectionLimit": {
+      "default": "",
+      "description": "Maximum number of selectable items.",
+      "description_zh": "最大可选择项数。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "showToggleAll": {
+      "default": "true",
+      "description": "Whether to show the header checkbox to toggle the selection of all items at once.",
+      "description_zh": "是否显示 header 复选框以一次切换所有项目的选择。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "loading": {
+      "default": "false",
+      "description": "Whether the multiselect is in loading state.",
+      "description_zh": "多选是否处于加载状态。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "checkboxIcon": {
+      "default": "",
+      "description": "Icon to display in the checkboxes.",
+      "description_zh": "图标以显示在复选框中。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "dropdownIcon": {
+      "default": "",
+      "description": "Icon to display in the dropdown.",
+      "description_zh": "图标以显示在下拉列表中。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "filterIcon": {
+      "default": "",
+      "description": "Icon to display in filter input.",
+      "description_zh": "要在筛选器输入中显示的图标。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "loadingIcon": {
+      "default": "",
+      "description": "Icon to display in loading state.",
+      "description_zh": "在加载状态下显示的图标。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "removeTokenIcon": {
+      "default": "",
+      "description": "Icon to display in chip remove action.",
+      "description_zh": "在芯片移除操作中显示的图标。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "chipIcon": {
+      "default": "",
+      "description": "Icon to display in chip remove action.",
+      "description_zh": "在芯片移除操作中显示的图标。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "selectAll": {
+      "default": "false",
+      "description": "Whether all data is selected.",
+      "description_zh": "是否选择所有数据。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "resetFilterOnHide": {
+      "default": "false",
+      "description": "Clears the filter value when hiding the dropdown.",
+      "description_zh": "在隐藏下拉列表时清除过滤器值。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "virtualScrollerOptions": {
+      "default": "",
+      "description": "Whether to use the virtualScroller feature. The properties of VirtualScroller component can be used like an object in it.",
+      "description_zh": "是否使用 virtualScroller 功能。VirtualScroller 组件的属性可以像其中的对象一样使用。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "autoOptionFocus": {
+      "default": "false",
+      "description": "Whether to focus on the first visible or selected element when the overlay panel is shown.",
+      "description_zh": "显示叠加面板时，是聚焦于第一个可见元素还是选定元素。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "autoFilterFocus": {
+      "default": "false",
+      "description": "Whether to focus on the filter element when the overlay panel is shown.",
+      "description_zh": "显示叠加面板时是否聚焦于过滤器元素。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "focusOnHover": {
+      "default": "true",
+      "description": "When enabled, the focus is placed on the hovered option.",
+      "description_zh": "启用后，焦点将放在悬停的选项上。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "highlightOnSelect": {
+      "default": "false",
+      "description": "Highlights automatically the first item.",
+      "description_zh": "自动高亮显示第一项。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "filterMessage": {
+      "default": "'{0} results are available'",
+      "description": "Text to be displayed in hidden accessible field when filtering returns any results. Defaults to value from PrimeVue locale configuration.",
+      "description_zh": "筛选时要在隐藏的可访问字段中显示的文本会返回任何结果。默认为 PrimeVue locale 配置中的 value。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "selectionMessage": {
+      "default": "null",
+      "description": "Text to be displayed in hidden accessible field when options are selected. Defaults to value from PrimeVue locale configuration.",
+      "description_zh": "选择选项时要在隐藏的可访问字段中显示的文本。默认为 PrimeVue locale 配置中的 value。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "emptySelectionMessage": {
+      "default": "No selected item",
+      "description": "Text to be displayed in hidden accessible field when any option is not selected. Defaults to value from PrimeVue locale configuration.",
+      "description_zh": "未选择任何选项时，要在隐藏的可访问字段中显示的文本。默认为 PrimeVue locale 配置中的 value。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "emptyFilterMessage": {
+      "default": "No results found",
+      "description": "Text to display when filtering does not return any results. Defaults to value from PrimeVue locale configuration.",
+      "description_zh": "筛选时显示的文本不会返回任何结果。默认为 PrimeVue locale 配置中的 value。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "emptyMessage": {
+      "default": "No available options'",
+      "description": "Text to display when there are no options available. Defaults to value from PrimeVue locale configuration.",
+      "description_zh": "没有可用选项时显示的文本。默认为 PrimeVue locale 配置中的 value。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "tabindex": {
+      "default": "",
+      "description": "Index of the element in tabbing order.",
+      "description_zh": "按 Tab 键顺序排列的元素索引。",
+      "type": "string | number",
+      "value": "",
+      "required": false
+    },
+    "ariaLabel": {
+      "default": "",
+      "description": "Defines a string value that labels an interactive element.",
+      "description_zh": "定义用于标记交互式元素的字符串值。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "ariaLabelledby": {
+      "default": "",
+      "description": "Identifier of the underlying input element.",
+      "description_zh": "基础 input 元素的标识符。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<MultiSelectPassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "value",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">value</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Value of the component</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">placeholder</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Placeholder prop value</span>\n }",
+      "description": "Custom value template.",
+      "description_zh": "自定义值模板。"
+    },
+    {
+      "name": "chip",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">value</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// A value in the selection</span>\n }",
+      "description": "Custom chip template.",
+      "description_zh": "自定义芯片模板。"
+    },
+    {
+      "name": "header",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">value</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Value of the component</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">options</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Displayed options</span>\n }",
+      "description": "Custom header template.",
+      "description_zh": "自定义标头模板。"
+    },
+    {
+      "name": "footer",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">value</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Value of the component</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">options</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Displayed options</span>\n }",
+      "description": "Custom footer template.",
+      "description_zh": "自定义页脚模板。"
+    },
+    {
+      "name": "option",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">option</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Option instance</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">selected</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Selection state</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">index</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Index of the option</span>\n }",
+      "description": "Custom option template.",
+      "description_zh": "自定义选项模板。"
+    },
+    {
+      "name": "optiongroup",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">option</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Option instance</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">index</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Index of the option</span>\n }",
+      "description": "Custom option group template.",
+      "description_zh": "自定义选项组模板。"
+    },
+    {
+      "name": "emptyfilter",
+      "params": "",
+      "description": "Custom emptyfilter template.",
+      "description_zh": "自定义 emptyfilter 模板。"
+    },
+    {
+      "name": "empty",
+      "params": "",
+      "description": "Custom empty template.",
+      "description_zh": "自定义空模板。"
+    },
+    {
+      "name": "content",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">items</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// An array of objects to display for virtualscroller</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">styleClass</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the component</span>\n \t <span class=\"ml-3 doc-option-parameter-name\">contentRef</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">el</span>: any) &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Referance of the content</span>\n\t <span class=\"ml-3 doc-option-parameter-name\">getItemOptions</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">index</span>: number) &rArr; VirtualScrollerItemOptions</span>, <span class=\"doc-option-parameter-type\">// Options of the items</span>\n}",
+      "description": "Custom content template.",
+      "description_zh": "自定义内容模板。"
+    },
+    {
+      "name": "loader",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">options</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Options of the loader items for virtualscroller</span>\n }",
+      "description": "Custom loader template.",
+      "description_zh": "自定义加载器模板。"
+    },
+    {
+      "name": "removetokenicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the loading icon.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">item</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Item of the token.</span>\n \t <span class=\"ml-3 doc-option-parameter-name\">removeCallback</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">event</span>: Event, <span class=\"doc-option-parameter-name\">item</span>: any) &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Chip icon function.</span>\n}",
+      "description": "",
+      "description_zh": ""
+    },
+    {
+      "name": "chipicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the loading icon.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">item</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Item of the token.</span>\n \t <span class=\"ml-3 doc-option-parameter-name\">removeCallback</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">event</span>: Event, <span class=\"doc-option-parameter-name\">item</span>: any) &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Chip icon function.</span>\n}",
+      "description": "Custom chip icon template.",
+      "description_zh": "自定义条状图标模板。"
+    },
+    {
+      "name": "headercheckboxicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">allSelected</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Options of the loader items for virtualscroller</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the loading icon.</span>\n }",
+      "description": "Custom header checkbox icon template.",
+      "description_zh": "自定义标题复选框图标模板。"
+    },
+    {
+      "name": "filtericon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the loading icon.</span>\n }",
+      "description": "Custom filter icon template.",
+      "description_zh": "自定义筛选器图标模板。"
+    },
+    {
+      "name": "itemcheckboxicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">selected</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Options of the loader items for virtualscroller</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the loading icon.</span>\n }",
+      "description": "Custom item checkbox icon template.",
+      "description_zh": "自定义项目复选框图标模板。"
+    },
+    {
+      "name": "loadingicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the loading icon.</span>\n }",
+      "description": "Custom loading icon template.",
+      "description_zh": "自定义加载图标模板。"
+    },
+    {
+      "name": "dropdownicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the loading icon.</span>\n }",
+      "description": "Custom dropdown icon template.",
+      "description_zh": "自定义下拉图标模板。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/multiselect/",
+  "methods": []
+}

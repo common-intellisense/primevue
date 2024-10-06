@@ -1,0 +1,143 @@
+{
+  "name": "TabPanel",
+  "props": {
+    "value": {
+      "default": "",
+      "description": "Value of tabpanel.",
+      "description_zh": "tabpanel 的值。",
+      "type": "string | number",
+      "value": "",
+      "required": false
+    },
+    "as": {
+      "default": "DIV",
+      "description": "Use to change the HTML tag of root element.",
+      "description_zh": "用于更改根元素的 HTML 标记。",
+      "type": "string | Component",
+      "value": "",
+      "required": false
+    },
+    "asChild": {
+      "default": "false",
+      "description": "When enabled, it changes the default rendered element for the one passed as a child element.",
+      "description_zh": "启用后，它会更改作为子元素传递的元素的默认渲染元素。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "header": {
+      "default": "",
+      "description": "Orientation of tab headers.",
+      "description_zh": "选项卡标题的方向。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "headerStyle": {
+      "default": "",
+      "description": "Inline style of the tab header.",
+      "description_zh": "选项卡标题的内联样式。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "headerClass": {
+      "default": "",
+      "description": "Style class of the tab header.",
+      "description_zh": "Style 类。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "headerProps": {
+      "default": "",
+      "description": "Used to pass all properties of the HTMLLiElement to the tab header.",
+      "description_zh": "用于将 HTMLLiElement 的所有属性传递给 Tab 页头。",
+      "type": "LiHTMLAttributes",
+      "value": "",
+      "required": false
+    },
+    "headerActionProps": {
+      "default": "",
+      "description": "Used to pass all properties of the HTMLAnchorElement to the focusable anchor element inside the tab header.",
+      "description_zh": "用于将 HTMLAnchorElement 的所有属性传递给选项卡标题内的可聚焦锚点元素。",
+      "type": "AnchorHTMLAttributes",
+      "value": "",
+      "required": false
+    },
+    "contentStyle": {
+      "default": "",
+      "description": "Inline style of the tab content.",
+      "description_zh": "选项卡内容的内联样式。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "contentClass": {
+      "default": "",
+      "description": "Style class of the tab content.",
+      "description_zh": "Style 类。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "contentProps": {
+      "default": "",
+      "description": "Used to pass all properties of the HTMLDivElement to the tab content.",
+      "description_zh": "用于将 HTMLDivElement 的所有属性传递给选项卡内容。",
+      "type": "HTMLAttributes",
+      "value": "",
+      "required": false
+    },
+    "disabled": {
+      "default": "false",
+      "description": "Whether the tab is disabled.",
+      "description_zh": "选项卡是否被禁用。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<TabPanelPassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "default",
+      "params": "",
+      "description": "Custom content template.",
+      "description_zh": "自定义内容模板。"
+    },
+    {
+      "name": "header",
+      "params": "",
+      "description": "Custom header template.",
+      "description_zh": "自定义标头模板。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/tabpanel/",
+  "methods": []
+}

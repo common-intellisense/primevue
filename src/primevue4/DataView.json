@@ -1,0 +1,213 @@
+{
+  "name": "DataView",
+  "props": {
+    "value": {
+      "default": "",
+      "description": "An array of objects to display.",
+      "description_zh": "要显示的对象数组。",
+      "type": "any[]",
+      "value": "",
+      "required": false
+    },
+    "layout": {
+      "default": "list",
+      "description": "Layout of the items, valid values are 'list' and 'grid'.",
+      "description_zh": "项的布局，有效值为 'list' 和 'grid'。",
+      "type": "list / grid",
+      "value": "",
+      "required": false
+    },
+    "rows": {
+      "default": "0",
+      "description": "Number of rows to display per page.",
+      "description_zh": "每页要显示的行数。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "first": {
+      "default": "0",
+      "description": "Index of the first record to render.",
+      "description_zh": "要呈现的第一条记录的索引。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "totalRecords": {
+      "default": "",
+      "description": "Number of total records, defaults to length of value when not defined.",
+      "description_zh": "总记录数，如果未定义，则默认为 length of value。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "paginator": {
+      "default": "false",
+      "description": "When specified as true, enables the pagination.",
+      "description_zh": "当指定为 true 时，启用分页。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "paginatorPosition": {
+      "default": "bottom",
+      "description": "Position of the paginator, options are 'top','bottom' or 'both'.",
+      "description_zh": "位置，选项为 'top'、'bottom' 或 'both'。",
+      "type": "top / bottom / both",
+      "value": "",
+      "required": false
+    },
+    "alwaysShowPaginator": {
+      "default": "true",
+      "description": "Whether to show it even there is only one page.",
+      "description_zh": "即使只有一个页面，是否也要显示它。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "paginatorTemplate": {
+      "default": "FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink RowsPerPageDropdown",
+      "description": "Template of the paginator. It can be customized using the template property using the predefined keys,\n\n- FirstPageLink\n- PrevPageLink\n- PageLinks\n- NextPageLink\n- LastPageLink\n- RowsPerPageDropdown\n- JumpToPageDropdown\n- JumpToPageInput\n- CurrentPageReport",
+      "description_zh": "分页器的模板。可以使用 template 属性和预定义的键\n\n- FirstPage链接\n- 上一页链接\n- 页面链接\n- NextPage链接\n- LastPageLink\n- RowsPerPageDropdown\n- JumpToPageDropdown\n- JumpToPageInput\n- 当前页面报告",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "pageLinkSize": {
+      "default": "5",
+      "description": "Number of page links to display.",
+      "description_zh": "要显示的页面链接数。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "rowsPerPageOptions": {
+      "default": "",
+      "description": "Array of integer values to display inside rows per page dropdown.",
+      "description_zh": "要在每页行数下拉列表中显示的整数值数组。",
+      "type": "number[]",
+      "value": "",
+      "required": false
+    },
+    "currentPageReportTemplate": {
+      "default": "'({currentPage} of {totalPages})'",
+      "description": "Template of the current page report element. It displays information about the pagination state.\n\n- {currentPage}\n- {totalPages}\n- {rows}\n- {first}\n- {last}\n- {totalRecords}",
+      "description_zh": "当前页报表元素的模板。它显示有关分页状态的信息。\n\n- {当前页面}\n- {总页数}\n- {行}\n- {第一}\n- {最后}\n- {总计记录}",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "sortField": {
+      "default": "",
+      "description": "Property name or a getter function of data to use in sorting by default.",
+      "description_zh": "默认情况下，用于排序的 data 的属性名称或 getter 函数。",
+      "type": "string | Function",
+      "value": "",
+      "required": false
+    },
+    "sortOrder": {
+      "default": "",
+      "description": "Order to sort the data by default.",
+      "description_zh": "Order 默认对数据进行排序。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "lazy": {
+      "default": "false",
+      "description": "Defines if data is loaded and interacted with in lazy manner.",
+      "description_zh": "定义是否以延迟方式加载数据并与之交互。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "dataKey": {
+      "default": "",
+      "description": "Name of the data that uniquely identifies the a record in the data.",
+      "description_zh": "唯一标识数据中 a 记录的数据的名称。",
+      "type": "undefined | string",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<DataViewPassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "header",
+      "params": "",
+      "description": "Custom header template.",
+      "description_zh": "自定义标头模板。"
+    },
+    {
+      "name": "footer",
+      "params": "",
+      "description": "Custom footer template.",
+      "description_zh": "自定义页脚模板。"
+    },
+    {
+      "name": "empty",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">layout</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Layout of the items.</span>\n }",
+      "description": "Custom empty template.",
+      "description_zh": "自定义空模板。"
+    },
+    {
+      "name": "paginatorstart",
+      "params": "",
+      "description": "Custom paginator start template.",
+      "description_zh": "自定义 paginator 启动模板。"
+    },
+    {
+      "name": "paginatorend",
+      "params": "",
+      "description": "Custom paginator end template.",
+      "description_zh": "自定义分页器结束模板。"
+    },
+    {
+      "name": "list",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">items</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Value of the component</span>\n }",
+      "description": "Custom list template.",
+      "description_zh": "自定义列表模板。"
+    },
+    {
+      "name": "grid",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">items</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Value of the component</span>\n }",
+      "description": "Custom list template.",
+      "description_zh": "自定义列表模板。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/dataview/",
+  "methods": []
+}

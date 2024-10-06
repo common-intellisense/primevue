@@ -1,0 +1,101 @@
+{
+  "name": "OrganizationChart",
+  "props": {
+    "value": {
+      "default": "",
+      "description": "Value of the component.",
+      "description_zh": "组件的值。",
+      "type": "OrganizationChartNode",
+      "value": "",
+      "required": false
+    },
+    "selectionKeys": {
+      "default": "",
+      "description": "A map instance of key-value pairs to represented the selected nodes.",
+      "description_zh": "用于表示所选节点的键值对的 map 实例。",
+      "type": "OrganizationChartSelectionKeys",
+      "value": "",
+      "required": false
+    },
+    "selectionMode": {
+      "default": "",
+      "description": "Type of the selection.",
+      "description_zh": "选择项的类型。",
+      "type": "single / multiple",
+      "value": "",
+      "required": false
+    },
+    "collapsedKeys": {
+      "default": "",
+      "description": "A map instance of key-value pairs to represented the collapsed nodes.",
+      "description_zh": "一个键值对的 map 实例，用于表示折叠的节点。",
+      "type": "OrganizationChartCollapsedKeys",
+      "value": "",
+      "required": false
+    },
+    "collapsible": {
+      "default": "false",
+      "description": "Whether the nodes can be expanded or toggled.",
+      "description_zh": "节点是否可以扩展或切换。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<OrganizationChartPassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "default",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">node</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Current node</span>\n }",
+      "description": "Custom content template.",
+      "description_zh": "自定义内容模板。"
+    },
+    {
+      "name": "togglericon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">expanded</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Curent state of the node</span>\n }",
+      "description": "",
+      "description_zh": ""
+    },
+    {
+      "name": "toggleicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">expanded</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Curent state of the node</span>\n }",
+      "description": "Custom toggler icon template.",
+      "description_zh": "自定义切换器图标模板。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/organizationchart/",
+  "methods": []
+}

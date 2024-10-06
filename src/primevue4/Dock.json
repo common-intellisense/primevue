@@ -1,0 +1,141 @@
+{
+  "name": "Dock",
+  "props": {
+    "model": {
+      "default": "",
+      "description": "MenuModel instance to define the action items.",
+      "description_zh": "MenuModel 实例来定义操作项。",
+      "type": "MenuItem[]",
+      "value": "",
+      "required": false
+    },
+    "position": {
+      "default": "bottom",
+      "description": "Position of element.",
+      "description_zh": "元素的位置。",
+      "type": "left / right / top / bottom",
+      "value": "",
+      "required": false
+    },
+    "class": {
+      "default": "",
+      "description": "Style class of the element.",
+      "description_zh": "Style 类。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "style": {
+      "default": "",
+      "description": "Inline style of the element.",
+      "description_zh": "元素的内联样式。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "breakpoint": {
+      "default": "960px",
+      "description": "The breakpoint to define the maximum width boundary.",
+      "description_zh": "用于定义最大宽度边界的断点。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "tooltipOptions": {
+      "default": "",
+      "description": "Whether to display the tooltip on items. The modifiers of Tooltip can be used like an object in it. Valid keys are 'event' and 'position'.",
+      "description_zh": "是否在项目上显示 tooltip。Tooltip 的修改器可以像其中的对象一样使用。有效键是 'event' 和 'position'。",
+      "type": "DockTooltipOptions",
+      "value": "",
+      "required": false
+    },
+    "menuId": {
+      "default": "",
+      "description": "Unique identifier of the menu.",
+      "description_zh": "菜单的唯一标识符。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "tabindex": {
+      "default": "",
+      "description": "Index of the element in tabbing order.",
+      "description_zh": "按 Tab 键顺序排列的元素索引。",
+      "type": "string | number",
+      "value": "",
+      "required": false
+    },
+    "ariaLabelledby": {
+      "default": "",
+      "description": "Establishes relationships between the component and label(s) where its value should be one or more element IDs.",
+      "description_zh": "在组件和标签之间建立关系，其中其值应为一个或多个元素 ID。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "ariaLabel": {
+      "default": "",
+      "description": "Establishes a string value that labels the component.",
+      "description_zh": "建立用于标记组件的字符串值。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<DockPassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "item",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">item</span>: <span class=\"doc-option-parameter-type\">MenuItem</span>, <span class=\"doc-option-parameter-type\">// Custom content for item.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">index</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Index of the menuitem</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">label</span>: <span class=\"doc-option-parameter-type\">undefined</span>, <span class=\"doc-option-parameter-type\">// Label property of the menuitem</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">props</span>: <span class=\"doc-option-parameter-type\">DockRouterBindProps</span>, <span class=\"doc-option-parameter-type\">// Binding properties of the menuitem</span>\n }",
+      "description": "Custom item content.",
+      "description_zh": "自定义项目内容。"
+    },
+    {
+      "name": "icon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">item</span>: <span class=\"doc-option-parameter-type\">MenuItem</span>, <span class=\"doc-option-parameter-type\">// Custom content for item icon.</span>\n }",
+      "description": "",
+      "description_zh": ""
+    },
+    {
+      "name": "itemicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">item</span>: <span class=\"doc-option-parameter-type\">MenuItem</span>, <span class=\"doc-option-parameter-type\">// Custom content for item icon.</span>\n }",
+      "description": "Custom icon content.",
+      "description_zh": "自定义图标内容。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/dock/",
+  "methods": []
+}

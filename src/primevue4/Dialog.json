@@ -1,0 +1,303 @@
+{
+  "name": "Dialog",
+  "props": {
+    "header": {
+      "default": "",
+      "description": "Title content of the dialog.",
+      "description_zh": "对话框的标题内容。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "footer": {
+      "default": "",
+      "description": "Footer content of the dialog.",
+      "description_zh": "对话框的页脚内容。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "visible": {
+      "default": "false",
+      "description": "Specifies the visibility of the dialog.",
+      "description_zh": "指定对话框的可见性。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "modal": {
+      "default": "false",
+      "description": "Defines if background should be blocked when dialog is displayed.",
+      "description_zh": "定义在显示对话框时是否应阻止背景。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "contentStyle": {
+      "default": "",
+      "description": "Style of the content section.",
+      "description_zh": "内容部分的样式。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "contentClass": {
+      "default": "",
+      "description": "Style class of the content section.",
+      "description_zh": "content 部分的 Style 类。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "contentProps": {
+      "default": "",
+      "description": "Used to pass all properties of the HTMLDivElement to the overlay Dialog inside the component.",
+      "description_zh": "用于将 HTMLDivElement 的所有属性传递给组件内的覆盖对话框。",
+      "type": "HTMLAttributes",
+      "value": "",
+      "required": false
+    },
+    "closable": {
+      "default": "true",
+      "description": "Adds a close icon to the header to hide the dialog.",
+      "description_zh": "向标题添加关闭图标以隐藏对话框。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "dismissableMask": {
+      "default": "false",
+      "description": "Specifies if clicking the modal background should hide the dialog.",
+      "description_zh": "指定单击模态背景是否应隐藏对话框。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "closeOnEscape": {
+      "default": "true",
+      "description": "Specifies if pressing escape key should hide the dialog.",
+      "description_zh": "指定按 Esc 键是否应隐藏对话框。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "showHeader": {
+      "default": "true",
+      "description": "Whether to show the header or not.",
+      "description_zh": "是否显示标题。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "blockScroll": {
+      "default": "false",
+      "description": "Whether background scroll should be blocked when dialog is visible.",
+      "description_zh": "当对话框可见时，是否应阻止背景滚动。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "baseZIndex": {
+      "default": "0",
+      "description": "Base zIndex value to use in layering.",
+      "description_zh": "要在分层中使用的 Base zIndex 值。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "autoZIndex": {
+      "default": "true",
+      "description": "Whether to automatically manage layering.",
+      "description_zh": "是否自动管理分层。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "position": {
+      "default": "center",
+      "description": "Position of the dialog.",
+      "description_zh": "对话框的位置。",
+      "type": "left / right / top / bottom / center / topleft / topright / bottomleft / bottomright",
+      "value": "",
+      "required": false
+    },
+    "maximizable": {
+      "default": "false",
+      "description": "Whether the dialog can be displayed full screen.",
+      "description_zh": "对话框是否可以全屏显示。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "breakpoints": {
+      "default": "",
+      "description": "Object literal to define widths per screen size.",
+      "description_zh": "Object literals 定义每个屏幕大小的宽度。",
+      "type": "DialogBreakpoints",
+      "value": "",
+      "required": false
+    },
+    "draggable": {
+      "default": "true",
+      "description": "Enables dragging to change the position using header.",
+      "description_zh": "启用拖动以使用 header 更改位置。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "keepInViewPort": {
+      "default": "true",
+      "description": "Keeps dialog in the viewport when dragging.",
+      "description_zh": "拖动时将对话框保留在视区中。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "minX": {
+      "default": "0.",
+      "description": "Minimum value for the left coordinate of dialog in dragging.",
+      "description_zh": "拖动时对话框左坐标的最小值。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "minY": {
+      "default": "0",
+      "description": "Minimum value for the top coordinate of dialog in dragging.",
+      "description_zh": "拖动时对话框的顶部坐标的最小值。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "appendTo": {
+      "default": "body",
+      "description": "A valid query selector or an HTMLElement to specify where the dialog gets attached.",
+      "description_zh": "一个有效的查询选择器或一个 HTMLElement，用于指定对话框的附加位置。",
+      "type": "HTMLElement | HintedString<\"body\" | \"self\">",
+      "value": "",
+      "required": false
+    },
+    "style": {
+      "default": "",
+      "description": "Style of the dynamic dialog.",
+      "description_zh": "动态对话框的样式。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "closeIcon": {
+      "default": "",
+      "description": "Icon to display in the dialog close button.",
+      "description_zh": "在对话框关闭按钮中显示的图标。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "maximizeIcon": {
+      "default": "",
+      "description": "Icon to display in the dialog maximize button when dialog is not maximized.",
+      "description_zh": "当对话框未最大化时，对话框最大化按钮中显示的图标。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "minimizeIcon": {
+      "default": "",
+      "description": "Icon to display in the dialog maximize button when dialog is minimized.",
+      "description_zh": "当对话框最小化时，对话框最大化按钮中显示的图标。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "closeButtonProps": {
+      "default": "",
+      "description": "Used to pass all properties of the ButtonProps to the Button component.",
+      "description_zh": "用于将 ButtonProps 的所有属性传递给 Button 组件。",
+      "type": "object",
+      "value": "",
+      "required": false
+    },
+    "maximizeButtonProps": {
+      "default": "",
+      "description": "Used to pass all properties of the ButtonProps to the Button component.",
+      "description_zh": "用于将 ButtonProps 的所有属性传递给 Button 组件。",
+      "type": "object",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<DialogPassThroughOptions<any>>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "default",
+      "params": "",
+      "description": "Default content slot.",
+      "description_zh": "默认内容槽。"
+    },
+    {
+      "name": "header",
+      "params": "",
+      "description": "Custom header template.",
+      "description_zh": "自定义标头模板。"
+    },
+    {
+      "name": "footer",
+      "params": "",
+      "description": "Custom footer template.",
+      "description_zh": "自定义页脚模板。"
+    },
+    {
+      "name": "closeicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Style class of the close icon</span>\n }",
+      "description": "Custom close icon template.",
+      "description_zh": "自定义关闭图标模板。"
+    },
+    {
+      "name": "maximizeicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">maximized</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Maximized state as a boolean</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Style class of the maximize icon</span>\n }",
+      "description": "Custom maximize icon template of dialog.",
+      "description_zh": "自定义最大化对话框的图标模板。"
+    },
+    {
+      "name": "container",
+      "params": "{\n \t <span class=\"ml-3 doc-option-parameter-name\">closeCallback</span>: <span class=\"doc-option-parameter-type\">() &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Close dialog function.</span>\n\t <span class=\"ml-3 doc-option-parameter-name\">maximizeCallback</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">event</span>: Event) &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Maximize/minimize dialog function.</span>\n}",
+      "description": "Custom container slot.",
+      "description_zh": "自定义容器槽。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/dialog/",
+  "methods": []
+}

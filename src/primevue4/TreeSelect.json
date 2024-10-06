@@ -1,0 +1,337 @@
+{
+  "name": "TreeSelect",
+  "props": {
+    "modelValue": {
+      "default": "",
+      "description": "Value of the component.",
+      "description_zh": "组件的值。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "options": {
+      "default": "",
+      "description": "An array of treenodes.",
+      "description_zh": "treenode 数组。",
+      "type": "TreeNode[]",
+      "value": "",
+      "required": false
+    },
+    "expandedKeys": {
+      "default": "",
+      "description": "A map of keys to represent the expansion state in controlled mode.",
+      "description_zh": "一个键映射，用于表示受控模式下的扩展状态。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "scrollHeight": {
+      "default": "20rem",
+      "description": "Height of the viewport, a scrollbar is defined if height of list exceeds this value.",
+      "description_zh": "视区的高度，如果列表的高度超过此值，则定义滚动条。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "placeholder": {
+      "default": "",
+      "description": "Label to display when there are no selections.",
+      "description_zh": "没有选择项时显示的标签。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "invalid": {
+      "default": "false",
+      "description": "When present, it specifies that the component should have invalid state style.",
+      "description_zh": "如果存在，则它指定组件应具有无效的状态样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "disabled": {
+      "default": "false",
+      "description": "When present, it specifies that the component should be disabled.",
+      "description_zh": "如果存在，则它指定应禁用该组件。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "variant": {
+      "default": "outlined",
+      "description": "Specifies the input variant of the component.",
+      "description_zh": "指定组件的输入变量。",
+      "type": "outlined / filled",
+      "value": "",
+      "required": false
+    },
+    "tabindex": {
+      "default": "",
+      "description": "Index of the element in tabbing order.",
+      "description_zh": "按 Tab 键顺序排列的元素索引。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "selectionMode": {
+      "default": "",
+      "description": "Defines the selection mode.",
+      "description_zh": "定义选择模式。",
+      "type": "single / multiple / checkbox",
+      "value": "",
+      "required": false
+    },
+    "fluid": {
+      "default": "null",
+      "description": "Spans 100% width of the container when enabled.",
+      "description_zh": "启用后，跨度为容器的 100% 宽度。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "appendTo": {
+      "default": "body",
+      "description": "A valid query selector or an HTMLElement to specify where the overlay gets attached.",
+      "description_zh": "一个有效的查询选择器或一个 HTMLElement，用于指定覆盖层的附加位置。",
+      "type": "HTMLElement | HintedString<\"body\" | \"self\">",
+      "value": "",
+      "required": false
+    },
+    "emptyMessage": {
+      "default": "No available options",
+      "description": "Text to display when there are no options available. Defaults to value from PrimeVue locale configuration.",
+      "description_zh": "没有可用选项时显示的文本。默认为 PrimeVue locale 配置中的 value。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "display": {
+      "default": "comma",
+      "description": "Defines how the selected items are displayed.",
+      "description_zh": "定义选定项目的显示方式。",
+      "type": "comma / chip",
+      "value": "",
+      "required": false
+    },
+    "metaKeySelection": {
+      "default": "false",
+      "description": "Defines how multiple items can be selected, when true metaKey needs to be pressed to select or unselect an item and when set to false selection of each item can be toggled individually.\nOn touch enabled devices, metaKeySelection is turned off automatically.",
+      "description_zh": "定义如何选择多个项目，何时需要按 true metaKey 来选择或取消选择项目，以及何时设置为 false 时可以单独切换每个项目的选择。\n在支持触摸的设备上，metaKeySelection 会自动关闭。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "loading": {
+      "default": "false",
+      "description": "Whether to display loading indicator.",
+      "description_zh": "是否显示加载指示器。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "loadingIcon": {
+      "default": "",
+      "description": "Icon to display when tree is loading.",
+      "description_zh": "加载树时显示的图标。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "loadingMode": {
+      "default": "mask",
+      "description": "Loading mode display.",
+      "description_zh": "加载模式显示。",
+      "type": "mask / icon",
+      "value": "",
+      "required": false
+    },
+    "filter": {
+      "default": "false",
+      "description": "When specified, displays an input field to filter the items.",
+      "description_zh": "指定后，显示一个输入字段以筛选项目。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "filterBy": {
+      "default": "label",
+      "description": "When filtering is enabled, filterBy decides which field or fields (comma separated) to search against. A callable taking a TreeNode can be provided instead of a list of field names.",
+      "description_zh": "启用筛选后， filterBy 决定要搜索的一个或多个字段（以逗号分隔）。可以提供采用 TreeNode 的可调用对象，而不是字段名称列表。",
+      "type": "string | Function",
+      "value": "",
+      "required": false
+    },
+    "filterMode": {
+      "default": "lenient",
+      "description": "Mode for filtering.",
+      "description_zh": "筛选模式。",
+      "type": "lenient / strict",
+      "value": "",
+      "required": false
+    },
+    "filterPlaceholder": {
+      "default": "",
+      "description": "Placeholder text to show when filter input is empty.",
+      "description_zh": "筛选器输入为空时显示的占位符文本。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "filterLocale": {
+      "default": "",
+      "description": "Locale to use in filtering. The default locale is the host environment's current locale.",
+      "description_zh": "筛选中使用的区域设置。默认区域设置是主机环境的当前区域设置。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "inputId": {
+      "default": "",
+      "description": "Identifier of the underlying input element.",
+      "description_zh": "基础 input 元素的标识符。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "inputClass": {
+      "default": "",
+      "description": "Style class of the input field.",
+      "description_zh": "Style 类。",
+      "type": "string | object",
+      "value": "",
+      "required": false
+    },
+    "inputStyle": {
+      "default": "",
+      "description": "Inline style of the input field.",
+      "description_zh": "输入字段的内联样式。",
+      "type": "object",
+      "value": "",
+      "required": false
+    },
+    "inputProps": {
+      "default": "",
+      "description": "Used to pass all properties of the HTMLInputElement to the focusable input element inside the component.",
+      "description_zh": "用于将 HTMLInputElement 的所有属性传递给组件内的可聚焦输入元素。",
+      "type": "InputHTMLAttributes",
+      "value": "",
+      "required": false
+    },
+    "panelClass": {
+      "default": "",
+      "description": "Style class of the overlay panel.",
+      "description_zh": "Style 类。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "ariaLabelledby": {
+      "default": "",
+      "description": "Establishes relationships between the component and label(s) where its value should be one or more element IDs.",
+      "description_zh": "在组件和标签之间建立关系，其中其值应为一个或多个元素 ID。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "ariaLabel": {
+      "default": "",
+      "description": "Establishes a string value that labels the component.",
+      "description_zh": "建立用于标记组件的字符串值。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<TreeSelectPassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "value",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">value</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Selected value</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">placeholder</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Placeholder</span>\n }",
+      "description": "Custom value template.",
+      "description_zh": "自定义值模板。"
+    },
+    {
+      "name": "header",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">value</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Selected value</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">options</span>: <span class=\"doc-option-parameter-type\">TreeNode</span>, <span class=\"doc-option-parameter-type\">// An array of treenodes.</span>\n }",
+      "description": "Custom header template.",
+      "description_zh": "自定义标头模板。"
+    },
+    {
+      "name": "footer",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">value</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Selected value</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">options</span>: <span class=\"doc-option-parameter-type\">TreeNode</span>, <span class=\"doc-option-parameter-type\">// An array of treenodes.</span>\n }",
+      "description": "Custom footer template.",
+      "description_zh": "自定义页脚模板。"
+    },
+    {
+      "name": "empty",
+      "params": "",
+      "description": "Custom empty template.",
+      "description_zh": "自定义空模板。"
+    },
+    {
+      "name": "triggericon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the icon.</span>\n }",
+      "description": "",
+      "description_zh": ""
+    },
+    {
+      "name": "dropdownicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the icon.</span>\n }",
+      "description": "Custom indicator template.",
+      "description_zh": "自定义指标模板。"
+    },
+    {
+      "name": "itemtogglericon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">node</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Node instance</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">expanded</span>: <span class=\"doc-option-parameter-type\">TreeNode</span>, <span class=\"doc-option-parameter-type\">// Expanded state of the node</span>\n }",
+      "description": "",
+      "description_zh": ""
+    },
+    {
+      "name": "itemtoggleicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">node</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Node instance</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">expanded</span>: <span class=\"doc-option-parameter-type\">TreeNode</span>, <span class=\"doc-option-parameter-type\">// Expanded state of the node</span>\n }",
+      "description": "Custom item toggle icon template.",
+      "description_zh": "自定义项目切换图标模板。"
+    },
+    {
+      "name": "itemcheckboxicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">checked</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Check state of the node</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">partialChecked</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Partial check state of the node</span>\n }",
+      "description": "Custom item checkbox icon template.",
+      "description_zh": "自定义项目复选框图标模板。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/treeselect/",
+  "methods": []
+}

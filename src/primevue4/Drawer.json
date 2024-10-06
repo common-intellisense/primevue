@@ -1,0 +1,161 @@
+{
+  "name": "Drawer",
+  "props": {
+    "visible": {
+      "default": "false",
+      "description": "Specifies the visibility of the dialog.",
+      "description_zh": "指定对话框的可见性。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "position": {
+      "default": "left",
+      "description": "Specifies the position of the drawer.",
+      "description_zh": "指定抽屉的位置。",
+      "type": "left / right / top / bottom / full",
+      "value": "",
+      "required": false
+    },
+    "header": {
+      "default": "",
+      "description": "Title content of the dialog.",
+      "description_zh": "对话框的标题内容。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "baseZIndex": {
+      "default": "0",
+      "description": "Base zIndex value to use in layering.",
+      "description_zh": "要在分层中使用的 Base zIndex 值。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "autoZIndex": {
+      "default": "true",
+      "description": "Whether to automatically manage layering.",
+      "description_zh": "是否自动管理分层。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "dismissable": {
+      "default": "true",
+      "description": "Whether clicking outside closes the panel.",
+      "description_zh": "单击外部是否关闭面板。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "showCloseIcon": {
+      "default": "true",
+      "description": "Whether to display a close icon inside the panel.",
+      "description_zh": "是否在面板内显示关闭图标。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "closeButtonProps": {
+      "default": "",
+      "description": "Used to pass the custom value to read for the button inside the component.",
+      "description_zh": "用于传递要读取组件内按钮的自定义值。",
+      "type": "object",
+      "value": "",
+      "required": false
+    },
+    "closeIcon": {
+      "default": "",
+      "description": "Icon to display in the drawer close button.",
+      "description_zh": "显示在抽屉关闭按钮中的图标。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "modal": {
+      "default": "true",
+      "description": "Whether to a modal layer behind the drawer.",
+      "description_zh": "是否在抽屉后面的模态层。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "blockScroll": {
+      "default": "false",
+      "description": "Whether background scroll should be blocked when drawer is visible.",
+      "description_zh": "当抽屉可见时是否应阻止背景滚动。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<DrawerPassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "default",
+      "params": "",
+      "description": "Custom content template.",
+      "description_zh": "自定义内容模板。"
+    },
+    {
+      "name": "header",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Style class of the header title</span>\n }",
+      "description": "Custom header template.",
+      "description_zh": "自定义标头模板。"
+    },
+    {
+      "name": "closeicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Style class of the close icon</span>\n }",
+      "description": "Custom close icon template.",
+      "description_zh": "自定义关闭图标模板。"
+    },
+    {
+      "name": "container",
+      "params": "{\n \t <span class=\"ml-3 doc-option-parameter-name\">closeCallback</span>: <span class=\"doc-option-parameter-type\">() &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Close drawer function.</span>\n}",
+      "description": "Custom container slot.",
+      "description_zh": "自定义容器槽。"
+    },
+    {
+      "name": "footer",
+      "params": "",
+      "description": "Custom footer template.",
+      "description_zh": "自定义页脚模板。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/drawer/",
+  "methods": []
+}

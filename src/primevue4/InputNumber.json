@@ -1,0 +1,375 @@
+{
+  "name": "InputNumber",
+  "props": {
+    "modelValue": {
+      "default": "",
+      "description": "Value of the component.",
+      "description_zh": "组件的值。",
+      "type": "Nullable<number>",
+      "value": "",
+      "required": false
+    },
+    "format": {
+      "default": "true",
+      "description": "Whether to format the value.",
+      "description_zh": "是否设置值的格式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "showButtons": {
+      "default": "false",
+      "description": "Displays spinner buttons.",
+      "description_zh": "显示微调器按钮。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "buttonLayout": {
+      "default": "stacked",
+      "description": "Layout of the buttons.",
+      "description_zh": "按钮的布局。",
+      "type": "horizontal / vertical / stacked",
+      "value": "",
+      "required": false
+    },
+    "incrementButtonClass": {
+      "default": "",
+      "description": "Style class of the increment button.",
+      "description_zh": "Style 类。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "decrementButtonClass": {
+      "default": "",
+      "description": "Style class of the decrement button.",
+      "description_zh": "style 类。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "incrementButtonIcon": {
+      "default": "",
+      "description": "Style class of the increment icon.",
+      "description_zh": "Style 类。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "incrementIcon": {
+      "default": "",
+      "description": "Style class of the increment icon.",
+      "description_zh": "Style 类。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "decrementButtonIcon": {
+      "default": "",
+      "description": "Style class of the decrement icon.",
+      "description_zh": "Style 类。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "decrementIcon": {
+      "default": "",
+      "description": "Style class of the decrement icon.",
+      "description_zh": "Style 类。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "locale": {
+      "default": "",
+      "description": "Locale to be used in formatting.",
+      "description_zh": "要在格式化中使用的区域设置。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "localeMatcher": {
+      "default": "best fit",
+      "description": "The locale matching algorithm to use. Possible values are 'lookup' and 'best fit'; the default is 'best fit'.\nSee [Locale Negotation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl#locale_negotiation) for details.",
+      "description_zh": "要使用的区域设置匹配算法。可能的值为 'lookup' 和 'best fit';默认值为 'best fit'。\n有关详细信息，请参见 [Locale Negotation]（https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl#locale_negotiation）。",
+      "type": "lookup / best fit",
+      "value": "",
+      "required": false
+    },
+    "mode": {
+      "default": "decimal",
+      "description": "Defines the behavior of the component.",
+      "description_zh": "定义组件的行为。",
+      "type": "decimal / currency",
+      "value": "",
+      "required": false
+    },
+    "prefix": {
+      "default": "",
+      "description": "Text to display before the value.",
+      "description_zh": "要在值之前显示的文本。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "suffix": {
+      "default": "",
+      "description": "Text to display after the value.",
+      "description_zh": "要在值之后显示的文本。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "currency": {
+      "default": "",
+      "description": "The currency to use in currency formatting. Possible values are the [ISO 4217 currency codes](https://www.six-group.com/en/products-services/financial-information/data-standards.html#scrollTo=maintenance-agency), such as 'USD' for the US dollar, 'EUR' for the euro, or 'CNY' for the Chinese RMB.\nThere is no default value; if the style is 'currency', the currency property must be provided.",
+      "description_zh": "要在货币格式设置中使用的货币。可能的值为 [ISO 4217 货币代码]（https://www.six-group.com/en/products-services/financial-information/data-standards.html#scrollTo=maintenance-agency），例如“USD”代表美元，“EUR”代表欧元，“CNY”代表中国人民币。\n没有默认值;如果样式为 'currency'，则必须提供 currency 属性。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "currencyDisplay": {
+      "default": "symbol",
+      "description": "How to display the currency in currency formatting. Possible values are 'symbol' to use a localized currency symbol such as €, 'code' to use the ISO currency code, 'name' to use a localized currency name such as 'dollar'.",
+      "description_zh": "如何以货币格式显示货币。可能的值包括“symbol”以使用本地化货币符号（如 €），“code”以使用 ISO 货币代码，“name”以使用本地化货币名称（如“dollar”）。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "useGrouping": {
+      "default": "true",
+      "description": "Whether to use grouping separators, such as thousands separators or thousand/lakh/crore separators.",
+      "description_zh": "是否使用分组分隔符，例如千位分隔符或千/十万/千万分隔符。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "minFractionDigits": {
+      "default": "",
+      "description": "The minimum number of fraction digits to use. Possible values are from 0 to 20; the default for plain number and percent formatting is 0;\nthe default for currency formatting is the number of minor unit digits provided by the [ISO 4217 currency code](https://www.six-group.com/en/products-services/financial-information/data-standards.html#scrollTo=maintenance-agency) list (2 if the list doesn't provide that information).",
+      "description_zh": "要使用的最小小数位数。可能的值介于 0 到 20 之间;纯数字和百分比格式的默认值为 0;\n货币格式的默认值是 [ISO 4217 currency code]（https://www.six-group.com/en/products-services/financial-information/data-standards.html#scrollTo=maintenance-agency） 列表提供的次要单位位数（如果列表未提供该信息，则为 2）。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "maxFractionDigits": {
+      "default": "",
+      "description": "The maximum number of fraction digits to use. Possible values are from 0 to 20; the default for plain number formatting is the larger of minimumFractionDigits and 3;\nthe default for currency formatting is the larger of minimumFractionDigits and the number of minor unit digits provided by the [ISO 4217 currency code](https://www.six-group.com/en/products-services/financial-information/data-standards.html#scrollTo=maintenance-agency) list (2 if the list doesn't provide that information).",
+      "description_zh": "要使用的最大小数位数。可能的值介于 0 到 20 之间;纯数字格式的默认值是 minimumFractionDigits 和 3 中的较大者;\n货币格式的默认值是 minimumFractionDigits 和 [ISO 4217 货币代码]（https://www.six-group.com/en/products-services/financial-information/data-standards.html#scrollTo=maintenance-agency） 列表提供的次要单位位数中的较大值（如果列表未提供该信息，则为 2）。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "roundingMode": {
+      "default": "",
+      "description": "How decimals should be rounded.\nThe default value is  `\"halfExpand\"` , [further information](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat#roundingmode).",
+      "description_zh": "小数应如何四舍五入。\n默认值为 '“halfExpand”' ， [更多信息]（https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat#roundingmode）。",
+      "type": "RoundingMode",
+      "value": "",
+      "required": false
+    },
+    "min": {
+      "default": "",
+      "description": "Minimum boundary value.",
+      "description_zh": "最小边界值。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "max": {
+      "default": "",
+      "description": "Maximum boundary value.",
+      "description_zh": "最大边界值。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "step": {
+      "default": "1",
+      "description": "Step factor to increment/decrement the value.",
+      "description_zh": "递增/递减值的步长因子。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "allowEmpty": {
+      "default": "true",
+      "description": "Determines whether the input field is empty.",
+      "description_zh": "确定输入字段是否为空。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "highlightOnFocus": {
+      "default": "false",
+      "description": "Highlights automatically the input value.",
+      "description_zh": "自动高亮显示输入值。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "invalid": {
+      "default": "false",
+      "description": "When present, it specifies that the component should have invalid state style.",
+      "description_zh": "如果存在，则它指定组件应具有无效的状态样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "disabled": {
+      "default": "false",
+      "description": "When present, it specifies that the component should be disabled.",
+      "description_zh": "如果存在，则它指定应禁用该组件。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "variant": {
+      "default": "outlined",
+      "description": "Specifies the input variant of the component.",
+      "description_zh": "指定组件的输入变量。",
+      "type": "outlined / filled",
+      "value": "",
+      "required": false
+    },
+    "readonly": {
+      "default": "false",
+      "description": "When present, it specifies that an input field is read-only.",
+      "description_zh": "如果存在，则指定输入字段为只读。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "placeholder": {
+      "default": "",
+      "description": "Placeholder text for the input.",
+      "description_zh": "输入的占位符文本。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "fluid": {
+      "default": "null",
+      "description": "Spans 100% width of the container when enabled.",
+      "description_zh": "启用后，跨度为容器的 100% 宽度。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "inputId": {
+      "default": "",
+      "description": "Identifier of the focus input to match a label defined for the chips.",
+      "description_zh": "焦点输入的标识符，用于匹配为条状标签定义的标签。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "inputClass": {
+      "default": "",
+      "description": "Style class of the input field.",
+      "description_zh": "Style 类。",
+      "type": "string | object",
+      "value": "",
+      "required": false
+    },
+    "inputStyle": {
+      "default": "",
+      "description": "Inline style of the input field.",
+      "description_zh": "输入字段的内联样式。",
+      "type": "object",
+      "value": "",
+      "required": false
+    },
+    "ariaLabelledby": {
+      "default": "",
+      "description": "Establishes relationships between the component and label(s) where its value should be one or more element IDs.",
+      "description_zh": "在组件和标签之间建立关系，其中其值应为一个或多个元素 ID。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "ariaLabel": {
+      "default": "",
+      "description": "Establishes a string value that labels the component.",
+      "description_zh": "建立用于标记组件的字符串值。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<InputNumberPassThroughOptions<any>>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "incrementbutton",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">listeners</span>: <span class=\"doc-option-parameter-type\">InputNumberButtonListeners</span>, <span class=\"doc-option-parameter-type\">// InputNumber listeners</span>\n }",
+      "description": "Custom increment button template.",
+      "description_zh": "自定义增量按钮模板。"
+    },
+    {
+      "name": "decrementbutton",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">listeners</span>: <span class=\"doc-option-parameter-type\">InputNumberButtonListeners</span>, <span class=\"doc-option-parameter-type\">// InputNumber listeners</span>\n }",
+      "description": "Custom decrement button template.",
+      "description_zh": "自定义递减按钮模板。"
+    },
+    {
+      "name": "incrementbuttonicon",
+      "params": "",
+      "description": "",
+      "description_zh": ""
+    },
+    {
+      "name": "incrementicon",
+      "params": "",
+      "description": "Custom increment icon template.",
+      "description_zh": "自定义增量图标模板。"
+    },
+    {
+      "name": "decrementbuttonicon",
+      "params": "",
+      "description": "",
+      "description_zh": ""
+    },
+    {
+      "name": "decrementicon",
+      "params": "",
+      "description": "Custom decrement icon template.",
+      "description_zh": "自定义递减图标模板。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/inputnumber/",
+  "methods": []
+}

@@ -1,0 +1,111 @@
+{
+  "name": "Rating",
+  "props": {
+    "modelValue": {
+      "default": "",
+      "description": "Value of the rating.",
+      "description_zh": "评级的值。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "name": {
+      "default": "",
+      "description": "Name of the element.",
+      "description_zh": "元素的名称。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "disabled": {
+      "default": "false",
+      "description": "When present, it specifies that the element should be disabled.",
+      "description_zh": "如果存在，则指定应禁用该元素。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "readonly": {
+      "default": "false",
+      "description": "When present, it specifies that component is read-only.",
+      "description_zh": "如果存在，则指定组件是只读的。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "stars": {
+      "default": "5",
+      "description": "Number of stars.",
+      "description_zh": "星星数。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "onIcon": {
+      "default": "",
+      "description": "Icon for the on state.",
+      "description_zh": "开启状态的图标。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "offIcon": {
+      "default": "",
+      "description": "Icon for the off state.",
+      "description_zh": "关闭状态的图标。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<RatingPassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "onicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">value</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Option value</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the icon.</span>\n }",
+      "description": "Custom on icon template.",
+      "description_zh": "自定义图标模板。"
+    },
+    {
+      "name": "officon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">value</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Option value</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the icon.</span>\n }",
+      "description": "Custom off icon template.",
+      "description_zh": "自定义关闭图标模板。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/rating/",
+  "methods": []
+}

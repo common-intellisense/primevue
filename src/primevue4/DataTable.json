@@ -1,0 +1,721 @@
+{
+  "name": "DataTable",
+  "props": {
+    "value": {
+      "default": "",
+      "description": "An array of objects to display.",
+      "description_zh": "要显示的对象数组。",
+      "type": "null | any[]",
+      "value": "",
+      "required": false
+    },
+    "dataKey": {
+      "default": "",
+      "description": "Name of the field that uniquely identifies the a record in the data.",
+      "description_zh": "唯一标识数据中 a 记录的字段的名称。",
+      "type": "string | Function",
+      "value": "",
+      "required": false
+    },
+    "rows": {
+      "default": "0",
+      "description": "Number of rows to display per page.",
+      "description_zh": "每页要显示的行数。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "first": {
+      "default": "0",
+      "description": "Index of the first row to be displayed.",
+      "description_zh": "要显示的第一行的索引。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "totalRecords": {
+      "default": "0",
+      "description": "Number of total records, defaults to length of value when not defined.",
+      "description_zh": "总记录数，如果未定义，则默认为 length of value。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "paginator": {
+      "default": "false",
+      "description": "When specified as true, enables the pagination.",
+      "description_zh": "当指定为 true 时，启用分页。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "paginatorPosition": {
+      "default": "bottom",
+      "description": "Position of the paginator, options are 'top','bottom' or 'both'.",
+      "description_zh": "位置，选项为 'top'、'bottom' 或 'both'。",
+      "type": "top / bottom / both",
+      "value": "",
+      "required": false
+    },
+    "alwaysShowPaginator": {
+      "default": "true",
+      "description": "Whether to show it even there is only one page.",
+      "description_zh": "即使只有一个页面，是否也要显示它。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "paginatorTemplate": {
+      "default": "FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink RowsPerPageDropdown",
+      "description": "Template of the paginator. It can be customized using the template property using the predefined keys.\n\n- FirstPageLink\n- PrevPageLink\n- PageLinks\n- NextPageLink\n- LastPageLink\n- RowsPerPageDropdown\n- JumpToPageDropdown\n- JumpToPageInput\n- CurrentPageReport",
+      "description_zh": "分页器的模板。可以使用 template 属性和预定义的键对其进行自定义。\n\n- FirstPage链接\n- 上一页链接\n- 页面链接\n- NextPage链接\n- LastPageLink\n- RowsPerPageDropdown\n- JumpToPageDropdown\n- JumpToPageInput\n- 当前页面报告",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pageLinkSize": {
+      "default": "5",
+      "description": "Number of page links to display.",
+      "description_zh": "要显示的页面链接数。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "rowsPerPageOptions": {
+      "default": "",
+      "description": "Array of integer values to display inside rows per page dropdown.",
+      "description_zh": "要在每页行数下拉列表中显示的整数值数组。",
+      "type": "number[]",
+      "value": "",
+      "required": false
+    },
+    "currentPageReportTemplate": {
+      "default": "'({currentPage} of {totalPages})'",
+      "description": "Template of the current page report element. It displays information about the pagination state. Available placeholders are the following;\n\n- {currentPage}\n- {totalPages}\n- {rows}\n- {first}\n- {last}\n- {totalRecords}",
+      "description_zh": "当前页报表元素的模板。它显示有关分页状态的信息。可用的占位符如下;\n\n- {当前页面}\n- {总页数}\n- {行}\n- {第一}\n- {最后}\n- {总计记录}",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "lazy": {
+      "default": "false",
+      "description": "Defines if data is loaded and interacted with in lazy manner.",
+      "description_zh": "定义是否以延迟方式加载数据并与之交互。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "loading": {
+      "default": "false",
+      "description": "Displays a loader to indicate data load is in progress.",
+      "description_zh": "显示加载程序以指示数据加载正在进行中。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "loadingIcon": {
+      "default": "",
+      "description": "The icon to show while indicating data load is in progress.",
+      "description_zh": "指示数据加载正在进行时显示的图标。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "sortField": {
+      "default": "",
+      "description": "Property name or a getter function of a row data used for sorting by default",
+      "description_zh": "默认情况下用于排序的行数据的属性名称或 getter 函数",
+      "type": "string | Function",
+      "value": "",
+      "required": false
+    },
+    "sortOrder": {
+      "default": "",
+      "description": "Order to sort the data by default.",
+      "description_zh": "Order 默认对数据进行排序。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "nullSortOrder": {
+      "default": "1",
+      "description": "Determines how null values are sorted.",
+      "description_zh": "确定 Null 值的排序方式。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "defaultSortOrder": {
+      "default": "1",
+      "description": "Default sort order of an unsorted column.",
+      "description_zh": "未排序列的默认排序顺序。",
+      "type": "number",
+      "value": "",
+      "required": false
+    },
+    "multiSortMeta": {
+      "default": "",
+      "description": "An array of SortMeta objects to sort the data.",
+      "description_zh": "用于对数据进行排序的 SortMeta 对象数组。",
+      "type": "DataTableSortMeta[]",
+      "value": "",
+      "required": false
+    },
+    "sortMode": {
+      "default": "single",
+      "description": "Defines whether sorting works on single column or on multiple columns.",
+      "description_zh": "定义排序是适用于单列还是多列。",
+      "type": "single / multiple",
+      "value": "",
+      "required": false
+    },
+    "removableSort": {
+      "default": "false",
+      "description": "When enabled, columns can have an un-sorted state.",
+      "description_zh": "启用后，列可以具有 un-sorted 状态。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "filters": {
+      "default": "",
+      "description": "Filters object with key-value pairs to define the filters.",
+      "description_zh": "Filters 对象与键值对以定义过滤器。",
+      "type": "DataTableFilterMeta",
+      "value": "",
+      "required": false
+    },
+    "filterDisplay": {
+      "default": "",
+      "description": "Layout of the filter elements.",
+      "description_zh": "筛选器元素的布局。",
+      "type": "menu / row",
+      "value": "",
+      "required": false
+    },
+    "globalFilterFields": {
+      "default": "",
+      "description": "An array of fields as string or function to use in global filtering.",
+      "description_zh": "作为字符串或函数的字段数组，用于全局筛选。",
+      "type": "(string | Function)[]",
+      "value": "",
+      "required": false
+    },
+    "filterLocale": {
+      "default": "",
+      "description": "Locale to use in filtering. The default locale is the host environment's current locale.",
+      "description_zh": "筛选中使用的区域设置。默认区域设置是主机环境的当前区域设置。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "selection": {
+      "default": "",
+      "description": "Selected row in single mode or an array of values in multiple mode.",
+      "description_zh": "单个模式下的选定行或多个模式下的值数组。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "selectionMode": {
+      "default": "",
+      "description": "Specifies the selection mode.",
+      "description_zh": "指定选择模式。",
+      "type": "single / multiple",
+      "value": "",
+      "required": false
+    },
+    "compareSelectionBy": {
+      "default": "deepEquals",
+      "description": "Algorithm to define if a row is selected.",
+      "description_zh": "用于定义是否选择行的算法。",
+      "type": "equals / deepEquals",
+      "value": "",
+      "required": false
+    },
+    "metaKeySelection": {
+      "default": "false",
+      "description": "Defines whether metaKey is requred or not for the selection. When true metaKey needs to be pressed to select or unselect an item and\nwhen set to false selection of each item can be toggled individually. On touch enabled devices, metaKeySelection is turned off automatically.",
+      "description_zh": "定义选择是否需要 metaKey。当需要按下 true metaKey 来选择或取消选择项目，并且\n当设置为 false 时，可以单独切换每个项目的选择。在支持触摸的设备上，metaKeySelection 会自动关闭。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "contextMenu": {
+      "default": "false",
+      "description": "Enables context menu integration.",
+      "description_zh": "启用上下文菜单集成。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "contextMenuSelection": {
+      "default": "",
+      "description": "Selected row instance with the ContextMenu.",
+      "description_zh": "使用 ContextMenu 的选定行实例。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "selectAll": {
+      "default": "",
+      "description": "Whether all data is selected.",
+      "description_zh": "是否选择所有数据。",
+      "type": "Nullable<boolean>",
+      "value": "",
+      "required": false
+    },
+    "rowHover": {
+      "default": "false",
+      "description": "When enabled, background of the rows change on hover.",
+      "description_zh": "启用后，行的背景会在悬停时更改。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "csvSeparator": {
+      "default": ",",
+      "description": "Character to use as the csv separator.",
+      "description_zh": "用作 csv 分隔符的字符。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "exportFilename": {
+      "default": "download",
+      "description": "Name of the exported file.",
+      "description_zh": "导出文件的名称。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "exportFunction": {
+      "default": "",
+      "type": "Function",
+      "value": "",
+      "required": false,
+      "description": "",
+      "description_zh": ""
+    },
+    "resizableColumns": {
+      "default": "false",
+      "description": "When enabled, columns can be resized using drag and drop.",
+      "description_zh": "启用后，可以使用拖放来调整列的大小。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "columnResizeMode": {
+      "default": "fit",
+      "description": "Defines whether the overall table width.",
+      "description_zh": "定义整体表宽。",
+      "type": "fit / expand",
+      "value": "",
+      "required": false
+    },
+    "reorderableColumns": {
+      "default": "false",
+      "description": "When enabled, columns can be reordered using drag and drop.",
+      "description_zh": "启用后，可以使用拖放对列进行重新排序。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "expandedRows": {
+      "default": "",
+      "description": "A collection of row data display as expanded.",
+      "description_zh": "行数据的集合显示为展开状态。",
+      "type": "null | any[] | DataTableExpandedRows",
+      "value": "",
+      "required": false
+    },
+    "expandedRowIcon": {
+      "default": "",
+      "description": "Icon of the row toggler to display the row as expanded.",
+      "description_zh": "行切换器的图标，用于将行显示为展开状态。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "collapsedRowIcon": {
+      "default": "",
+      "description": "Icon of the row toggler to display the row as collapsed.",
+      "description_zh": "行切换器的图标，用于将行显示为折叠状态。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "rowGroupMode": {
+      "default": "",
+      "description": "Defines the row group mode.",
+      "description_zh": "定义行组模式。",
+      "type": "subheader / rowspan",
+      "value": "",
+      "required": false
+    },
+    "groupRowsBy": {
+      "default": "",
+      "description": "One or more field names to use in row grouping.",
+      "description_zh": "要在行分组中使用的一个或多个字段名称。",
+      "type": "string | string[] | Function",
+      "value": "",
+      "required": false
+    },
+    "expandableRowGroups": {
+      "default": "false",
+      "description": "Whether the row groups can be expandable.",
+      "description_zh": "行组是否可以展开。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "expandedRowGroups": {
+      "default": "",
+      "description": "An array of group field values whose groups would be rendered as expanded.",
+      "description_zh": "一个组字段值数组，其组将呈现为展开。",
+      "type": "any[] | DataTableExpandedRows",
+      "value": "",
+      "required": false
+    },
+    "stateStorage": {
+      "default": "session",
+      "description": "Defines where a stateful table keeps its state.",
+      "description_zh": "定义有状态表保持其状态的位置。",
+      "type": "session / local",
+      "value": "",
+      "required": false
+    },
+    "stateKey": {
+      "default": "",
+      "description": "Unique identifier of a stateful table to use in state storage.",
+      "description_zh": "要在状态存储中使用的有状态表的唯一标识符。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "editMode": {
+      "default": "",
+      "description": "Defines the incell editing mode.",
+      "description_zh": "定义 incell 编辑模式。",
+      "type": "row / cell",
+      "value": "",
+      "required": false
+    },
+    "editingRows": {
+      "default": "",
+      "description": "A collection of rows to represent the current editing data in row edit mode.",
+      "description_zh": "在行编辑模式下表示当前编辑数据的行集合。",
+      "type": "any[] | DataTableEditingRows",
+      "value": "",
+      "required": false
+    },
+    "rowClass": {
+      "default": "",
+      "type": "Function",
+      "value": "",
+      "required": false,
+      "description": "",
+      "description_zh": ""
+    },
+    "rowStyle": {
+      "default": "",
+      "type": "Function",
+      "value": "",
+      "required": false,
+      "description": "",
+      "description_zh": ""
+    },
+    "scrollable": {
+      "default": "false",
+      "description": "When specified, enables horizontal and/or vertical scrolling.",
+      "description_zh": "指定后，启用水平和/或垂直滚动。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "scrollHeight": {
+      "default": "",
+      "description": "Height of the scroll viewport in fixed pixels or the 'flex' keyword for a dynamic size.",
+      "description_zh": "滚动视区的高度（以固定像素为单位）或动态大小的 'flex' 关键字。",
+      "type": "HintedString<\"flex\">",
+      "value": "",
+      "required": false
+    },
+    "virtualScrollerOptions": {
+      "default": "",
+      "description": "Whether to use the virtualScroller feature. The properties of VirtualScroller component can be used like an object in it.\nNote: Currently only vertical orientation mode is supported.",
+      "description_zh": "是否使用 virtualScroller 功能。VirtualScroller 组件的属性可以像其中的对象一样使用。\n注： 目前仅支持垂直方向模式。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "frozenValue": {
+      "default": "",
+      "description": "Items of the frozen part in scrollable DataTable.",
+      "description_zh": "可滚动 DataTable 中冻结部分的项。",
+      "type": "null | any[]",
+      "value": "",
+      "required": false
+    },
+    "breakpoint": {
+      "default": "960px",
+      "description": "The breakpoint to define the maximum width boundary when using stack responsive layout.",
+      "description_zh": "使用堆栈响应式布局时定义最大宽度边界的断点。",
+      "type": "string",
+      "value": "",
+      "required": false
+    },
+    "showHeaders": {
+      "default": "true",
+      "description": "Whether to display table headers",
+      "description_zh": "是否显示表头",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "showGridlines": {
+      "default": "false",
+      "description": "Whether to show grid lines between cells.",
+      "description_zh": "是否在单元格之间显示网格线。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "stripedRows": {
+      "default": "false",
+      "description": "Whether to displays rows with alternating colors.",
+      "description_zh": "是否显示具有交替颜色的行。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "highlightOnSelect": {
+      "default": "false",
+      "description": "Highlights automatically the first item.",
+      "description_zh": "自动高亮显示第一项。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    },
+    "size": {
+      "default": "",
+      "description": "Defines the size of the table.",
+      "description_zh": "定义表的大小。",
+      "type": "large / small",
+      "value": "",
+      "required": false
+    },
+    "tableStyle": {
+      "default": "",
+      "description": "Inline style of the table element.",
+      "description_zh": "表格元素的内联样式。",
+      "type": "string | object",
+      "value": "",
+      "required": false
+    },
+    "tableClass": {
+      "default": "",
+      "description": "Style class of the table element.",
+      "description_zh": "style 类。",
+      "type": "string | object",
+      "value": "",
+      "required": false
+    },
+    "tableProps": {
+      "default": "",
+      "description": "Used to pass all properties of the TableHTMLAttributes to table element inside the component.",
+      "description_zh": "用于将 TableHTMLAttributes 的所有属性传递给组件内的 table 元素。",
+      "type": "TableHTMLAttributes",
+      "value": "",
+      "required": false
+    },
+    "filterInputProps": {
+      "default": "",
+      "description": "Used to pass all properties of the HTMLInputElement to the focusable filter input element inside the component.",
+      "description_zh": "用于将 HTMLInputElement 的所有属性传递给组件内的可聚焦过滤器输入元素。",
+      "type": "InputHTMLAttributes",
+      "value": "",
+      "required": false
+    },
+    "filterButtonProps": {
+      "default": "",
+      "description": "Used to pass all filter button property object",
+      "description_zh": "用于传递所有筛选器按钮属性对象",
+      "type": "DataTableFilterButtonPropsOptions",
+      "value": "",
+      "required": false
+    },
+    "editButtonProps": {
+      "default": "",
+      "description": "Used to pass all edit button property object",
+      "description_zh": "用于传递所有编辑按钮属性对象",
+      "type": "DataTableEditButtonPropsOptions",
+      "value": "",
+      "required": false
+    },
+    "dt": {
+      "default": "",
+      "description": "It generates scoped CSS variables using design tokens for the component.",
+      "description_zh": "它使用组件的设计令牌生成范围限定的 CSS 变量。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "pt": {
+      "default": "",
+      "description": "Used to pass attributes to DOM elements inside the component.",
+      "description_zh": "用于将属性传递给组件内的 DOM 元素。",
+      "type": "PassThrough<DataTablePassThroughOptions>",
+      "value": "",
+      "required": false
+    },
+    "ptOptions": {
+      "default": "",
+      "description": "Used to configure passthrough(pt) options of the component.",
+      "description_zh": "用于配置组件的 passthrough（pt） 选项。",
+      "type": "any",
+      "value": "",
+      "required": false
+    },
+    "unstyled": {
+      "default": "false",
+      "description": "When enabled, it removes component related styles in the core.",
+      "description_zh": "启用后，它会删除核心中与组件相关的样式。",
+      "type": "boolean",
+      "value": "",
+      "required": false
+    }
+  },
+  "events": [],
+  "slots": [
+    {
+      "name": "header",
+      "params": "",
+      "description": "Custom header template.",
+      "description_zh": "自定义标头模板。"
+    },
+    {
+      "name": "footer",
+      "params": "",
+      "description": "Custom footer template.",
+      "description_zh": "自定义页脚模板。"
+    },
+    {
+      "name": "paginatorstart",
+      "params": "",
+      "description": "Custom paginator start template.",
+      "description_zh": "自定义 paginator 启动模板。"
+    },
+    {
+      "name": "paginatorend",
+      "params": "",
+      "description": "Custom paginator end template.",
+      "description_zh": "自定义分页器结束模板。"
+    },
+    {
+      "name": "empty",
+      "params": "",
+      "description": "Custom empty template.",
+      "description_zh": "自定义空模板。"
+    },
+    {
+      "name": "groupheader",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">data</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Row data</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">index</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Row index</span>\n }",
+      "description": "Custom group header template.",
+      "description_zh": "自定义组标题模板。"
+    },
+    {
+      "name": "groupfooter",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">data</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Row data</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">index</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Row index</span>\n }",
+      "description": "Custom group footer template.",
+      "description_zh": "自定义组页脚模板。"
+    },
+    {
+      "name": "loading",
+      "params": "",
+      "description": "Custom loading template.",
+      "description_zh": "自定义加载模板。"
+    },
+    {
+      "name": "expansion",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">data</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Row data</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">index</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Row index</span>\n }",
+      "description": "Custom expansion template.",
+      "description_zh": "自定义扩展模板。"
+    },
+    {
+      "name": "loadingicon",
+      "params": "",
+      "description": "Custom loading icon template.",
+      "description_zh": "自定义加载图标模板。"
+    },
+    {
+      "name": "reorderindicatorupicon",
+      "params": "",
+      "description": "Custom row reorder indicator up icon template.",
+      "description_zh": "自定义行重新排序指示器向上图标模板。"
+    },
+    {
+      "name": "rowreorderindicatorupicon",
+      "params": "",
+      "description": "Custom row reorder indicator up icon template.",
+      "description_zh": "自定义行重新排序指示器向上图标模板。"
+    },
+    {
+      "name": "reorderindicatordownicon",
+      "params": "",
+      "description": "Custom reorder indicator down icon template.",
+      "description_zh": "自定义重新排序指示器向下图标模板。"
+    },
+    {
+      "name": "rowreorderindicatordownicon",
+      "params": "",
+      "description": "Custom reorder indicator down icon template.",
+      "description_zh": "自定义重新排序指示器向下图标模板。"
+    },
+    {
+      "name": "rowgrouptogglericon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">expanded</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Current rowgroup's expanded state.</span>\n }",
+      "description": "Custom rowgroup toggler icon template.",
+      "description_zh": "自定义行组切换器图标模板。"
+    },
+    {
+      "name": "paginatorfirstpagelinkicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the paginator first page link icon.</span>\n }",
+      "description": "Custom paginator first page link icon template.",
+      "description_zh": "自定义分页器首页链接图标模板。"
+    },
+    {
+      "name": "paginatorprevpagelinkicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the paginator prev page link icon.</span>\n }",
+      "description": "Custom paginator previous page link icon template.",
+      "description_zh": "自定义分页器上一页链接图标模板。"
+    },
+    {
+      "name": "paginatornextpagelinkicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the paginator next page link icon.</span>\n }",
+      "description": "Custom paginator next page link icon template.",
+      "description_zh": "自定义分页器下一页链接图标模板。"
+    },
+    {
+      "name": "paginatorlastpagelinkicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the paginator last page link icon.</span>\n }",
+      "description": "Custom paginator last page link icon template.",
+      "description_zh": "自定义分页器最后一页链接图标模板。"
+    },
+    {
+      "name": "paginatorrowsperpagedropdownicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the paginator rows per page dropdown icon.</span>\n }",
+      "description": "Custom paginatorrowsperpagedropdownicon template.",
+      "description_zh": "自定义 paginatorrowsperpagedropdownicon 模板。"
+    },
+    {
+      "name": "paginatorjumptopagedropdownicon",
+      "params": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the paginator jump to page dropdown icon.</span>\n }",
+      "description": "Custom paginatorjumptopagedropdownicon template.",
+      "description_zh": "自定义 paginatorjumptopagedropdownicon 模板。"
+    }
+  ],
+  "suggestions": [],
+  "link": "https://primevue.org/datatable/",
+  "methods": []
+}
