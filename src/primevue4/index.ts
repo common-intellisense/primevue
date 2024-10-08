@@ -14,8 +14,10 @@ export function primevue4Components() {
     map: getComponentsMap(),
     isSeperatorByHyphen: false,
     prefix: '',
-    isReact: false,
+    isReact: true,
     lib: 'primevue',
+    dynamicLib: 'primevue/${name}',
+    importWay: 'default',
     // directives: directives.primevue4,
   }
 }
