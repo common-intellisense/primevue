@@ -13,7 +13,7 @@
       "default": "",
       "description": "Severity type of the badge.",
       "description_zh": "徽章的严重性类型。",
-      "type": "null | HintedString<\"secondary\" | \"info\" | \"success\" | \"warn\" | \"danger\" | \"contrast\">",
+      "type": "null / secondary / info success / warn / danger / contrast",
       "value": "",
       "required": false
     },
@@ -21,7 +21,7 @@
       "default": "",
       "description": "Size of the badge, valid options are 'small', 'large', and 'xlarge'.",
       "description_zh": "大小，有效选项为 'small'、'large' 和 'xlarge'。",
-      "type": "null | \"large\" | \"xlarge\" | \"small\"",
+      "type": "null / large / xlarge / small",
       "value": "",
       "required": false
     },

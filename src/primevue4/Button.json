@@ -69,7 +69,7 @@
       "default": "",
       "description": "Severity type of the badge.",
       "description_zh": "徽章的严重性类型。",
-      "type": "null | HintedString<\"secondary\" | \"info\" | \"success\" | \"warn\" | \"danger\" | \"contrast\">",
+      "type": "null / secondary / info / success / warn / danger / contrast",
       "value": "",
       "required": false
     },
@@ -117,7 +117,7 @@
       "default": "",
       "description": "Defines the style of the button.",
       "description_zh": "定义按钮的样式。",
-      "type": "HintedString<\"secondary\" | \"info\" | \"success\" | \"warn\" | \"danger\" | \"contrast\" | \"help\">",
+      "type": "secondary / info / success / warn / danger / contrast / help",
       "value": "",
       "required": false
     },

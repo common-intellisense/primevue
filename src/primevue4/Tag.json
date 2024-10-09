@@ -13,7 +13,7 @@
       "default": "",
       "description": "Severity type of the tag.",
       "description_zh": "标签的严重性类型。",
-      "type": "HintedString<\"secondary\" | \"info\" | \"success\" | \"warn\" | \"danger\" | \"contrast\">",
+      "type": "secondary / info / success / warn / danger / contrast",
       "value": "",
       "required": false
     },

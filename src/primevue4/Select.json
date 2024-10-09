@@ -93,7 +93,7 @@
       "default": "contains",
       "description": "Defines the filtering algorithm to use when searching the options.",
       "description_zh": "定义搜索选项时要使用的筛选算法。",
-      "type": "HintedString<\"startsWith\" | \"contains\" | \"endsWith\">",
+      "type": "startsWith / contains / endsWith",
       "value": "",
       "required": false
     },
@@ -253,7 +253,7 @@
       "default": "body",
       "description": "A valid query selector or an HTMLElement to specify where the overlay gets attached.",
       "description_zh": "一个有效的查询选择器或一个 HTMLElement，用于指定覆盖层的附加位置。",
-      "type": "HTMLElement | HintedString<\"body\" | \"self\">",
+      "type": "HTMLElement / body / self",
       "value": "",
       "required": false
     },

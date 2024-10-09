@@ -93,7 +93,7 @@
       "default": "body",
       "description": "A valid query selector or an HTMLElement to specify where the overlay gets attached.",
       "description_zh": "一个有效的查询选择器或一个 HTMLElement，用于指定覆盖层的附加位置。",
-      "type": "HTMLElement | HintedString<\"body\" | \"self\">",
+      "type": "HTMLElement / body / self",
       "value": "",
       "required": false
     },

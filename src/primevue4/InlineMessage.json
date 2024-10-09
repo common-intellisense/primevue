@@ -5,7 +5,7 @@
       "default": "info",
       "description": "Severity level of the message.",
       "description_zh": "消息的严重性级别。",
-      "type": "HintedString<\"error\" | \"secondary\" | \"info\" | \"success\" | \"warn\" | \"contrast\">",
+      "type": "error / secondary / info / success / warn / contrast",
       "value": "",
       "required": false
     },
