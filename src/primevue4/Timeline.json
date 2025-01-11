@@ -1,7 +1,7 @@
 {
   "name": "Timeline",
   "props": {
-    "value": {
+    ":value": {
       "default": "",
       "description": "An array of events to display.",
       "description_zh": "要显示的事件数组。",

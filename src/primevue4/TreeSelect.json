@@ -9,7 +9,7 @@
       "value": "",
       "required": false
     },
-    "options": {
+    ":options": {
       "default": "",
       "description": "An array of treenodes.",
       "description_zh": "treenode 数组。",

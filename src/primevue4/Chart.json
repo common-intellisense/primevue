@@ -17,7 +17,7 @@
       "value": "",
       "required": false
     },
-    "options": {
+    ":options": {
       "default": "",
       "description": "Options to customize the chart.",
       "description_zh": "用于自定义图表的选项。",
@@ -25,7 +25,7 @@
       "value": "",
       "required": false
     },
-    "plugins": {
+    ":plugins": {
       "default": "",
       "description": "Used to custom plugins of the chart.",
       "description_zh": "用于自定义图表的插件。",

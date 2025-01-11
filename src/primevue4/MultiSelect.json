@@ -9,7 +9,7 @@
       "value": "",
       "required": false
     },
-    "options": {
+    ":options": {
       "default": "",
       "description": "An array of select items to display as the available options.",
       "description_zh": "要显示为可用选项的选定项的数组。",

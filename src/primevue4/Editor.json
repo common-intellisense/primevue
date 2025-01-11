@@ -25,7 +25,7 @@
       "value": "",
       "required": false
     },
-    "formats": {
+    ":formats": {
       "default": "",
       "description": "Whitelist of formats to display, see  <a target=\"_blank\" href=\"https://quilljs.com/docs/formats/\">here</a>  for available options.",
       "description_zh": "要显示的格式白名单，请参阅 <a target=“_blank” href=“https://quilljs.com/docs/formats/”>此处</a>的可用选项。",

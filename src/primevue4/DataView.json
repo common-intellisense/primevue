@@ -1,7 +1,7 @@
 {
   "name": "DataView",
   "props": {
-    "value": {
+    ":value": {
       "default": "",
       "description": "An array of objects to display.",
       "description_zh": "要显示的对象数组。",
