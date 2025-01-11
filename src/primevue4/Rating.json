@@ -1,7 +1,7 @@
 {
   "name": "Rating",
   "props": {
-    "modelValue": {
+    ":v-model": {
       "default": "",
       "description": "Value of the rating.",
       "description_zh": "评级的值。",

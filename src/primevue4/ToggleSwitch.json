@@ -1,7 +1,7 @@
 {
   "name": "ToggleSwitch",
   "props": {
-    "modelValue": {
+    ":v-model": {
       "default": "false",
       "description": "Specifies whether a toggleswitch should be checked or not.",
       "description_zh": "指定是否应选中 toggleswitch。",

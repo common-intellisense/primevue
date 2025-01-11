@@ -1,7 +1,7 @@
 {
   "name": "ColorPicker",
   "props": {
-    "modelValue": {
+    ":v-model": {
       "default": "",
       "description": "Value of the component.",
       "description_zh": "组件的值。",

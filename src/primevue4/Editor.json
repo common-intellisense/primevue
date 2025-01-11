@@ -1,7 +1,7 @@
 {
   "name": "Editor",
   "props": {
-    "modelValue": {
+    ":v-model": {
       "default": "",
       "description": "Value of the content.",
       "description_zh": "内容的值。",

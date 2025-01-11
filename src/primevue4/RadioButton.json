@@ -9,7 +9,7 @@
       "value": "",
       "required": false
     },
-    "modelValue": {
+    ":v-model": {
       "default": "",
       "description": "Value binding of the checkbox.",
       "description_zh": "复选框的值绑定。",

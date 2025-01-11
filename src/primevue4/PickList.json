@@ -1,7 +1,7 @@
 {
   "name": "PickList",
   "props": {
-    "modelValue": {
+    ":v-model": {
       "default": "",
       "description": "Value of the component as a multidimensional array.",
       "description_zh": "组件的值作为多维数组。",

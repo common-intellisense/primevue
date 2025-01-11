@@ -1,7 +1,7 @@
 {
   "name": "AutoComplete",
   "props": {
-    "modelValue": {
+    ":v-model": {
       "default": "",
       "description": "Value of the component.",
       "description_zh": "组件的值。",
@@ -9,7 +9,7 @@
       "value": "",
       "required": false
     },
-    "suggestions": {
+    ":suggestions": {
       "default": "",
       "description": "An array of suggestions to display.",
       "description_zh": "要显示的一组建议。",

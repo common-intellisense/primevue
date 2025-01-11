@@ -1,7 +1,7 @@
 {
   "name": "ToggleButton",
   "props": {
-    "modelValue": {
+    ":v-model": {
       "default": "false",
       "description": "Value of the component.",
       "description_zh": "组件的值。",

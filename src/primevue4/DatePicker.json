@@ -1,7 +1,7 @@
 {
   "name": "DatePicker",
   "props": {
-    "modelValue": {
+    ":v-model": {
       "default": "null",
       "description": "Value of the component.",
       "description_zh": "组件的值。",
