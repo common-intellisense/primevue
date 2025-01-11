@@ -6,6 +6,7 @@ export function primevue4() {
     uiName: 'primevue',
     lib: 'primevue',
     map: getPropsMap(),
+    dynamicLib: 'primevue/${name}',
   }
 }
 
