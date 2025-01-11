@@ -8,7 +8,7 @@
       "value": "",
       "description_zh": "组件的值。"
     },
-    "options": {
+    ":options": {
       "default": "",
       "description": "An array of treenodes.",
       "type": "TreeNode[]",
@@ -99,7 +99,7 @@
       "value": "",
       "description_zh": "输入字段的样式类。"
     },
-    "inputStyle": {
+    ":inputStyle": {
       "default": "",
       "description": "Inline style of the input field.",
       "type": "object",

@@ -78,7 +78,7 @@
       "value": "",
       "description_zh": "基础输入元素的标识符。"
     },
-    "inputClass": {
+    ":inputClass": {
       "default": "",
       "description": "Style class of the input field.",
       "type": "object",

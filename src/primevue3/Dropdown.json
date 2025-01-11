@@ -134,7 +134,7 @@
       "value": "",
       "description_zh": "基础输入元素的标识符。"
     },
-    "inputStyle": {
+    ":inputStyle": {
       "default": "",
       "description": "Inline style of the input field.",
       "type": "object",
@@ -155,7 +155,7 @@
       "value": "",
       "description_zh": "用于将 HTMLInputElement/HTMLSpanElement 的所有属性传递给组件内的可聚焦输入元素。"
     },
-    "panelStyle": {
+    ":panelStyle": {
       "default": "",
       "description": "Inline style of the overlay panel.",
       "type": "object",

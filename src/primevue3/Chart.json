@@ -8,14 +8,14 @@
       "value": "",
       "description_zh": "图表的类型。"
     },
-    "data": {
+    ":data": {
       "default": "",
       "description": "Data to display.",
       "type": "object",
       "value": "",
       "description_zh": "要显示的数据。"
     },
-    "options": {
+    ":options": {
       "default": "",
       "description": "Options to customize the chart.",
       "type": "object",
