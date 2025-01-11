@@ -385,7 +385,7 @@
       "value": "",
       "required": false
     },
-    "inputStyle": {
+    ":inputStyle": {
       "default": "",
       "description": "Inline style of the input field.",
       "description_zh": "输入字段的内联样式。",
@@ -401,7 +401,7 @@
       "value": "",
       "required": false
     },
-    "panelStyle": {
+    ":panelStyle": {
       "default": "",
       "description": "Inline style of the overlay panel.",
       "description_zh": "叠加面板的内联样式。",
@@ -417,7 +417,7 @@
       "value": "",
       "required": false
     },
-    "todayButtonProps": {
+    ":todayButtonProps": {
       "default": "",
       "description": "Used to pass all properties of the ButtonProps to the today button component.",
       "description_zh": "用于将 ButtonProps 的所有属性传递给 today 按钮组件。",
@@ -425,7 +425,7 @@
       "value": "",
       "required": false
     },
-    "clearButtonProps": {
+    ":clearButtonProps": {
       "default": "",
       "description": "Used to pass all properties of the ButtonProps to the clear button component.",
       "description_zh": "用于将 ButtonProps 的所有属性传递给 clear button 组件。",
@@ -433,7 +433,7 @@
       "value": "",
       "required": false
     },
-    "navigatorButtonProps": {
+    ":navigatorButtonProps": {
       "default": "",
       "description": "Used to pass all properties of the ButtonProps to the navigator button component.",
       "description_zh": "用于将 ButtonProps 的所有属性传递给导航器按钮组件。",
@@ -441,7 +441,7 @@
       "value": "",
       "required": false
     },
-    "timepickerButtonProps": {
+    ":timepickerButtonProps": {
       "default": "",
       "description": "Used to pass all properties of the ButtonProps to the timepicker button component.",
       "description_zh": "用于将 ButtonProps 的所有属性传递给 timepicker 按钮组件。",

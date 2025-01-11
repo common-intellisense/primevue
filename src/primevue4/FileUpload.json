@@ -201,7 +201,7 @@
       "value": "",
       "required": false
     },
-    "chooseButtonProps": {
+    ":chooseButtonProps": {
       "default": "null",
       "description": "Used to pass all properties of the ButtonProps to the choose button inside the component.",
       "description_zh": "用于将 ButtonProps 的所有属性传递给组件内的 choose 按钮。",
@@ -209,7 +209,7 @@
       "value": "",
       "required": false
     },
-    "uploadButtonProps": {
+    ":uploadButtonProps": {
       "default": "",
       "description": "Used to pass all properties of the ButtonProps to the upload button inside the component.",
       "description_zh": "用于将 ButtonProps 的所有属性传递给组件内的上传按钮。",
@@ -217,7 +217,7 @@
       "value": "",
       "required": false
     },
-    "cancelButtonProps": {
+    ":cancelButtonProps": {
       "default": "",
       "description": "Used to pass all properties of the ButtonProps to the cancel button inside the component.",
       "description_zh": "用于将 ButtonProps 的所有属性传递给组件内的 cancel 按钮。",

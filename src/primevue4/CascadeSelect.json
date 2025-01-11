@@ -113,7 +113,7 @@
       "value": "",
       "required": false
     },
-    "inputStyle": {
+    ":inputStyle": {
       "default": "",
       "description": "Inline style of the input field.",
       "description_zh": "输入字段的内联样式。",
@@ -137,7 +137,7 @@
       "value": "",
       "required": false
     },
-    "panelStyle": {
+    ":panelStyle": {
       "default": "",
       "description": "",
       "description_zh": "",
@@ -161,7 +161,7 @@
       "value": "",
       "required": false
     },
-    "overlayStyle": {
+    ":overlayStyle": {
       "default": "",
       "description": "Inline style of the overlay overlay.",
       "description_zh": "叠加层叠加层的内联样式。",

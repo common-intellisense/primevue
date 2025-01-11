@@ -113,7 +113,7 @@
       "value": "",
       "required": false
     },
-    "panelStyle": {
+    ":panelStyle": {
       "default": "",
       "description": "",
       "description_zh": "",
@@ -129,7 +129,7 @@
       "value": "",
       "required": false
     },
-    "overlayStyle": {
+    ":overlayStyle": {
       "default": "",
       "description": "Inline style of the overlay.",
       "description_zh": "叠加层的内联样式。",

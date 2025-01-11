@@ -121,7 +121,7 @@
       "value": "",
       "required": false
     },
-    "inputStyle": {
+    ":inputStyle": {
       "default": "",
       "description": "Inline style of the input field.",
       "description_zh": "输入字段的内联样式。",

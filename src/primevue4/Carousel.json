@@ -113,7 +113,7 @@
       "value": "",
       "required": false
     },
-    "prevButtonProps": {
+    ":prevButtonProps": {
       "default": "",
       "description": "Used to pass attributes to the previous Button component.",
       "description_zh": "用于将属性传递给上一个 Button 组件。",
@@ -121,7 +121,7 @@
       "value": "",
       "required": false
     },
-    "nextButtonProps": {
+    ":nextButtonProps": {
       "default": "",
       "description": "Used to pass attributes to the next Button component.",
       "description_zh": "用于将属性传递给下一个 Button 组件。",

@@ -33,7 +33,7 @@
       "value": "",
       "required": false
     },
-    "buttonProps": {
+    ":buttonProps": {
       "default": "",
       "description": "Used to pass all properties of the ButtonProps to the Button component.",
       "description_zh": "用于将 ButtonProps 的所有属性传递给 Button 组件。",

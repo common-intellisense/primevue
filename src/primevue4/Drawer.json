@@ -57,7 +57,7 @@
       "value": "",
       "required": false
     },
-    "closeButtonProps": {
+    ":closeButtonProps": {
       "default": "",
       "description": "Used to pass the custom value to read for the button inside the component.",
       "description_zh": "用于传递要读取组件内按钮的自定义值。",

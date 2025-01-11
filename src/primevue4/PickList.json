@@ -105,7 +105,7 @@
       "value": "",
       "required": false
     },
-    "buttonProps": {
+    ":buttonProps": {
       "default": "",
       "description": "Used to pass all properties of the ButtonProps to the move up button inside the component.",
       "description_zh": "用于将 ButtonProps 的所有属性传递给组件内的上移按钮。",
@@ -113,7 +113,7 @@
       "value": "",
       "required": false
     },
-    "moveUpButtonProps": {
+    ":moveUpButtonProps": {
       "default": "",
       "description": "Used to pass all properties of the ButtonProps to the move up button inside the component.",
       "description_zh": "用于将 ButtonProps 的所有属性传递给组件内的上移按钮。",
@@ -121,7 +121,7 @@
       "value": "",
       "required": false
     },
-    "moveTopButtonProps": {
+    ":moveTopButtonProps": {
       "default": "",
       "description": "Used to pass all properties of the ButtonProps to the move top button inside the component.",
       "description_zh": "用于将 ButtonProps 的所有属性传递给组件内的 move top 按钮。",
@@ -129,7 +129,7 @@
       "value": "",
       "required": false
     },
-    "moveDownButtonProps": {
+    ":moveDownButtonProps": {
       "default": "",
       "description": "Used to pass all properties of the ButtonProps to the move down button inside the component.",
       "description_zh": "用于将 ButtonProps 的所有属性传递给组件内的 move down 按钮。",
@@ -137,7 +137,7 @@
       "value": "",
       "required": false
     },
-    "moveBottomButtonProps": {
+    ":moveBottomButtonProps": {
       "default": "",
       "description": "Used to pass all properties of the ButtonProps to the move bottom button inside the component.",
       "description_zh": "用于将 ButtonProps 的所有属性传递给组件内部的 move bottom 按钮。",
@@ -145,7 +145,7 @@
       "value": "",
       "required": false
     },
-    "moveToTargetProps": {
+    ":moveToTargetProps": {
       "default": "",
       "description": "Used to pass all properties of the ButtonProps to the move to target button inside the component.",
       "description_zh": "用于将 ButtonProps 的所有属性传递给组件内的 move to target 按钮。",
@@ -153,7 +153,7 @@
       "value": "",
       "required": false
     },
-    "moveAllToTargetProps": {
+    ":moveAllToTargetProps": {
       "default": "",
       "description": "Used to pass all properties of the ButtonProps to the move all to target button inside the component.",
       "description_zh": "用于将 ButtonProps 的所有属性传递给组件内的 move all to target 按钮。",
@@ -161,7 +161,7 @@
       "value": "",
       "required": false
     },
-    "moveToSourceProps": {
+    ":moveToSourceProps": {
       "default": "",
       "description": "Used to pass all properties of the ButtonProps to the move to source button inside the component.",
       "description_zh": "用于将 ButtonProps 的所有属性传递给组件内的 move to source 按钮。",
@@ -169,7 +169,7 @@
       "value": "",
       "required": false
     },
-    "moveAllToSourceProps": {
+    ":moveAllToSourceProps": {
       "default": "",
       "description": "Used to pass all properties of the ButtonProps to the move all to source button inside the component.",
       "description_zh": "用于将 ButtonProps 的所有属性传递给组件内的 move all to source 按钮。",

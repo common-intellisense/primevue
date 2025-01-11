@@ -9,7 +9,7 @@
       "value": "",
       "required": false
     },
-    "data": {
+    ":data": {
       "default": "",
       "description": "Data to display.",
       "description_zh": "要显示的数据。",

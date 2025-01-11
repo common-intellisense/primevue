@@ -177,7 +177,7 @@
       "value": "",
       "required": false
     },
-    "inputStyle": {
+    ":inputStyle": {
       "default": "",
       "description": "",
       "description_zh": "",
@@ -201,7 +201,7 @@
       "value": "",
       "required": false
     },
-    "labelStyle": {
+    ":labelStyle": {
       "default": "",
       "description": "Inline style of the label field.",
       "description_zh": "标签字段的内联样式。",
@@ -217,7 +217,7 @@
       "value": "",
       "required": false
     },
-    "panelStyle": {
+    ":panelStyle": {
       "default": "",
       "description": "",
       "description_zh": "",
@@ -233,7 +233,7 @@
       "value": "",
       "required": false
     },
-    "overlayStyle": {
+    ":overlayStyle": {
       "default": "",
       "description": "Inline style of the overlay.",
       "description_zh": "叠加层的内联样式。",
