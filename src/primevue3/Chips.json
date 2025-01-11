@@ -1,7 +1,7 @@
 {
   "name": "Chips",
   "props": {
-    "modelValue": {
+    ":v-model": {
       "default": "",
       "description": "Value of the component.",
       "type": "any[]",
@@ -123,7 +123,7 @@
   },
   "events": [
     {
-      "name": "update:modelValue",
+      "name": "update::v-model",
       "description": "Emitted when the value changes.",
       "params": "(value: any[]) => void",
       "description_zh": "在值更改时发出。"

@@ -1,7 +1,7 @@
 {
   "name": "InputMask",
   "props": {
-    "modelValue": {
+    ":v-model": {
       "default": "",
       "description": "Value of the component.",
       "type": "string",
@@ -67,7 +67,7 @@
   },
   "events": [
     {
-      "name": "update:modelValue",
+      "name": "update::v-model",
       "description": "Emitted when the value changes.",
       "params": "(value: string) => void",
       "description_zh": "在值更改时发出。"

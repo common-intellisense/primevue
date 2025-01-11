@@ -1,7 +1,7 @@
 {
   "name": "Editor",
   "props": {
-    "modelValue": {
+    ":v-model": {
       "default": "",
       "description": "Value of the content.",
       "type": "string",
@@ -22,7 +22,7 @@
       "value": "",
       "description_zh": "是否将编辑器实例化为只读模式。"
     },
-    "formats": {
+    ":formats": {
       "default": "",
       "description": "Whitelist of formats to display, see [here](https://quilljs.com/docs/formats/) for available options.",
       "type": "any[]",
@@ -67,7 +67,7 @@
   },
   "events": [
     {
-      "name": "update:modelValue",
+      "name": "update::v-model",
       "description": "Emitted when the value changes.",
       "params": "(value: string) => void",
       "description_zh": "在值更改时发出。"

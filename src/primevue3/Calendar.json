@@ -1,7 +1,7 @@
 {
   "name": "Calendar",
   "props": {
-    "modelValue": {
+    ":v-model": {
       "default": "null",
       "description": "Value of the component.",
       "type": "null | string | string[] | Date | Date[]",
@@ -410,7 +410,7 @@
   },
   "events": [
     {
-      "name": "update:modelValue",
+      "name": "update::v-model",
       "description": "Emitted when the value changes.",
       "params": "(value: undefined | string | string[] | Date | Date[]) => void",
       "description_zh": "在值更改时发出。"

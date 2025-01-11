@@ -88,7 +88,7 @@
   },
   "events": [
     {
-      "name": "update:modelValue",
+      "name": "update::v-model",
       "description": "Emitted when the value changes.",
       "params": "(value: boolean) => void",
       "description_zh": "在值更改时发出。"

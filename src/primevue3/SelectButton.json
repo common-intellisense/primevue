@@ -1,14 +1,14 @@
 {
   "name": "SelectButton",
   "props": {
-    "modelValue": {
+    ":v-model": {
       "default": "",
       "description": "Value of the component.",
       "type": "any",
       "value": "",
       "description_zh": "组件的值。"
     },
-    "options": {
+    ":options": {
       "default": "",
       "description": "An array of selectitems to display as the available options.",
       "type": "any[]",
@@ -95,7 +95,7 @@
   },
   "events": [
     {
-      "name": "update:modelValue",
+      "name": "update::v-model",
       "description": "Emitted when the value changes.",
       "params": "(value: any) => void",
       "description_zh": "在值更改时发出。"

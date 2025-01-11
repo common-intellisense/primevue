@@ -1,7 +1,7 @@
 {
   "name": "OrderList",
   "props": {
-    "modelValue": {
+    ":v-model": {
       "default": "",
       "description": "Value of the component.",
       "type": "any[]",
@@ -15,7 +15,7 @@
       "value": "",
       "description_zh": "唯一标识数据中 a 记录的字段的名称。"
     },
-    "selection": {
+    ":selection": {
       "default": "",
       "description": "Selected items in the list.",
       "type": "any[]",
@@ -137,7 +137,7 @@
   },
   "events": [
     {
-      "name": "update:modelValue",
+      "name": "update::v-model",
       "description": "Emitted when the value changes.",
       "params": "(value: any[]) => void",
       "description_zh": "在值更改时发出。"

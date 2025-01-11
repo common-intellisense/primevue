@@ -8,7 +8,7 @@
       "value": "",
       "description_zh": "复选框的值。"
     },
-    "modelValue": {
+    ":v-model": {
       "default": "",
       "description": "Value binding of the checkbox.",
       "type": "any",

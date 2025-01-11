@@ -1,7 +1,7 @@
 {
   "name": "TriStateCheckbox",
   "props": {
-    "modelValue": {
+    ":v-model": {
       "default": "null",
       "description": "Value of the component.",
       "type": "Nullable<boolean>",
@@ -74,7 +74,7 @@
   },
   "events": [
     {
-      "name": "update:modelValue",
+      "name": "update::v-model",
       "description": "Emitted when the value changes.",
       "params": "(value: Nullable<boolean>) => void",
       "description_zh": "在值更改时发出。"

@@ -1,7 +1,7 @@
 {
   "name": "Knob",
   "props": {
-    "modelValue": {
+    ":v-model": {
       "default": "",
       "description": "Value of the component.",
       "type": "number",
@@ -137,7 +137,7 @@
   },
   "events": [
     {
-      "name": "update:modelValue",
+      "name": "update::v-model",
       "description": "Emitted when the value changes.",
       "params": "(value: number) => void",
       "description_zh": "在值更改时发出。"

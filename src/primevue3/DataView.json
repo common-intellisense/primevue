@@ -1,7 +1,7 @@
 {
   "name": "DataView",
   "props": {
-    "value": {
+    ":value": {
       "default": "",
       "description": "An array of objects to display.",
       "type": "any[]",

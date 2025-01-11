@@ -1,7 +1,7 @@
 {
   "name": "Timeline",
   "props": {
-    "value": {
+    ":value": {
       "default": "",
       "description": "An array of events to display.",
       "type": "any[]",
